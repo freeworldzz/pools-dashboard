@@ -1,0 +1,1357 @@
+{
+  "generated_at": "2026-05-29T17:32:25",
+  "vendors": [
+    "Pools and More",
+    "Bricoandpool",
+    "Carol Piscina",
+    "Shop4Pool",
+    "Hidraulicart",
+    "IoT Pool"
+  ],
+  "robots": [
+    {
+      "name": "Robot Wybot C2 VISION IA",
+      "brand": "wybot",
+      "prices": {
+        "Pools and More": {
+          "current": 615.0,
+          "before": null,
+          "matched_name": "Robot Wybot C2 VISION IA",
+          "url": "https://poolsandmore.pt/produto/robot-wybot-c2-vision-ia/"
+        },
+        "Bricoandpool": null,
+        "Carol Piscina": null,
+        "Shop4Pool": null,
+        "Hidraulicart": {
+          "current": 610.0,
+          "before": null,
+          "matched_name": "Aspirador de Piscina WYBOT E-TRON C2 VISION",
+          "url": "https://www.hidraulicart.pt/loja-online/aspiradoras-robotizadas-automaticas/aspirador-de-piscina-wybot-e-tron-c2vision/",
+          "match_score": 6
+        },
+        "IoT Pool": null
+      }
+    },
+    {
+      "name": "Zodiac Freerider 5600 iQ",
+      "brand": "zodiac",
+      "prices": {
+        "Pools and More": {
+          "current": null,
+          "before": null,
+          "matched_name": "Zodiac Freerider 5600 iQ",
+          "url": "https://poolsandmore.pt/produto/zodiac-freerider-5600-iq/"
+        },
+        "Bricoandpool": null,
+        "Carol Piscina": null,
+        "Shop4Pool": null,
+        "Hidraulicart": null,
+        "IoT Pool": {
+          "current": 1099.0,
+          "before": 1899.0,
+          "matched_name": "Aspirador robot ZODIAC FREERIDER RF 5600 iQ limpa fundos automático a bateria sem fios",
+          "url": "https://www.iot-pool.com/products/aspirador-de-piscina-automatico-a-bateria-sem-fios-freerider-rf-5600-iq-limpa-fundos-robot-zodiac",
+          "match_score": 7
+        }
+      }
+    },
+    {
+      "name": "Zodiac Freerider 5400 iQ",
+      "brand": "zodiac",
+      "prices": {
+        "Pools and More": {
+          "current": null,
+          "before": null,
+          "matched_name": "Zodiac Freerider 5400 iQ",
+          "url": "https://poolsandmore.pt/produto/zodiac-freerider-5400-iq/"
+        },
+        "Bricoandpool": null,
+        "Carol Piscina": null,
+        "Shop4Pool": {
+          "current": null,
+          "before": 980.0,
+          "matched_name": "Robot / Aspirador sem fios (bateria) RF 5400 iQ  Zodiac para limpeza de fundos, paredes e linha de água",
+          "url": "https://shop4pool.com/products/wr000411",
+          "match_score": 6
+        },
+        "Hidraulicart": null,
+        "IoT Pool": {
+          "current": 999.0,
+          "before": 1499.0,
+          "matched_name": "Aspirador ZODIAC FREERIDER RF 5400 iQ limpa fundos automático a bateria sem fios",
+          "url": "https://www.iot-pool.com/products/aspirador-de-piscina-automatico-a-bateria-sem-fios-freerider-rf-5400-iq-limpa-fundos-robot-zodiac",
+          "match_score": 7
+        }
+      }
+    },
+    {
+      "name": "WYBOT E-TRON i20 NG",
+      "brand": "wybot",
+      "prices": {
+        "Pools and More": {
+          "current": 378.84,
+          "before": 445.0,
+          "matched_name": "WYBOT E-TRON i20 NG",
+          "url": "https://poolsandmore.pt/produto/wybot-e-tron-i20-ng/"
+        },
+        "Bricoandpool": null,
+        "Carol Piscina": {
+          "current": 499.0,
+          "before": 579.0,
+          "matched_name": "Aspirador Piscina WYBOT E-TRON i20 NG Sem Fios",
+          "url": "https://carolpiscina.pt/products/aspirador-piscina-e-tron-i20-ng-sem-fios-copy",
+          "match_score": 7
+        },
+        "Shop4Pool": null,
+        "Hidraulicart": {
+          "current": 426.0,
+          "before": null,
+          "matched_name": "Aspirador De Piscina WYBOT E-TRON i20 NG",
+          "url": "https://www.hidraulicart.pt/loja-online/aspiradoras-robotizadas-automaticas/pool-vakuum-wybot-e-tron-i20-w3312/",
+          "match_score": 7
+        },
+        "IoT Pool": {
+          "current": 367.0,
+          "before": 734.0,
+          "matched_name": "Robot Aspirador E-TRON GENIUS i20 by WYBOT a bateria sem fios",
+          "url": "https://www.iot-pool.com/products/robot-aspirador-e-tron-spyder-genius-i20-by-wybot-1",
+          "match_score": 6
+        }
+      }
+    },
+    {
+      "name": "Wybot F1 – Skimmer Solar Inteligente",
+      "brand": "wybot",
+      "prices": {
+        "Pools and More": {
+          "current": 345.0,
+          "before": null,
+          "matched_name": "Wybot F1 – Skimmer Solar Inteligente",
+          "url": "https://poolsandmore.pt/produto/wybotf1_skimmer_solar/"
+        },
+        "Bricoandpool": null,
+        "Carol Piscina": null,
+        "Shop4Pool": null,
+        "Hidraulicart": null,
+        "IoT Pool": {
+          "current": 337.0,
+          "before": null,
+          "matched_name": "Robot Aspirador E-TRON F1 Wybot",
+          "url": "https://www.iot-pool.com/products/robot-aspirador-e-tron-f1-wybot",
+          "match_score": 5
+        }
+      }
+    },
+    {
+      "name": "Zodiac OP 32",
+      "brand": "zodiac",
+      "prices": {
+        "Pools and More": {
+          "current": 499.0,
+          "before": null,
+          "matched_name": "Zodiac OP 32",
+          "url": "https://poolsandmore.pt/produto/zodiac-pixel-op-32-robot-piscina-sem-fios/"
+        },
+        "Bricoandpool": {
+          "current": 449.0,
+          "before": 599.0,
+          "matched_name": "Zodiac - Pixel OP 32 Robô limpa-fundos sem fio para piscina",
+          "url": "https://bricoandpool.com/pt-pt/products/zodiac-pixel-op-32-robot-cabo-free-sem-limpeza",
+          "match_score": 6
+        },
+        "Carol Piscina": {
+          "current": 599.0,
+          "before": 799.0,
+          "matched_name": "Aspirador sem fios Pixel OP 32",
+          "url": "https://carolpiscina.pt/products/aspirador-hidraulico-mx10-copy",
+          "match_score": 5
+        },
+        "Shop4Pool": {
+          "current": 470.0,
+          "before": 709.57,
+          "matched_name": "Robot de Piscina Sem Fios Zodiac OP 32 – Limpeza de Fundo e Paredes",
+          "url": "https://shop4pool.com/products/wr000625",
+          "match_score": 6
+        },
+        "Hidraulicart": {
+          "current": 499.0,
+          "before": null,
+          "matched_name": "Aspirador de Piscina ZODIAC sem cabo Pixel OP 32",
+          "url": "https://www.hidraulicart.pt/loja-online/aspiradoras-robotizadas-automaticas/aspiradora-de-piscina-inalambrica-op-32/",
+          "match_score": 6
+        },
+        "IoT Pool": {
+          "current": 449.0,
+          "before": 679.0,
+          "matched_name": "Aspirador robot ZODIAC FREERIDER OP 32 Pixel limpa fundos automático a bateria sem fios",
+          "url": "https://www.iot-pool.com/products/aspirador-de-piscina-automatico-a-bateria-sem-fios-pixel-op-32-limpa-fundos-robot-zodiac",
+          "match_score": 6
+        }
+      }
+    },
+    {
+      "name": "Zodiac RF 5200 IQ Freerider – Aspirador Robô para Piscina",
+      "brand": "zodiac",
+      "prices": {
+        "Pools and More": {
+          "current": null,
+          "before": null,
+          "matched_name": "Zodiac RF 5200 IQ Freerider – Aspirador Robô para Piscina",
+          "url": "https://poolsandmore.pt/produto/zodiac-rf-5200-iq-freerider/"
+        },
+        "Bricoandpool": {
+          "current": 799.0,
+          "before": 999.0,
+          "matched_name": "Zodiac Vortex OV 5200 4WD Robô limpa-fundos com cabo para piscina",
+          "url": "https://bricoandpool.com/pt-pt/products/zodiac-vortex-ov-5200-4wd-robot-cleaning-pool-2",
+          "match_score": 5
+        },
+        "Carol Piscina": null,
+        "Shop4Pool": {
+          "current": null,
+          "before": 870.0,
+          "matched_name": "Robot Aspirador de Piscina Sem Fios Zodiac RF 5200 iQ – Limpeza de Fundo, Paredes e Linha de Água",
+          "url": "https://shop4pool.com/products/wr000576",
+          "match_score": 7
+        },
+        "Hidraulicart": {
+          "current": 999.0,
+          "before": 1099.0,
+          "matched_name": "Aspirador Piscina Zodiac OV 5200",
+          "url": "https://www.hidraulicart.pt/loja-online/aspiradoras-robotizadas-automaticas/aspiradora-de-piscina-zodiac-ov-5200/",
+          "match_score": 5
+        },
+        "IoT Pool": {
+          "current": 899.0,
+          "before": 1399.0,
+          "matched_name": "Aspirador robot ZODIAC FREERIDER RF 5200 iQ limpa fundos automático a bateria sem fios",
+          "url": "https://www.iot-pool.com/products/aspirador-de-piscina-automatico-a-bateria-sem-fios-freerider-rf-5200-iq-limpa-fundos-robot-zodiac",
+          "match_score": 8
+        }
+      }
+    },
+    {
+      "name": "Zodiac Freedom Lite Robot de Piscina a Bateria",
+      "brand": "zodiac",
+      "prices": {
+        "Pools and More": {
+          "current": 599.0,
+          "before": null,
+          "matched_name": "Zodiac Freedom Lite Robot de Piscina a Bateria",
+          "url": "https://poolsandmore.pt/produto/zodiac-freedom-lite-robot-piscina-sem-fios/"
+        },
+        "Bricoandpool": {
+          "current": 1299.0,
+          "before": 1499.0,
+          "matched_name": "Zodiac - Freedom lite Robô limpa-fundos sem fio para piscina",
+          "url": "https://bricoandpool.com/pt-pt/products/zodiac-freedom-control-robot-limpiafondos-piscina",
+          "match_score": 4
+        },
+        "Carol Piscina": null,
+        "Shop4Pool": null,
+        "Hidraulicart": {
+          "current": 599.0,
+          "before": null,
+          "matched_name": "Aspirador de piscinas sem fios Zodiac Freedom Lite | OFERTA",
+          "url": "https://www.hidraulicart.pt/loja-online/aspiradoras-robotizadas-automaticas/aspirador-de-piscinas-sem-fios-zodiac-freedom-lite/",
+          "match_score": 4
+        },
+        "IoT Pool": {
+          "current": 649.0,
+          "before": 1229.0,
+          "matched_name": "Aspirador robot ZODIAC FREERIDER FREEDOM OF 42 limpa fundos Bateria Automático",
+          "url": "https://www.iot-pool.com/products/aspirador-de-piscina-eletrico-e-automatico-of-42-limpa-fundos-robot-bateria",
+          "match_score": 3
+        }
+      }
+    },
+    {
+      "name": "Aiper X1 Pro Max — Robot de Piscina Sem Cabo",
+      "brand": "aiper",
+      "prices": {
+        "Pools and More": {
+          "current": 1599.0,
+          "before": null,
+          "matched_name": "Aiper X1 Pro Max — Robot de Piscina Sem Cabo",
+          "url": "https://poolsandmore.pt/produto/aiper-x1-pro-max-robot-piscina-sem-cabo/"
+        },
+        "Bricoandpool": {
+          "current": 1699.0,
+          "before": 3229.0,
+          "matched_name": "Aiper Robô X1 Pro Max Aspirador de piscina  sem fios e a pilhas",
+          "url": "https://bricoandpool.com/pt-pt/products/aiper-x1-pro-max-robot-aspirador-de-piscina-bateria-sem-cabo",
+          "match_score": 7
+        },
+        "Carol Piscina": null,
+        "Shop4Pool": {
+          "current": 1490.0,
+          "before": 2212.77,
+          "matched_name": "Robot Aspirador de Piscinas Sem Fios Aiper Scuba X1 Pro Max – Limpeza Total 300m²",
+          "url": "https://shop4pool.com/products/robo-aspirador-de-piscinas-sem-fios-aiper-scuba-x1-pro-max-limpeza-total-300m",
+          "match_score": 7
+        },
+        "Hidraulicart": null,
+        "IoT Pool": {
+          "current": 1599.0,
+          "before": null,
+          "matched_name": "Aspirador Elétrico sem fios ROBOT AIPER Scuba X1 Pro Max limpa fundos automático",
+          "url": "https://www.iot-pool.com/products/aspirador-eletrico-robot-aiper-scuba-x1-pro-max-limpa-fundos-automatico",
+          "match_score": 7
+        }
+      }
+    },
+    {
+      "name": "VEKTRO JÚNIOR",
+      "brand": "vektro",
+      "prices": {
+        "Pools and More": {
+          "current": 139.0,
+          "before": null,
+          "matched_name": "VEKTRO JÚNIOR",
+          "url": "https://poolsandmore.pt/produto/vektro-junior/"
+        },
+        "Bricoandpool": null,
+        "Carol Piscina": null,
+        "Shop4Pool": null,
+        "Hidraulicart": {
+          "current": 187.0,
+          "before": null,
+          "matched_name": "Aspirador Elétrico (Bateria) VEKTRO JÚNIOR",
+          "url": "https://www.hidraulicart.pt/loja-online/elektro-vakuum-batterie-vektro-junior/",
+          "match_score": 3
+        },
+        "IoT Pool": null
+      }
+    },
+    {
+      "name": "X-Warrior Fairland – O Robô Limpador de Piscinas com Inteligência Artificial",
+      "brand": "warrior",
+      "prices": {
+        "Pools and More": {
+          "current": 1180.0,
+          "before": null,
+          "matched_name": "X-Warrior Fairland – O Robô Limpador de Piscinas com Inteligência Artificial",
+          "url": "https://poolsandmore.pt/produto/x-warrior/"
+        },
+        "Bricoandpool": null,
+        "Carol Piscina": null,
+        "Shop4Pool": null,
+        "Hidraulicart": null,
+        "IoT Pool": null
+      }
+    },
+    {
+      "name": "Robot Piscina iGarden K40 Sem Fios",
+      "brand": "igarden",
+      "prices": {
+        "Pools and More": {
+          "current": 499.0,
+          "before": null,
+          "matched_name": "Robot Piscina iGarden K40 Sem Fios",
+          "url": "https://poolsandmore.pt/produto/igarden-k40-robot-piscina/"
+        },
+        "Bricoandpool": {
+          "current": 499.0,
+          "before": 699.0,
+          "matched_name": "iGarden K40 robô limpa-fundos de piscina automático sem fios",
+          "url": "https://bricoandpool.com/pt-pt/products/igarden-k-azul-robot-limpiafondos-de-piscina-de-bateria-sin-cable",
+          "match_score": 5
+        },
+        "Carol Piscina": null,
+        "Shop4Pool": null,
+        "Hidraulicart": null,
+        "IoT Pool": null
+      }
+    },
+    {
+      "name": "Beatbot AquaSense 2 Ultra – Aspirador Robótico para Piscinas",
+      "brand": "beatbot",
+      "prices": {
+        "Pools and More": {
+          "current": 2849.0,
+          "before": null,
+          "matched_name": "Beatbot AquaSense 2 Ultra – Aspirador Robótico para Piscinas",
+          "url": "https://poolsandmore.pt/produto/aquasense-2-ultra-aspirador-robotico-para-piscinas/"
+        },
+        "Bricoandpool": {
+          "current": 3199.0,
+          "before": 3850.0,
+          "matched_name": "Beatbot AquaSense 2 Ultra Robô limpa-fundos sem cabo para piscina",
+          "url": "https://bricoandpool.com/pt-pt/products/beatbot-robo-aspirador-de-piscina-aquasense-2-ultra",
+          "match_score": 4
+        },
+        "Carol Piscina": null,
+        "Shop4Pool": null,
+        "Hidraulicart": {
+          "current": 2830.0,
+          "before": null,
+          "matched_name": "Aspirador de Piscina sem fios Beatbot Aquasense 2 Ultra",
+          "url": "https://www.hidraulicart.pt/loja-online/aspirador-de-piscina-beatbot-aquasense-2-ultra/",
+          "match_score": 4
+        },
+        "IoT Pool": {
+          "current": 2925.0,
+          "before": 5099.0,
+          "matched_name": "Aspirador Robot AquaSense 2 Ultra Beatbot",
+          "url": "https://www.iot-pool.com/products/aspirador-robot-aquasense-2-ultra-beatbot",
+          "match_score": 4
+        }
+      }
+    },
+    {
+      "name": "Beatbot AquaSense 2 Pro – Aspirador Robótico para Piscinas",
+      "brand": "beatbot",
+      "prices": {
+        "Pools and More": {
+          "current": 1949.0,
+          "before": null,
+          "matched_name": "Beatbot AquaSense 2 Pro – Aspirador Robótico para Piscinas",
+          "url": "https://poolsandmore.pt/produto/aquasense-2-pro-aspirador-robotico-para-piscinas/"
+        },
+        "Bricoandpool": {
+          "current": 1899.0,
+          "before": 2699.0,
+          "matched_name": "Beatbot AquaSense 2 Pro Robô limpa-fundos sem fio para piscina",
+          "url": "https://bricoandpool.com/pt-pt/products/beatbot-robo-aspirador-de-piscina-aquasense-2-pro-sem-fio",
+          "match_score": 4
+        },
+        "Carol Piscina": null,
+        "Shop4Pool": null,
+        "Hidraulicart": {
+          "current": 1789.0,
+          "before": null,
+          "matched_name": "Beatbot Aquasense 2 Pro",
+          "url": "https://www.hidraulicart.pt/loja-online/aspiradoras-robotizadas-automaticas/beatbot-aquasense-2-pro/",
+          "match_score": 4
+        },
+        "IoT Pool": {
+          "current": 1999.0,
+          "before": 3679.0,
+          "matched_name": "Aspirador Robot AquaSense 2 Pro Beatbot",
+          "url": "https://www.iot-pool.com/products/aspirador-robot-aquasense-2-pro-beatbot",
+          "match_score": 4
+        }
+      }
+    },
+    {
+      "name": "Zodiac Freedom+ Control Robot de Piscina Sem Fios",
+      "brand": "zodiac",
+      "prices": {
+        "Pools and More": {
+          "current": 1299.0,
+          "before": null,
+          "matched_name": "Zodiac Freedom+ Control Robot de Piscina Sem Fios",
+          "url": "https://poolsandmore.pt/produto/zodiac-freedom-control-robot-de-piscina-sem-fios/"
+        },
+        "Bricoandpool": {
+          "current": 1299.0,
+          "before": 1499.0,
+          "matched_name": "Zodiac - Freedom lite Robô limpa-fundos sem fio para piscina",
+          "url": "https://bricoandpool.com/pt-pt/products/zodiac-freedom-control-robot-limpiafondos-piscina",
+          "match_score": 3
+        },
+        "Carol Piscina": null,
+        "Shop4Pool": null,
+        "Hidraulicart": {
+          "current": 599.0,
+          "before": null,
+          "matched_name": "Aspirador de piscinas sem fios Zodiac Freedom Lite | OFERTA",
+          "url": "https://www.hidraulicart.pt/loja-online/aspiradoras-robotizadas-automaticas/aspirador-de-piscinas-sem-fios-zodiac-freedom-lite/",
+          "match_score": 3
+        },
+        "IoT Pool": {
+          "current": 649.0,
+          "before": 1229.0,
+          "matched_name": "Aspirador robot ZODIAC FREERIDER FREEDOM OF 42 limpa fundos Bateria Automático",
+          "url": "https://www.iot-pool.com/products/aspirador-de-piscina-eletrico-e-automatico-of-42-limpa-fundos-robot-bateria",
+          "match_score": 3
+        }
+      }
+    },
+    {
+      "name": "Aiper Scuba P1 Pro – Robot de Piscina Sem Cabos",
+      "brand": "aiper",
+      "prices": {
+        "Pools and More": {
+          "current": 799.0,
+          "before": null,
+          "matched_name": "Aiper Scuba P1 Pro – Robot de Piscina Sem Cabos",
+          "url": "https://poolsandmore.pt/produto/aiper-p1-pro-robo-robot-piscina-sem-fio/"
+        },
+        "Bricoandpool": null,
+        "Carol Piscina": null,
+        "Shop4Pool": {
+          "current": 798.0,
+          "before": 1228.9,
+          "matched_name": "Robot Aspirador de Piscinas Aiper Scuba P1 Pro – Limpeza Inteligente WaveLine™ até 200m²",
+          "url": "https://shop4pool.com/products/robo-aspirador-de-piscinas-aiper-scuba-p1-pro-limpeza-inteligente-waveline™-ate-200m",
+          "match_score": 7
+        },
+        "Hidraulicart": null,
+        "IoT Pool": {
+          "current": 799.0,
+          "before": null,
+          "matched_name": "Aspirador Elétrico sem fios ROBOT AIPER Scuba P1 PRO limpa fundos automático",
+          "url": "https://www.iot-pool.com/products/aspirador-eletrico-sem-fios-robot-aiper-scuba-p1-pro-limpa-fundos-automatico",
+          "match_score": 7
+        }
+      }
+    },
+    {
+      "name": "Wybot E-TRON S2 Solar Vision – Robô aspirador de piscina solar",
+      "brand": "wybot",
+      "prices": {
+        "Pools and More": {
+          "current": 1349.0,
+          "before": null,
+          "matched_name": "Wybot E-TRON S2 Solar Vision – Robô aspirador de piscina solar",
+          "url": "https://poolsandmore.pt/produto/wybot-e-tron-s2-solar-vision/"
+        },
+        "Bricoandpool": null,
+        "Carol Piscina": null,
+        "Shop4Pool": null,
+        "Hidraulicart": {
+          "current": 1380.0,
+          "before": null,
+          "matched_name": "Aspirador de Piscina Wybot S2 Solar Vision",
+          "url": "https://www.hidraulicart.pt/loja-online/aspirador-de-piscina-wybot-s2-solar-vision/",
+          "match_score": 6
+        },
+        "IoT Pool": {
+          "current": 1298.99,
+          "before": 2449.0,
+          "matched_name": "Robot Aspirador E-TRON S2 SOLAR VISION Wybot",
+          "url": "https://www.iot-pool.com/products/robot-aspirador-e-tron-s2-solar-vision",
+          "match_score": 7
+        }
+      }
+    },
+    {
+      "name": "Zodiac CNX 40 iQ",
+      "brand": "zodiac",
+      "prices": {
+        "Pools and More": {
+          "current": 1099.0,
+          "before": null,
+          "matched_name": "Zodiac CNX 40 iQ",
+          "url": "https://poolsandmore.pt/produto/zodiac-cnx-40-iq/"
+        },
+        "Bricoandpool": {
+          "current": 999.0,
+          "before": 1269.0,
+          "matched_name": "Zodiac CNX 40 iQ Robô limpa-fundos com cabo para piscina",
+          "url": "https://bricoandpool.com/pt-pt/products/zodiac-cnx-40-q-robot-piscina-limpa",
+          "match_score": 7
+        },
+        "Carol Piscina": null,
+        "Shop4Pool": null,
+        "Hidraulicart": {
+          "current": 1099.0,
+          "before": null,
+          "matched_name": "Aspirador Piscina Zodiac CNX 40 iQ",
+          "url": "https://www.hidraulicart.pt/loja-online/aspiradoras-robotizadas-automaticas/aspiradora-de-piscina-zodiac-cnx-40-iq/",
+          "match_score": 7
+        },
+        "IoT Pool": {
+          "current": 999.0,
+          "before": 1702.0,
+          "matched_name": "Aspirador robot ZODIAC CNX 40 iq limpa fundos Elétrico e Automático piscina",
+          "url": "https://www.iot-pool.com/products/aspirador-de-piscina-electrico-e-automatico-zodiac-cnx-40-iq-limpa-fundos-robot",
+          "match_score": 7
+        }
+      }
+    },
+    {
+      "name": "Aiper Scuba P1 – Robot de Piscina Sem Fios",
+      "brand": "aiper",
+      "prices": {
+        "Pools and More": {
+          "current": 499.0,
+          "before": null,
+          "matched_name": "Aiper Scuba P1 – Robot de Piscina Sem Fios",
+          "url": "https://poolsandmore.pt/produto/aiper-scuba-p1-robot-aspirador-piscina/"
+        },
+        "Bricoandpool": null,
+        "Carol Piscina": null,
+        "Shop4Pool": {
+          "current": 498.0,
+          "before": 737.0,
+          "matched_name": "Robot Aspirador Piscina Aiper Scuba P1 – Liberdade Sem Fios e Navegação WavePath™",
+          "url": "https://shop4pool.com/products/robot-aspirador-de-piscinas-aiper-scuba-p1-pro-limpeza-inteligente-waveline™-ate-200m-copia",
+          "match_score": 6
+        },
+        "Hidraulicart": null,
+        "IoT Pool": {
+          "current": 499.0,
+          "before": null,
+          "matched_name": "Aspirador Elétrico sem fios ROBOT AIPER Scuba P1 limpa fundos automático",
+          "url": "https://www.iot-pool.com/products/aspirador-eletrico-sem-fios-robot-aiper-scuba-p1-limpa-fundos-automatico",
+          "match_score": 6
+        }
+      }
+    },
+    {
+      "name": "AquaSphere ASR",
+      "brand": "aquasphere",
+      "prices": {
+        "Pools and More": {
+          "current": 569.0,
+          "before": null,
+          "matched_name": "AquaSphere ASR",
+          "url": "https://poolsandmore.pt/produto/asr/"
+        },
+        "Bricoandpool": null,
+        "Carol Piscina": null,
+        "Shop4Pool": null,
+        "Hidraulicart": {
+          "current": 528.0,
+          "before": 599.0,
+          "matched_name": "Aspirador Piscina Aquasphere ASR 105 by FLUIDRA",
+          "url": "https://www.hidraulicart.pt/loja-online/aspiradoras-robotizadas-automaticas/aspiradora-de-piscina-aquasphere-asr-105-de-fluidra/",
+          "match_score": 3
+        },
+        "IoT Pool": {
+          "current": 559.0,
+          "before": 886.0,
+          "matched_name": "STOCK OFF - Aspirador robot ZODIAC AQUASPHERE ASR 105 limpa fundos Elétrico piscina",
+          "url": "https://www.iot-pool.com/products/aspirador-de-piscina-electrico-e-automatico-aquasphere-asr-105-limpa-fundos-robot-zodiac",
+          "match_score": 3
+        }
+      }
+    },
+    {
+      "name": "Aiper EcoSurfer M2",
+      "brand": "aiper",
+      "prices": {
+        "Pools and More": {
+          "current": 395.0,
+          "before": null,
+          "matched_name": "Aiper EcoSurfer M2",
+          "url": "https://poolsandmore.pt/produto/aiper-ecosurfer-m2-skimmer-solar-sem-fios/"
+        },
+        "Bricoandpool": null,
+        "Carol Piscina": null,
+        "Shop4Pool": {
+          "current": 395.0,
+          "before": 540.0,
+          "matched_name": "Robot Skimmer Solar Aiper EcoSurfer M2 – Limpeza Inteligente da Superfície",
+          "url": "https://shop4pool.com/products/robot-skimmer-solar-aiper-ecosurfer-m2-limpeza-inteligente-da-superficie",
+          "match_score": 6
+        },
+        "Hidraulicart": {
+          "current": 398.0,
+          "before": null,
+          "matched_name": "Robô Aiper EcoSurfer Skimmer Solar",
+          "url": "https://www.hidraulicart.pt/loja-online/aspiradoras-robotizadas-automaticas/robo-aiper-ecosurfer-skimmer-solar/",
+          "match_score": 3
+        },
+        "IoT Pool": {
+          "current": 349.99,
+          "before": null,
+          "matched_name": "Aspirador Elétrico sem fios ROBOT AIPER EcoSurfer M2 / Ecosurfer S2 limpa fundos automático",
+          "url": "https://www.iot-pool.com/products/aspirador-eletrico-sem-fios-robot-aiper-ecosurfer-m2-limpa-fundos-automatico",
+          "match_score": 6
+        }
+      }
+    },
+    {
+      "name": "Zodiac Freedom OF 42 iQ",
+      "brand": "zodiac",
+      "prices": {
+        "Pools and More": {
+          "current": 649.0,
+          "before": null,
+          "matched_name": "Zodiac Freedom OF 42 iQ",
+          "url": "https://poolsandmore.pt/produto/zodiac-freedom-of-42-iq-robot-piscina-sem-fios/"
+        },
+        "Bricoandpool": {
+          "current": 649.0,
+          "before": 999.0,
+          "matched_name": "Zodiac - Freedom OF 42 iQ Robô limpa-fundos sem cabo para piscina",
+          "url": "https://bricoandpool.com/pt-pt/products/zodiac-liberdade-de-42-robot-de-qi-cabo-sem-limpeza",
+          "match_score": 8
+        },
+        "Carol Piscina": null,
+        "Shop4Pool": null,
+        "Hidraulicart": {
+          "current": 849.0,
+          "before": 999.0,
+          "matched_name": "Aspirador de Piscina Zodiac Freedom OF 42 iQ",
+          "url": "https://www.hidraulicart.pt/loja-online/aspiradoras-robotizadas-automaticas/zodiac-freedom-of-42-iq-poolstaubsauger/",
+          "match_score": 8
+        },
+        "IoT Pool": {
+          "current": 649.0,
+          "before": 1229.0,
+          "matched_name": "Aspirador robot ZODIAC FREERIDER FREEDOM OF 42 limpa fundos Bateria Automático",
+          "url": "https://www.iot-pool.com/products/aspirador-de-piscina-eletrico-e-automatico-of-42-limpa-fundos-robot-bateria",
+          "match_score": 7
+        }
+      }
+    },
+    {
+      "name": "Aiper Scuba N1 Max",
+      "brand": "aiper",
+      "prices": {
+        "Pools and More": {
+          "current": 850.0,
+          "before": null,
+          "matched_name": "Aiper Scuba N1 Max",
+          "url": "https://poolsandmore.pt/produto/aiper-scuba-n1-max-robot-piscina-sem-fios/"
+        },
+        "Bricoandpool": null,
+        "Carol Piscina": null,
+        "Shop4Pool": {
+          "current": 850.0,
+          "before": 1365.3,
+          "matched_name": "Robot de Piscina Sem Fios Aiper Scuba N1 Max – Limpeza Total: Fundo, Paredes e Linha de Água",
+          "url": "https://shop4pool.com/products/robot-de-piscina-sem-fios-aiper-scuba-n1600-performance-de-elite-fundo-paredes-e-linha-de-agua-copia",
+          "match_score": 7
+        },
+        "Hidraulicart": {
+          "current": 862.0,
+          "before": null,
+          "matched_name": "Aspirador Piscina Aiper Scuba N1 MAX",
+          "url": "https://www.hidraulicart.pt/loja-online/aspirador-piscina-aiper-scuba-n1-max/",
+          "match_score": 7
+        },
+        "IoT Pool": {
+          "current": 849.0,
+          "before": null,
+          "matched_name": "Aspirador Elétrico sem fios ROBOT AIPER Scuba N1 MAX / AIPER X1 PRO limpa fundos automático",
+          "url": "https://www.iot-pool.com/products/aspirador-eletrico-sem-fios-robot-aiper-scuba-n1-max-limpa-fundos-automatico",
+          "match_score": 7
+        }
+      }
+    },
+    {
+      "name": "Robot iGarden K Pro 120 – Robot Piscina Sem Fios",
+      "brand": "igarden",
+      "prices": {
+        "Pools and More": {
+          "current": 1095.0,
+          "before": null,
+          "matched_name": "Robot iGarden K Pro 120 – Robot Piscina Sem Fios",
+          "url": "https://poolsandmore.pt/produto/igarden-k-pro-120-robot-piscina-sem-cabo/"
+        },
+        "Bricoandpool": null,
+        "Carol Piscina": null,
+        "Shop4Pool": {
+          "current": 1090.0,
+          "before": 1474.77,
+          "matched_name": "Robot Aspirador de Piscinas Sem Fios iGarden K Pro 120 – Performance Profissional para Piscinas até 15m",
+          "url": "https://shop4pool.com/products/robo-aspirador-de-piscinas-sem-fios-igarden-k-pro-performance-profissional-para-piscinas-ate-15m",
+          "match_score": 6
+        },
+        "Hidraulicart": {
+          "current": 1096.0,
+          "before": null,
+          "matched_name": "Aspirador Piscina K Pro | iGarden",
+          "url": "https://www.hidraulicart.pt/loja-online/aspiradoras-robotizadas-automaticas/aspirador-piscina-k-pro-igarden/",
+          "match_score": 3
+        },
+        "IoT Pool": null
+      }
+    },
+    {
+      "name": "iGarden K80 robô aspirador piscina a bateria sem fios",
+      "brand": "igarden",
+      "prices": {
+        "Pools and More": {
+          "current": 789.0,
+          "before": null,
+          "matched_name": "iGarden K80 robô aspirador piscina a bateria sem fios",
+          "url": "https://poolsandmore.pt/produto/igarden-k80-robo-aspirador-piscina-bateria/"
+        },
+        "Bricoandpool": {
+          "current": 799.0,
+          "before": 1049.0,
+          "matched_name": "iGarden K80 robô limpa-fundos de piscina automático sem fios",
+          "url": "https://bricoandpool.com/pt-pt/products/igarden-k80-azul-robot-limpiafondos-de-piscina-de-bateria-sin-cable",
+          "match_score": 5
+        },
+        "Carol Piscina": null,
+        "Shop4Pool": null,
+        "Hidraulicart": null,
+        "IoT Pool": null
+      }
+    },
+    {
+      "name": "Zodiac VORTRAX TRX 8700 IQ – Aspirador de Piscina Profissional",
+      "brand": "zodiac",
+      "prices": {
+        "Pools and More": {
+          "current": 2799.0,
+          "before": null,
+          "matched_name": "Zodiac VORTRAX TRX 8700 IQ – Aspirador de Piscina Profissional",
+          "url": "https://poolsandmore.pt/produto/aspirador-eletrico-vortrax-trx-8700-iq-zodiac/"
+        },
+        "Bricoandpool": {
+          "current": 2800.0,
+          "before": null,
+          "matched_name": "Zodiac - Vortrax TRX 8700 iQ Robô limpa-fundos para piscina",
+          "url": "https://bricoandpool.com/pt-pt/products/trx-8700-iq-vortrax-people-zodiac-2",
+          "match_score": 8
+        },
+        "Carol Piscina": null,
+        "Shop4Pool": {
+          "current": 2410.0,
+          "before": 3827.76,
+          "matched_name": "Robot Profissional TRX 8700 iQ VORTRAX – Potência Ultrassónica para Piscinas até 25m",
+          "url": "https://shop4pool.com/products/robot-profissional-trx-8700-iq-vortrax-potencia-ultrassonica-para-piscinas-ate-25m",
+          "match_score": 8
+        },
+        "Hidraulicart": null,
+        "IoT Pool": {
+          "current": null,
+          "before": 2659.0,
+          "matched_name": "Aspirador robot ZODIAC VORTRAX TRX 8700 IQ limpa fundos electrico",
+          "url": "https://www.iot-pool.com/products/aspirador-eletrico-vortrax-trx-8700-iq-aspirador-de-piscina-robot-limpa-fundos-zodiac",
+          "match_score": 8
+        }
+      }
+    },
+    {
+      "name": "Zodiac Sweepy Robo para Piscina",
+      "brand": "zodiac",
+      "prices": {
+        "Pools and More": {
+          "current": 640.0,
+          "before": null,
+          "matched_name": "Zodiac Sweepy Robo para Piscina",
+          "url": "https://poolsandmore.pt/produto/28836/"
+        },
+        "Bricoandpool": {
+          "current": 599.0,
+          "before": 779.0,
+          "matched_name": "Zodiac - Robot limpa-fundos com cabo para piscina Sweepy",
+          "url": "https://bricoandpool.com/pt-pt/products/zodiac-piscina-de-limpeza-de-robos-deslumbrantes",
+          "match_score": 3
+        },
+        "Carol Piscina": null,
+        "Shop4Pool": null,
+        "Hidraulicart": {
+          "current": 649.0,
+          "before": null,
+          "matched_name": "Aspirador Piscina Zodiac SWY 3500 Sweepy",
+          "url": "https://www.hidraulicart.pt/loja-online/aspiradoras-robotizadas-automaticas/aspiradora-de-piscina-zodiac-swy-3500-sweepy/",
+          "match_score": 3
+        },
+        "IoT Pool": {
+          "current": 599.0,
+          "before": 978.0,
+          "matched_name": "Aspirador robot ZODIAC Sweepy SWY 3500 limpa fundos Elétrico e Automático",
+          "url": "https://www.iot-pool.com/products/aspirador-de-piscina-eletrico-e-automatico-sweepy-swy-3500-limpa-fundos-robot",
+          "match_score": 3
+        }
+      }
+    },
+    {
+      "name": "Zodiac RA 6900 iQ Alpha Pro",
+      "brand": "zodiac",
+      "prices": {
+        "Pools and More": {
+          "current": null,
+          "before": null,
+          "matched_name": "Zodiac RA 6900 iQ Alpha Pro",
+          "url": "https://poolsandmore.pt/produto/zodiac-ra-6900-iq-alpha-pro/"
+        },
+        "Bricoandpool": null,
+        "Carol Piscina": null,
+        "Shop4Pool": {
+          "current": null,
+          "before": 1390.0,
+          "matched_name": "Robot Aspirador Piscina Zodiac Alpha iQ RA 6900 iQ – O Topo de Gama em Limpeza Inteligente",
+          "url": "https://shop4pool.com/products/robot-de-limpeza-ra-6800-iq-zodiac-limepza-de-fundos-paredes-e-linha-de-agua-ultra-inteligente-copia",
+          "match_score": 8
+        },
+        "Hidraulicart": null,
+        "IoT Pool": {
+          "current": 1499.0,
+          "before": null,
+          "matched_name": "Aspirador ROBOT ZODIAC ALPHA RA 6900 iQ limpa fundos Eléctrico e Automático",
+          "url": "https://www.iot-pool.com/products/aspirador-eletrico-robot-alpha-ra-6900-iq-aspirador-de-piscina-limpa-fundos-zodiac",
+          "match_score": 8
+        }
+      }
+    },
+    {
+      "name": "Beatbot Sora P7 – Robot de Piscina Sem Cabo",
+      "brand": "beatbot",
+      "prices": {
+        "Pools and More": {
+          "current": 1189.0,
+          "before": null,
+          "matched_name": "Beatbot Sora P7 – Robot de Piscina Sem Cabo",
+          "url": "https://poolsandmore.pt/produto/beatbot-sora-p7-robot-de-piscina-sem-cabo/"
+        },
+        "Bricoandpool": {
+          "current": 1259.0,
+          "before": 1499.0,
+          "matched_name": "Beatbot Sora P7 Robô limpa-fundos sem fio para piscina",
+          "url": "https://bricoandpool.com/pt-pt/products/beatbot-sora-p7-robot-limpiafondos-sin-cable-para-piscina",
+          "match_score": 6
+        },
+        "Carol Piscina": null,
+        "Shop4Pool": null,
+        "Hidraulicart": null,
+        "IoT Pool": {
+          "current": 1299.0,
+          "before": null,
+          "matched_name": "Robot aspirador BEATBOT SORA P7",
+          "url": "https://www.iot-pool.com/products/robot-aspirador-beatbot-sora-p7",
+          "match_score": 6
+        }
+      }
+    },
+    {
+      "name": "BeatBot AquaSense 2 Pro – Intelligent 5-in-1 Robotic Pool Cleaner",
+      "brand": "beatbot",
+      "prices": {
+        "Pools and More": {
+          "current": 1949.0,
+          "before": null,
+          "matched_name": "BeatBot AquaSense 2 Pro – Intelligent 5-in-1 Robotic Pool Cleaner",
+          "url": "https://poolsandmore.pt/produto/beatbot-aquasense-2-pro-intelligent-5-in-1-robotic-pool-cleaner/"
+        },
+        "Bricoandpool": {
+          "current": 1899.0,
+          "before": 2699.0,
+          "matched_name": "Beatbot AquaSense 2 Pro Robô limpa-fundos sem fio para piscina",
+          "url": "https://bricoandpool.com/pt-pt/products/beatbot-robo-aspirador-de-piscina-aquasense-2-pro-sem-fio",
+          "match_score": 4
+        },
+        "Carol Piscina": null,
+        "Shop4Pool": null,
+        "Hidraulicart": {
+          "current": 1789.0,
+          "before": null,
+          "matched_name": "Beatbot Aquasense 2 Pro",
+          "url": "https://www.hidraulicart.pt/loja-online/aspiradoras-robotizadas-automaticas/beatbot-aquasense-2-pro/",
+          "match_score": 4
+        },
+        "IoT Pool": {
+          "current": 1999.0,
+          "before": 3679.0,
+          "matched_name": "Aspirador Robot AquaSense 2 Pro Beatbot",
+          "url": "https://www.iot-pool.com/products/aspirador-robot-aquasense-2-pro-beatbot",
+          "match_score": 4
+        }
+      }
+    },
+    {
+      "name": "Beatbot AquaSense 2 – Aspirador Robótico Inteligente",
+      "brand": "beatbot",
+      "prices": {
+        "Pools and More": {
+          "current": 1169.0,
+          "before": null,
+          "matched_name": "Beatbot AquaSense 2 – Aspirador Robótico Inteligente",
+          "url": "https://poolsandmore.pt/produto/beatbot-aquasense-2-aspirador-robotico-inteligente/"
+        },
+        "Bricoandpool": {
+          "current": 1899.0,
+          "before": 2699.0,
+          "matched_name": "Beatbot AquaSense 2 Pro Robô limpa-fundos sem fio para piscina",
+          "url": "https://bricoandpool.com/pt-pt/products/beatbot-robo-aspirador-de-piscina-aquasense-2-pro-sem-fio",
+          "match_score": 3
+        },
+        "Carol Piscina": null,
+        "Shop4Pool": null,
+        "Hidraulicart": {
+          "current": 1789.0,
+          "before": null,
+          "matched_name": "Beatbot Aquasense 2 Pro",
+          "url": "https://www.hidraulicart.pt/loja-online/aspiradoras-robotizadas-automaticas/beatbot-aquasense-2-pro/",
+          "match_score": 3
+        },
+        "IoT Pool": {
+          "current": 999.0,
+          "before": 2099.0,
+          "matched_name": "Aspirador Robot AquaSense 2 Beatbot",
+          "url": "https://www.iot-pool.com/products/aspirador-robot-aquasense-2-beatbot",
+          "match_score": 3
+        }
+      }
+    },
+    {
+      "name": "Zodiac CNX-Li 52 iQ",
+      "brand": "zodiac",
+      "prices": {
+        "Pools and More": {
+          "current": 999.0,
+          "before": null,
+          "matched_name": "Zodiac CNX-Li 52 iQ",
+          "url": "https://poolsandmore.pt/produto/zodiac-cnx-li-52-iq/"
+        },
+        "Bricoandpool": {
+          "current": 849.0,
+          "before": 1299.0,
+          "matched_name": "Zodiac - CNX Li 52 iQ Robô limpa-fundos sem fio para piscina",
+          "url": "https://bricoandpool.com/pt-pt/products/zodiac-cnx-li-52-iq-robot-pool-de-limpeza-sem-bateria-de-cabo",
+          "match_score": 8
+        },
+        "Carol Piscina": null,
+        "Shop4Pool": null,
+        "Hidraulicart": {
+          "current": 999.0,
+          "before": null,
+          "matched_name": "Aspirador Piscina Zodiac CNX-Li 52 iQ Freedom",
+          "url": "https://www.hidraulicart.pt/loja-online/aspiradoras-robotizadas-automaticas/aspiratore-per-piscina-zodiac-cnx-li-52-iq-freedom/",
+          "match_score": 8
+        },
+        "IoT Pool": {
+          "current": 999.0,
+          "before": 1560.0,
+          "matched_name": "Aspirador robot ZODIAC FREERIDER CNX-Li 52 iQ limpa fundos a Bateria Automático sem fios",
+          "url": "https://www.iot-pool.com/products/aspirador-de-piscina-automatico-a-bateria-sem-fios-cnx-li-52-iq-limpa-fundos-robot",
+          "match_score": 8
+        }
+      }
+    },
+    {
+      "name": "Zodiac CNX 50 iQ",
+      "brand": "zodiac",
+      "prices": {
+        "Pools and More": {
+          "current": 1199.0,
+          "before": null,
+          "matched_name": "Zodiac CNX 50 iQ",
+          "url": "https://poolsandmore.pt/produto/zodiac-cnx-50-iq/"
+        },
+        "Bricoandpool": {
+          "current": 1099.0,
+          "before": 1329.0,
+          "matched_name": "Zodiac - CNX 50 iQ Robô limpa-fundos com cabo para piscina",
+          "url": "https://bricoandpool.com/pt-pt/products/zodiac-cnx-50-q-robot-piscina-limpa",
+          "match_score": 7
+        },
+        "Carol Piscina": null,
+        "Shop4Pool": null,
+        "Hidraulicart": {
+          "current": 1199.0,
+          "before": null,
+          "matched_name": "Aspirador Piscina Zodiac CNX 50 iQ",
+          "url": "https://www.hidraulicart.pt/loja-online/aspiradoras-robotizadas-automaticas/aspiradora-de-piscina-zodiac-cnx-50-iq/",
+          "match_score": 7
+        },
+        "IoT Pool": {
+          "current": 1099.0,
+          "before": 1736.0,
+          "matched_name": "Aspirador robot ZODIAC CNX 50 iq limpa fundos Elétrico e Automático piscina",
+          "url": "https://www.iot-pool.com/products/aspirador-de-piscina-electrico-e-automatico-zodiac-cnx-50-iq-limpa-fundos-robot",
+          "match_score": 7
+        }
+      }
+    },
+    {
+      "name": "Zodiac CNX 30 iQ",
+      "brand": "zodiac",
+      "prices": {
+        "Pools and More": {
+          "current": 999.0,
+          "before": null,
+          "matched_name": "Zodiac CNX 30 iQ",
+          "url": "https://poolsandmore.pt/produto/zodiac-cnx-30-iq/"
+        },
+        "Bricoandpool": {
+          "current": 899.0,
+          "before": 1139.0,
+          "matched_name": "Zodiac CNX 30 iQ Robô limpa-fundos com cabo para piscina",
+          "url": "https://bricoandpool.com/pt-pt/products/zodiac-cnx-30-pool-de-limpeza-de-robos-de-qi",
+          "match_score": 7
+        },
+        "Carol Piscina": null,
+        "Shop4Pool": null,
+        "Hidraulicart": {
+          "current": 999.0,
+          "before": null,
+          "matched_name": "Aspirador Piscina Zodiac CNX 30 iQ",
+          "url": "https://www.hidraulicart.pt/loja-online/aspiradoras-robotizadas-automaticas/aspiradora-de-piscina-zodiac-cnx-30-iq/",
+          "match_score": 7
+        },
+        "IoT Pool": {
+          "current": 899.0,
+          "before": 1482.0,
+          "matched_name": "Aspirador robot ZODIAC CNX 30 limpa fundos Elétrico e Automático",
+          "url": "https://www.iot-pool.com/products/aspirador-de-piscina-electrico-e-automatico-zodiac-cnx-30-iq-limpa-fundos-robot",
+          "match_score": 6
+        }
+      }
+    },
+    {
+      "name": "Zodiac ArcoMax – Robô Aspirador para Piscina Ultra Potente",
+      "brand": "zodiac",
+      "prices": {
+        "Pools and More": {
+          "current": 7990.0,
+          "before": null,
+          "matched_name": "Zodiac ArcoMax – Robô Aspirador para Piscina Ultra Potente",
+          "url": "https://poolsandmore.pt/produto/zodiac-arcomax/"
+        },
+        "Bricoandpool": {
+          "current": 8585.0,
+          "before": null,
+          "matched_name": "Zodiac - Arcomax Robô limpa-fundos para piscina pública",
+          "url": "https://bricoandpool.com/pt-pt/products/trx-8700-iq-vortrax-people-zodiac-5",
+          "match_score": 3
+        },
+        "Carol Piscina": null,
+        "Shop4Pool": {
+          "current": null,
+          "before": 1330.0,
+          "matched_name": "Robot de limpeza RA 6800 IQ Zodiac - limpeza de fundos, paredes e linha de água ultra inteligente",
+          "url": "https://shop4pool.com/products/wr000295",
+          "match_score": 3
+        },
+        "Hidraulicart": {
+          "current": 7750.0,
+          "before": 10292.64,
+          "matched_name": "Aspirador de Piscina ZODIAC ARCOMAX",
+          "url": "https://www.hidraulicart.pt/loja-online/aspirador-de-piscina-zodiac-arcomax/",
+          "match_score": 3
+        },
+        "IoT Pool": {
+          "current": 7999.0,
+          "before": 10293.0,
+          "matched_name": "Aspirador ROBOT ZODIAC ARCOMAX limpa fundos Eléctrico e Automático",
+          "url": "https://www.iot-pool.com/products/aspirador-eletrico-arcomax-aspirador-de-piscina-limpa-fundos-zodiac",
+          "match_score": 3
+        }
+      }
+    },
+    {
+      "name": "Zodiac ARCO Robot de limpeza para Piscinas Públicas",
+      "brand": "zodiac",
+      "prices": {
+        "Pools and More": {
+          "current": 3450.0,
+          "before": null,
+          "matched_name": "Zodiac ARCO Robot de limpeza para Piscinas Públicas",
+          "url": "https://poolsandmore.pt/produto/zodiac-arco-robot-de-limpeza-para-piscinas-publicas/"
+        },
+        "Bricoandpool": {
+          "current": 3585.0,
+          "before": null,
+          "matched_name": "Zodiac - Arco Robô limpa-fundos para piscina pública",
+          "url": "https://bricoandpool.com/pt-pt/products/trx-8700-iq-vortrax-people-zodiac-4",
+          "match_score": 3
+        },
+        "Carol Piscina": null,
+        "Shop4Pool": {
+          "current": null,
+          "before": 1330.0,
+          "matched_name": "Robot de limpeza RA 6800 IQ Zodiac - limpeza de fundos, paredes e linha de água ultra inteligente",
+          "url": "https://shop4pool.com/products/wr000295",
+          "match_score": 3
+        },
+        "Hidraulicart": {
+          "current": 3739.0,
+          "before": null,
+          "matched_name": "Aspirador de Piscina Zodiac ARCO",
+          "url": "https://www.hidraulicart.pt/loja-online/aspirador-de-piscina-zodiac-arco/",
+          "match_score": 3
+        },
+        "IoT Pool": {
+          "current": 3999.0,
+          "before": 5282.0,
+          "matched_name": "Aspirador ROBOT ZODIAC ARCO limpa fundos Eléctrico e Automático",
+          "url": "https://www.iot-pool.com/products/aspirador-eletrico-arco-aspirador-de-piscina-limpa-fundos-zodiac",
+          "match_score": 3
+        }
+      }
+    },
+    {
+      "name": "Aspirador Elétrico Zodiac VORTRAX TRX 8500 IQ",
+      "brand": "zodiac",
+      "prices": {
+        "Pools and More": {
+          "current": 2000.0,
+          "before": null,
+          "matched_name": "Aspirador Elétrico Zodiac VORTRAX TRX 8500 IQ",
+          "url": "https://poolsandmore.pt/produto/aspirador-eletrico-vortrax-trx-8500-iq-zodiac/"
+        },
+        "Bricoandpool": {
+          "current": 2159.0,
+          "before": null,
+          "matched_name": "Zodiac - Vortrax TRX 8500 iQ Robô limpa-fundos para piscina",
+          "url": "https://bricoandpool.com/pt-pt/products/limpeza-zodiac-trx-8500-qi-vortrax",
+          "match_score": 8
+        },
+        "Carol Piscina": null,
+        "Shop4Pool": {
+          "current": 1920.0,
+          "before": 2949.55,
+          "matched_name": "Robot Limpa-Fundos Profissional TRX 8500 iQ – Tecnologia Ultrassónica e Aspiração Ciclónica",
+          "url": "https://shop4pool.com/products/robot-limpa-fundos-profissional-trx-8500-iq-tecnologia-ultrassonica-e-aspiracao-ciclonica",
+          "match_score": 6
+        },
+        "Hidraulicart": null,
+        "IoT Pool": {
+          "current": 2099.0,
+          "before": 2549.0,
+          "matched_name": "Aspirador robot ZODIAC VORTRAX TRX 8500 IQ limpa fundos electrico",
+          "url": "https://www.iot-pool.com/products/aspirador-eletrico-vortrax-trx-8500-iq-aspirador-de-piscina-robot-limpa-fundos-zodiac",
+          "match_score": 8
+        }
+      }
+    },
+    {
+      "name": "Zodiac OS 0800 Spabot – Robo Aspirador para Spa",
+      "brand": "zodiac",
+      "prices": {
+        "Pools and More": {
+          "current": 418.0,
+          "before": null,
+          "matched_name": "Zodiac OS 0800 Spabot – Robo Aspirador para Spa",
+          "url": "https://poolsandmore.pt/produto/zodiac-os-0800/"
+        },
+        "Bricoandpool": {
+          "current": 369.0,
+          "before": 419.0,
+          "matched_name": "Zodiac - OS 0800 Spabot Robô para spa sem fio",
+          "url": "https://bricoandpool.com/pt-pt/products/zodiac-os-0800-pool-de-limpeza-de-robo-spabot",
+          "match_score": 7
+        },
+        "Carol Piscina": null,
+        "Shop4Pool": null,
+        "Hidraulicart": null,
+        "IoT Pool": {
+          "current": 199.0,
+          "before": 569.0,
+          "matched_name": "STOCK OFF - Aspirador a bateria SPABOT OS 0800 para spa ZODIAC",
+          "url": "https://www.iot-pool.com/products/aspirador-a-bateria-spabot-os-0800-para-spa-zodiac",
+          "match_score": 7
+        }
+      }
+    },
+    {
+      "name": "Zodiac Alpha OA 6400 IQ",
+      "brand": "zodiac",
+      "prices": {
+        "Pools and More": {
+          "current": null,
+          "before": null,
+          "matched_name": "Zodiac Alpha OA 6400 IQ",
+          "url": "https://poolsandmore.pt/produto/zodiac-alpha-oa-6400-iq/"
+        },
+        "Bricoandpool": {
+          "current": 1249.0,
+          "before": 1589.0,
+          "matched_name": "Zodiac - Alpha OA 6400 iQ Robô limpa-fundos com cabo para piscina",
+          "url": "https://bricoandpool.com/pt-pt/products/zodiac-alpha-oa-6400-iq-robot-cleaning-pool-6",
+          "match_score": 8
+        },
+        "Carol Piscina": null,
+        "Shop4Pool": null,
+        "Hidraulicart": {
+          "current": 1349.0,
+          "before": null,
+          "matched_name": "Aspirador Piscina Zodiac OA 6400 ALPHA IQ",
+          "url": "https://www.hidraulicart.pt/loja-online/aspiradoras-robotizadas-automaticas/aspirador-de-piscina-zodiac-ra-6300-iq-pro-4wd-sw/",
+          "match_score": 8
+        },
+        "IoT Pool": {
+          "current": 1349.0,
+          "before": 2003.0,
+          "matched_name": "Aspirador robot ZODIAC ALPHA OA 6400 iQ limpa fundos Eléctrico Automático RA 6500 iq e RA 6300 iq",
+          "url": "https://www.iot-pool.com/products/aspirador-de-piscina-electrico-automatico-zodiac-alpha-oa-6400-iq-limpa-fundos-robot",
+          "match_score": 8
+        }
+      }
+    },
+    {
+      "name": "Zodiac Alpha OA 6600 iQ – Robot de Piscina Inteligente",
+      "brand": "zodiac",
+      "prices": {
+        "Pools and More": {
+          "current": null,
+          "before": null,
+          "matched_name": "Zodiac Alpha OA 6600 iQ – Robot de Piscina Inteligente",
+          "url": "https://poolsandmore.pt/produto/zodiac-alpha-oa-6600-iq/"
+        },
+        "Bricoandpool": {
+          "current": 1349.0,
+          "before": 1719.0,
+          "matched_name": "Zodiac - Alpha OA 6600 iQ Robô limpa-fundos com cabo para piscina",
+          "url": "https://bricoandpool.com/pt-pt/products/zodiac-alpha-oa-6600-iq-robot-cleaning-pool-6",
+          "match_score": 8
+        },
+        "Carol Piscina": null,
+        "Shop4Pool": null,
+        "Hidraulicart": {
+          "current": 1459.0,
+          "before": 1719.0,
+          "matched_name": "Aspirador Piscina Zodiac OA 6600 ALPHA IQ",
+          "url": "https://www.hidraulicart.pt/loja-online/aspiradoras-robotizadas-automaticas/aspiradora-de-piscina-zodiac-oa-6600-alpha-iq/",
+          "match_score": 8
+        },
+        "IoT Pool": {
+          "current": 1459.0,
+          "before": 2249.0,
+          "matched_name": "Aspirador robot ZODIAC Alpha OA 6600 iq limpa fundos Elétrico e Automático piscina RA 6800 iq",
+          "url": "https://www.iot-pool.com/products/aspirador-de-piscina-electrico-automatico-zodiac-alpha-oa-6600-iq-limpa-fundos-robot",
+          "match_score": 8
+        }
+      }
+    },
+    {
+      "name": "Zodiac RA 6800 iQ Alpha Pro",
+      "brand": "zodiac",
+      "prices": {
+        "Pools and More": {
+          "current": null,
+          "before": null,
+          "matched_name": "Zodiac RA 6800 iQ Alpha Pro",
+          "url": "https://poolsandmore.pt/produto/zodiac-ra-6800-iq-alpha-pro/"
+        },
+        "Bricoandpool": null,
+        "Carol Piscina": null,
+        "Shop4Pool": {
+          "current": null,
+          "before": 1330.0,
+          "matched_name": "Robot de limpeza RA 6800 IQ Zodiac - limpeza de fundos, paredes e linha de água ultra inteligente",
+          "url": "https://shop4pool.com/products/wr000295",
+          "match_score": 7
+        },
+        "Hidraulicart": null,
+        "IoT Pool": {
+          "current": 1399.0,
+          "before": null,
+          "matched_name": "Aspirador ROBOT ZODIAC ALPHA RA 6800 iq limpa fundos Eléctrico e Automático",
+          "url": "https://www.iot-pool.com/products/aspirador-eletrico-robot-alpha-ra-6800-iq-aspirador-de-piscina-limpa-fundos-zodiac",
+          "match_score": 8
+        }
+      }
+    },
+    {
+      "name": "Zodiac RE 4700 iQ Voyager",
+      "brand": "zodiac",
+      "prices": {
+        "Pools and More": {
+          "current": null,
+          "before": null,
+          "matched_name": "Zodiac RE 4700 iQ Voyager",
+          "url": "https://poolsandmore.pt/produto/zodiac-re-4700-iq-voyager/"
+        },
+        "Bricoandpool": null,
+        "Carol Piscina": null,
+        "Shop4Pool": {
+          "current": 1020.0,
+          "before": 1597.77,
+          "matched_name": "Robot / Aspirador de limpeza de piscinas RE 4700 iQ Voyager da Zodiac - limpeza fundos, paredes e linha de água",
+          "url": "https://shop4pool.com/products/wr000499",
+          "match_score": 8
+        },
+        "Hidraulicart": {
+          "current": null,
+          "before": null,
+          "matched_name": "Filtro aspirador Zodiac CNX e Voyager",
+          "url": "https://www.hidraulicart.pt/loja-online/filtro-aspirador-zodiac-cnx-e-voyager/",
+          "match_score": 3
+        },
+        "IoT Pool": null
+      }
+    }
+  ]
+}

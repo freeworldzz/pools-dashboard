@@ -1,0 +1,23 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+.venv/
+venv/
+env/
+*.egg-info/
+
+# Artefactos antigos
+dashboard_data.js
+
+# Editor / IDE
+.vscode/
+.idea/
+*.swp
+
+# Claude Code (configuração local)
+.claude/
+
+# OS
+.DS_Store
+Thumbs.db

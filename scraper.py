@@ -1352,23 +1352,24 @@ def main():
         "salt_electrolysis": existing.get("salt_electrolysis", []),
     }
 
+    def _update(key: str, fn, label: str):
+        result = fn()
+        if result:
+            output[key] = result
+            output["generated_at"] = datetime.now().isoformat(timespec="seconds")
+            _save(output)
+            log(f"\n--- {label} gravado(a): {len(result)} produtos. ---")
+        else:
+            log(f"\n⚠ {label}: scraping devolveu 0 resultados — dados anteriores mantidos.")
+
     if cat in ("robots", "todas"):
-        output["robots"] = _run_robots()
-        output["generated_at"] = datetime.now().isoformat(timespec="seconds")
-        _save(output)
-        log(f"\n--- Robôs gravados. ---")
+        _update("robots", _run_robots, "Robôs")
 
     if cat in ("bombas", "todas"):
-        output["heat_pumps"] = _run_heat_pumps()
-        output["generated_at"] = datetime.now().isoformat(timespec="seconds")
-        _save(output)
-        log(f"\n--- Bombas gravadas. ---")
+        _update("heat_pumps", _run_heat_pumps, "Bombas de Calor")
 
     if cat in ("sal", "todas"):
-        output["salt_electrolysis"] = _run_salt()
-        output["generated_at"] = datetime.now().isoformat(timespec="seconds")
-        _save(output)
-        log(f"\n--- Eletrólise gravada. ---")
+        _update("salt_electrolysis", _run_salt, "Eletrólise de Sal")
 
     log(f"\n=== Concluído! ({cat})")
     _print_summary(output)

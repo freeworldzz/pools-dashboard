@@ -25,13 +25,19 @@ jobs:
       - name: Instalar dependências
         run: pip install -r requirements.txt
 
-      - name: Correr scraper
-        run: python scraper.py
+      - name: Scraper — Robôs
+        run: python scraper.py --categoria robots
+
+      - name: Scraper — Bombas de Calor
+        run: python scraper.py --categoria bombas
+
+      - name: Scraper — Eletrólise de Sal
+        run: python scraper.py --categoria sal
 
       - name: Commit & push (se houver alterações)
         run: |
           git config user.name  "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add dashboard.html data.json
+          git add index.html data.json
           git diff --cached --quiet || git commit -m "chore: preços atualizados $(date -u '+%Y-%m-%d %H:%M UTC')"
           git push

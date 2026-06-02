@@ -9,6 +9,7 @@ env/
 
 # Artefactos antigos
 dashboard_data.js
+dashboard.html
 
 # Editor / IDE
 .vscode/

@@ -37,6 +37,13 @@ VENDORS = [
     "Shop4Pool",
     "Hidraulicart",
     "IoT Pool",
+    "Ferromar",
+    "Outlet Piscinas",
+    "PoolComet",
+    "Piscinas y Productos",
+    "MyPiscine",
+    "Piscinarium",
+    # Vendedores que devolvem 0 numa categoria são escondidos automaticamente no dashboard
 ]
 
 STOPWORDS = {
@@ -510,6 +517,399 @@ def scrape_hidraulicart() -> list[dict]:
             log(f"  Hidraulicart página {page} erro: {e}")
     log(f"  Hidraulicart: {len(products)} produtos")
     return products
+
+
+# ---------------------------------------------------------------------------
+# Scrapers — novos vendedores
+# ---------------------------------------------------------------------------
+
+def scrape_swiminn() -> list[dict]:
+    """Swiminn/Tradeinn — tenta JSON-LD e HTML."""
+    products = []
+    seen: set = set()
+    url = ("https://www.tradeinn.com/swiminn/pt/"
+           "piscinas-aspiradores-de-piscina/19750/s")
+    log("  Swiminn ...")
+    try:
+        r = get(url, delay=1.5)
+        r.encoding = "utf-8"
+        s = BeautifulSoup(r.text, "html.parser")
+
+        # Tenta JSON-LD (structured data)
+        for tag in s.find_all("script", type="application/ld+json"):
+            try:
+                data = json.loads(tag.string or "")
+                items = data if isinstance(data, list) else [data]
+                for item in items:
+                    if item.get("@type") != "Product":
+                        continue
+                    name = item.get("name", "").strip()
+                    if not name or name in seen:
+                        continue
+                    seen.add(name)
+                    offers = item.get("offers", {})
+                    if isinstance(offers, list):
+                        offers = offers[0] if offers else {}
+                    p_cur = parse_price(str(offers.get("price", "")))
+                    products.append({
+                        "name": name, "price_current": p_cur, "price_before": None,
+                        "url": item.get("url"), "vendor": "Swiminn",
+                        "brand": extract_brand(name),
+                    })
+            except Exception:
+                pass
+
+        # Fallback HTML
+        if not products:
+            for item in s.select(".products-list > li, .product-item"):
+                nm = item.select_one("h3, h2, .product-name, [class*='name']")
+                if not nm:
+                    continue
+                name = nm.get_text(strip=True)
+                if not name or len(name) < 5 or name in seen:
+                    continue
+                seen.add(name)
+                pe = item.select_one(".price, [class*='price']")
+                link = item.select_one("a[href]")
+                products.append({
+                    "name": name,
+                    "price_current": parse_price(pe.get_text()) if pe else None,
+                    "price_before": None,
+                    "url": link["href"] if link else None,
+                    "vendor": "Swiminn",
+                    "brand": extract_brand(name),
+                })
+    except Exception as e:
+        log(f"  Swiminn ERRO: {e}")
+    log(f"  Swiminn: {len(products)} produtos")
+    return products
+
+
+def scrape_ferromar(
+    base: str = "https://www.piscinasferromar.com/limpiafondos/limpiafondos-electricos",
+    pages: int = 3,
+) -> list[dict]:
+    """PiscinasFerromar — Magento, ?p=N."""
+    products = []
+    seen: set = set()
+    for page in range(1, pages + 1):
+        url = f"{base}?p={page}"
+        log(f"  Ferromar pág {page} ...")
+        try:
+            r = get(url)
+            r.encoding = "utf-8"
+            s = BeautifulSoup(r.text, "html.parser")
+            items = (s.select("li.item.product-item") or s.select(".products-grid li.item")
+                     or s.select("li.item"))
+            if not items:
+                break
+            init = len(products)
+            for item in items:
+                link = (item.select_one("a.product-item-link")
+                        or item.select_one(".product-name a")
+                        or item.select_one("a[href*='.html']"))
+                if not link:
+                    continue
+                name = link.get_text(strip=True)
+                if not name or len(name) < 4 or name in seen:
+                    continue
+                seen.add(name)
+                sp = item.select_one(".special-price .price")
+                op = item.select_one(".old-price .price")
+                if sp:
+                    p_cur = parse_price(sp.get_text())
+                    p_bef = parse_price(op.get_text()) if op else None
+                else:
+                    vals = [parse_price(p.get_text()) for p in item.select(".price")
+                            if parse_price(p.get_text())]
+                    p_cur = min(vals) if vals else None
+                    p_bef = max(vals) if len(vals) > 1 else None
+                if p_bef and p_cur and p_bef <= p_cur:
+                    p_bef = None
+                products.append({
+                    "name": name, "price_current": p_cur, "price_before": p_bef,
+                    "url": link.get("href"), "vendor": "Ferromar",
+                    "brand": extract_brand(name),
+                })
+            if len(products) == init:
+                break
+        except Exception as e:
+            log(f"  Ferromar pág {page} ERRO: {e}")
+    log(f"  Ferromar: {len(products)} produtos")
+    return products
+
+
+def scrape_outlet_piscinas(
+    base: str = "https://www.outlet-piscinas.pt/limpa-fundos-piscinas",
+    pages: int = 3,
+) -> list[dict]:
+    """Outlet Piscinas — Magento."""
+    products = []
+    seen: set = set()
+    for page in range(1, pages + 1):
+        url = base if page == 1 else f"{base}?p={page}"
+        log(f"  Outlet Piscinas pág {page} ...")
+        try:
+            r = get(url)
+            r.encoding = "utf-8"
+            s = BeautifulSoup(r.text, "html.parser")
+            items = (s.select("li.item.product-item") or s.select(".products-grid li.item")
+                     or s.select("li.item"))
+            if not items:
+                break
+            init = len(products)
+            for item in items:
+                link = (item.select_one("a.product-item-link")
+                        or item.select_one(".product-name a")
+                        or item.select_one("a[href]"))
+                if not link:
+                    continue
+                name = link.get_text(strip=True)
+                if not name or len(name) < 4 or name in seen:
+                    continue
+                seen.add(name)
+                sp = item.select_one(".special-price .price")
+                op = item.select_one(".old-price .price")
+                if sp:
+                    p_cur = parse_price(sp.get_text())
+                    p_bef = parse_price(op.get_text()) if op else None
+                else:
+                    vals = [parse_price(p.get_text()) for p in item.select(".price")
+                            if parse_price(p.get_text())]
+                    p_cur = min(vals) if vals else None
+                    p_bef = max(vals) if len(vals) > 1 else None
+                if p_bef and p_cur and p_bef <= p_cur:
+                    p_bef = None
+                href = link.get("href", "")
+                if not href.startswith("http"):
+                    href = "https://www.outlet-piscinas.pt" + href
+                products.append({
+                    "name": name, "price_current": p_cur, "price_before": p_bef,
+                    "url": href, "vendor": "Outlet Piscinas",
+                    "brand": extract_brand(name),
+                })
+            if len(products) == init:
+                break
+        except Exception as e:
+            log(f"  Outlet Piscinas pág {page} ERRO: {e}")
+    log(f"  Outlet Piscinas: {len(products)} produtos")
+    return products
+
+
+def scrape_mypiscine(
+    path: str = "351-robot-piscine",
+    offsets: tuple = (0, 28, 56, 84),
+) -> list[dict]:
+    """MyPiscine — PrestaShop FR, offset ?products.from=N (usa sessão)."""
+    products = []
+    seen: set = set()
+    domain = "https://www.mypiscine.com"
+    _session_for(domain)
+    for offset in offsets:
+        url = f"{domain}/{path}?products.from={offset}"
+        log(f"  MyPiscine offset {offset} ...")
+        try:
+            r = shopify_get(url, domain, delay=2.0)
+            r.encoding = "utf-8"
+            s = BeautifulSoup(r.text, "html.parser")
+            items = (s.select("article.product-miniature")
+                     or s.select(".product-miniature")
+                     or s.select(".js-product-miniature")
+                     or s.select(".product-item"))
+            if not items:
+                log(f"  MyPiscine: 0 items encontrados — possível bloqueio")
+                break
+            init = len(products)
+            for item in items:
+                nm = (item.select_one(".product-title a")
+                      or item.select_one("h2 a") or item.select_one("h3 a")
+                      or item.select_one("[class*='title'] a"))
+                if not nm:
+                    continue
+                name = nm.get_text(strip=True)
+                if not name or name in seen:
+                    continue
+                seen.add(name)
+                href = nm.get("href", "")
+                if not href.startswith("http"):
+                    href = domain + href
+                all_p = [p for p in item.select(".price, [class*='price']")
+                         if parse_price(p.get_text())]
+                p_cur = parse_price(all_p[0].get_text()) if all_p else None
+                old_el = item.select_one(".regular-price, s, del")
+                p_bef = parse_price(old_el.get_text()) if old_el else (
+                    parse_price(all_p[1].get_text()) if len(all_p) > 1 else None
+                )
+                if p_bef and p_cur and p_bef <= p_cur:
+                    p_bef = None
+                products.append({
+                    "name": name, "price_current": p_cur, "price_before": p_bef,
+                    "url": href, "vendor": "MyPiscine",
+                    "brand": extract_brand(name),
+                })
+            if len(products) == init:
+                break
+        except Exception as e:
+            log(f"  MyPiscine offset {offset} ERRO: {e}")
+    log(f"  MyPiscine: {len(products)} produtos")
+    return products
+
+
+def scrape_piscinarium(
+    base: str = "https://www.piscinarium.com/pt/11-limpadores-de-piscina-automaticos",
+    pages: int = 3,
+) -> list[dict]:
+    """Piscinarium — tenta múltiplos seletores (PrestaShop / custom)."""
+    products = []
+    seen: set = set()
+    for page in range(1, pages + 1):
+        url = f"{base}?page={page}"
+        log(f"  Piscinarium pág {page} ...")
+        try:
+            r = get(url)
+            r.encoding = "utf-8"
+            s = BeautifulSoup(r.text, "html.parser")
+
+            # Tenta seletores do mais específico para o mais genérico
+            items = (s.select("article.product-miniature")
+                     or s.select(".product-miniature")
+                     or s.select(".product-item")
+                     or s.select(".product-card")
+                     or s.select("li.product")
+                     or [el for el in s.find_all(True)
+                         if any(c in el.get("class", []) for c in
+                                ["product", "item", "card"])
+                         and el.name in ("li", "article", "div")
+                         and el.select_one("a[href*='/pt/']")])
+            if not items:
+                log(f"  Piscinarium pág {page}: nenhum seletor encontrou itens")
+                break
+
+            init = len(products)
+            for item in items:
+                # Nome: h6, h3, h2, .product-title, qualquer heading dentro
+                nm = (item.select_one("h6") or item.select_one("h3")
+                      or item.select_one("h2") or item.select_one("h4") or item.select_one("h5")
+                      or item.select_one(".product-title")
+                      or item.select_one("[class*='title'] a")
+                      or item.select_one("[class*='name'] a"))
+                if not nm:
+                    continue
+                name = nm.get_text(strip=True)
+                if not name or len(name) < 4 or name in seen:
+                    continue
+                seen.add(name)
+
+                link = item.select_one("a[href]")
+                href = link["href"] if link else None
+
+                # Preços: tenta vários padrões
+                old_el = item.select_one(".regular-price, .old-price, s, del")
+                cur_el = item.select_one(".special-price .price, .price-current, ins .price")
+                if not cur_el:
+                    all_p = [p for p in item.select(".price, [class*='price']")
+                             if parse_price(p.get_text())]
+                    cur_el = all_p[0] if all_p else None
+                    if len(all_p) > 1 and not old_el:
+                        old_el = all_p[1]
+
+                p_cur = parse_price(cur_el.get_text()) if cur_el else None
+                p_bef = parse_price(old_el.get_text()) if old_el else None
+                if p_bef and p_cur and p_bef <= p_cur:
+                    p_bef = None
+
+                products.append({
+                    "name": name, "price_current": p_cur, "price_before": p_bef,
+                    "url": href, "vendor": "Piscinarium",
+                    "brand": extract_brand(name),
+                })
+            if len(products) == init:
+                break
+        except Exception as e:
+            log(f"  Piscinarium pág {page} ERRO: {e}")
+    log(f"  Piscinarium: {len(products)} produtos")
+    return products
+
+
+def scrape_poolcomet(
+    path: str = "robos-aspiradores-piscina",
+    pages: int = 9,
+) -> list[dict]:
+    """PoolComet — WooCommerce, /page/N/ (usa sessão para contornar 403)."""
+    products = []
+    seen: set = set()
+    domain = "https://poolcomet.com"
+    _session_for(domain)  # warm-up com cookies
+
+    for page in range(1, pages + 1):
+        url = f"{domain}/pt/{path}/page/{page}/"
+        log(f"  PoolComet pág {page} ...")
+        try:
+            r = shopify_get(url, domain, delay=1.2)
+            r.encoding = "utf-8"
+            s = BeautifulSoup(r.text, "html.parser")
+            
+            # Correção no seletor: li.product apanha perfeitamente a estrutura do WooCommerce
+            prods = s.select("ul.products.columns-4 li.product") or s.select("li.product")
+            
+            if not prods:
+                break
+                
+            init = len(products)
+            for p in prods:
+                # O título no teu HTML está numa classe específica dentro de um h3
+                nm = p.select_one(".woocommerce-loop-product__title") or p.select_one("h3")
+                if not nm:
+                    continue
+                    
+                name = nm.get_text(strip=True)
+                if not name or name in seen:
+                    continue
+                seen.add(name)
+                
+                # Preços
+                dels = [d.get_text(strip=True) for d in p.select("del")]
+                ins  = [i.get_text(strip=True) for i in p.select("ins")]
+                amts = [a.get_text(strip=True) for a in p.select(".woocommerce-Price-amount")]
+                
+                if dels and ins:
+                    p_bef = parse_price(dels[0])
+                    p_cur = parse_price(ins[0])
+                elif amts:
+                    # No WooCommerce com promoção, .woocommerce-Price-amount aparece tanto no <del> como no <ins>.
+                    # Se houver <ins>, o p_cur deve vir dele. Se não, usamos o primeiro amt.
+                    p_cur = parse_price(amts[0])
+                    p_bef = None
+                else:
+                    p_cur = p_bef = None
+                
+                # No teu HTML o link principal envolve o título e a imagem
+                link = p.select_one("a.woocommerce-LoopProduct-link") or p.select_one("a[href]")
+                
+                products.append({
+                    "name": name, 
+                    "price_current": p_cur, 
+                    "price_before": p_bef,
+                    "url": link["href"] if link else None, 
+                    "vendor": "PoolComet",
+                    "brand": extract_brand(name),
+                })
+                
+            if len(products) == init:
+                break
+        except Exception as e:
+            log(f"  PoolComet pág {page} ERRO: {e}")
+            
+    log(f"  PoolComet: {len(products)} produtos")
+    return products
+
+
+def scrape_piscinasyproductos() -> list[dict]:
+    """PiscinasyProductos — Shopify products.json."""
+    return _shopify_json(
+        "https://www.piscinasyproductos.com/pt-eu/collections/6-limpiafondos/products.json",
+        3, "Piscinas y Productos",
+    )
 
 
 # ---------------------------------------------------------------------------
@@ -1235,54 +1635,111 @@ def _run_robots() -> list[dict]:
     hidra   = scrape_hidraulicart()
     log("=== [Robôs] IoT Pool...")
     iotpool = scrape_iotpool()
+    log("=== [Robôs] Ferromar...")
+    ferromar = scrape_ferromar()
+    log("=== [Robôs] Outlet Piscinas...")
+    outlet   = scrape_outlet_piscinas()
+    log("=== [Robôs] MyPiscine...")
+    mypiscine = scrape_mypiscine()
+    log("=== [Robôs] Piscinarium...")
+    piscinarium = scrape_piscinarium()
+    log("=== [Robôs] PoolComet...")
+    poolcomet = scrape_poolcomet()
+    log("=== [Robôs] Piscinas y Productos...")
+    piscinasyp = scrape_piscinasyproductos()
     log("=== Matching robôs...")
     return build_matched_data(pm, {
-        "Pools and More": pm,   "Bricoandpool": brico,
-        "Carol Piscina":  carol,"Shop4Pool":    shop4,
-        "Hidraulicart":   hidra,"IoT Pool":     iotpool,
+        "Pools and More":      pm,          "Bricoandpool":       brico,
+        "Carol Piscina":       carol,        "Shop4Pool":          shop4,
+        "Hidraulicart":        hidra,        "IoT Pool":           iotpool,
+        "Ferromar":            ferromar,     "Outlet Piscinas":    outlet,
+        "MyPiscine":           mypiscine,    "Piscinarium":        piscinarium,
+        "PoolComet":           poolcomet,    "Piscinas y Productos": piscinasyp,
     })
 
 
 def _run_heat_pumps() -> list[dict]:
+    cn = canonical_heat_pump
     log("=== [Bombas] Pools and More...")
-    hp_pm      = _apply_canonical(scrape_pm_heat_pumps(),           canonical_heat_pump)
+    hp_pm      = _apply_canonical(scrape_pm_heat_pumps(),           cn)
     log("=== [Bombas] Bricoandpool...")
-    hp_brico   = _apply_canonical(scrape_bricoandpool_heat_pumps(), canonical_heat_pump)
+    hp_brico   = _apply_canonical(scrape_bricoandpool_heat_pumps(), cn)
     log("=== [Bombas] Carol Piscina...")
-    hp_carol   = _apply_canonical(scrape_carolpiscina_heat_pumps(), canonical_heat_pump)
+    hp_carol   = _apply_canonical(scrape_carolpiscina_heat_pumps(), cn)
     log("=== [Bombas] Shop4Pool...")
-    hp_shop4   = _apply_canonical(scrape_shop4pool_heat_pumps(),    canonical_heat_pump)
+    hp_shop4   = _apply_canonical(scrape_shop4pool_heat_pumps(),    cn)
     log("=== [Bombas] Hidraulicart...")
-    hp_hidra   = _apply_canonical(scrape_hidraulicart_heat_pumps(), canonical_heat_pump)
+    hp_hidra   = _apply_canonical(scrape_hidraulicart_heat_pumps(), cn)
     log("=== [Bombas] IoT Pool...")
-    hp_iotpool = _apply_canonical(scrape_iotpool_heat_pumps(),      canonical_heat_pump)
+    hp_iotpool = _apply_canonical(scrape_iotpool_heat_pumps(),      cn)
+    log("=== [Bombas] Ferromar...")
+    hp_ferro   = _apply_canonical(scrape_ferromar(
+        "https://www.piscinasferromar.com/climatizacion-piscinas/bombas-calor-piscina", 2), cn)
+    log("=== [Bombas] Outlet Piscinas...")
+    hp_outlet  = _apply_canonical(scrape_outlet_piscinas(
+        "https://www.outlet-piscinas.pt/aquecimento-climatizacao-piscina/bombas-de-calor-piscina", 1), cn)
+    log("=== [Bombas] MyPiscine...")
+    hp_mypisc  = _apply_canonical(scrape_mypiscine(
+        "276-pompe-a-chaleur-piscine", (0, 28, 56)), cn)
+    log("=== [Bombas] Piscinarium...")
+    hp_piscrm  = _apply_canonical(scrape_piscinarium(
+        "https://www.piscinarium.com/pt/108-bombas-de-calor-para-piscinas", 1), cn)
+    log("=== [Bombas] PoolComet...")
+    hp_comet   = _apply_canonical(scrape_poolcomet("bombas-calor", 5), cn)
+    log("=== [Bombas] Piscinas y Productos...")
+    hp_pyp     = _apply_canonical(_shopify_json_variants(
+        "https://www.piscinasyproductos.com/pt-eu/collections/99-heat-pumps/products.json",
+        2, "Piscinas y Productos"), cn)
     log("=== Matching bombas...")
     return build_matched_data(hp_pm, {
         "Pools and More": hp_pm,    "Bricoandpool": hp_brico,
         "Carol Piscina":  hp_carol, "Shop4Pool":    hp_shop4,
         "Hidraulicart":   hp_hidra, "IoT Pool":     hp_iotpool,
-    }, canonicalize=canonical_heat_pump)
+        "Ferromar":       hp_ferro, "Outlet Piscinas": hp_outlet,
+        "MyPiscine":      hp_mypisc,"Piscinarium":  hp_piscrm,
+        "PoolComet":      hp_comet, "Piscinas y Productos": hp_pyp,
+    }, canonicalize=cn)
 
 
 def _run_salt() -> list[dict]:
+    cn = canonical_salt
     log("=== [Sal] Pools and More...")
-    salt_pm      = _apply_canonical(scrape_pm_salt(),           canonical_salt)
+    salt_pm      = _apply_canonical(scrape_pm_salt(),           cn)
     log("=== [Sal] Bricoandpool...")
-    salt_brico   = _apply_canonical(scrape_bricoandpool_salt(), canonical_salt)
+    salt_brico   = _apply_canonical(scrape_bricoandpool_salt(), cn)
     log("=== [Sal] Carol Piscina...")
-    salt_carol   = _apply_canonical(scrape_carolpiscina_salt(), canonical_salt)
+    salt_carol   = _apply_canonical(scrape_carolpiscina_salt(), cn)
     log("=== [Sal] Shop4Pool...")
-    salt_shop4   = _apply_canonical(scrape_shop4pool_salt(),    canonical_salt)
+    salt_shop4   = _apply_canonical(scrape_shop4pool_salt(),    cn)
     log("=== [Sal] Hidraulicart...")
-    salt_hidra   = _apply_canonical(scrape_hidraulicart_salt(), canonical_salt)
+    salt_hidra   = _apply_canonical(scrape_hidraulicart_salt(), cn)
     log("=== [Sal] IoT Pool...")
-    salt_iotpool = _apply_canonical(scrape_iotpool_salt(),      canonical_salt)
+    salt_iotpool = _apply_canonical(scrape_iotpool_salt(),      cn)
+    log("=== [Sal] Ferromar...")
+    salt_ferro   = _apply_canonical(scrape_ferromar(
+        "https://www.piscinasferromar.com/tratamiento/cloradores-salinos", 3), cn)
+    log("=== [Sal] Outlet Piscinas...")
+    salt_outlet  = _apply_canonical(scrape_outlet_piscinas(
+        "https://www.outlet-piscinas.pt/tratamentos/cloracao-salina", 1), cn)
+    log("=== [Sal] MyPiscine...")
+    salt_mypisc  = _apply_canonical(scrape_mypiscine(
+        "27-electrolyseur-piscine", (0, 28)), cn)
+    log("=== [Sal] Piscinarium...")
+    salt_piscrm  = _apply_canonical(scrape_piscinarium(
+        "https://www.piscinarium.com/pt/85-cloradores-de-sal-de-piscina", 3), cn)
+    log("=== [Sal] Piscinas y Productos...")
+    salt_pyp     = _apply_canonical(_shopify_json_variants(
+        "https://www.piscinasyproductos.com/collections/regulacion-automatica-ph/products.json",
+        6, "Piscinas y Productos"), cn)
     log("=== Matching eletrólise...")
     return build_matched_data(salt_pm, {
         "Pools and More": salt_pm,    "Bricoandpool": salt_brico,
         "Carol Piscina":  salt_carol, "Shop4Pool":    salt_shop4,
         "Hidraulicart":   salt_hidra, "IoT Pool":     salt_iotpool,
-    }, canonicalize=canonical_salt)
+        "Ferromar":       salt_ferro, "Outlet Piscinas": salt_outlet,
+        "MyPiscine":      salt_mypisc,"Piscinarium":  salt_piscrm,
+        "Piscinas y Productos": salt_pyp,
+    }, canonicalize=cn)
 
 
 def _save(output: dict) -> None:

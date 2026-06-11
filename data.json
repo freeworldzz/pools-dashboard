@@ -1,12 +1,16 @@
 {
-  "generated_at": "2026-06-02T11:11:03",
+  "generated_at": "2026-06-05T18:12:32",
   "vendors": [
     "Pools and More",
     "Bricoandpool",
     "Carol Piscina",
     "Shop4Pool",
     "Hidraulicart",
-    "IoT Pool"
+    "IoT Pool",
+    "Ferromar",
+    "Outlet Piscinas",
+    "PoolComet",
+    "Piscinas y Productos"
   ],
   "robots": [
     {
@@ -29,7 +33,17 @@
           "url": "https://www.hidraulicart.pt/loja-online/aspiradoras-robotizadas-automaticas/aspirador-de-piscina-wybot-e-tron-c2vision/",
           "match_score": 6
         },
-        "IoT Pool": null
+        "IoT Pool": null,
+        "Ferromar": {
+          "current": 599.0,
+          "before": 999.0,
+          "matched_name": "E-TRON VISION NG Limpiafondos sin cables Wybot",
+          "url": "https://www.piscinasferromar.com/limpiafondos-sin-cables-wybot-c2.html",
+          "match_score": 3
+        },
+        "Outlet Piscinas": null,
+        "PoolComet": null,
+        "Piscinas y Productos": null
       }
     },
     {
@@ -52,7 +66,11 @@
           "matched_name": "Aspirador robot ZODIAC FREERIDER RF 5600 iQ limpa fundos automático a bateria sem fios",
           "url": "https://www.iot-pool.com/products/aspirador-de-piscina-automatico-a-bateria-sem-fios-freerider-rf-5600-iq-limpa-fundos-robot-zodiac",
           "match_score": 7
-        }
+        },
+        "Ferromar": null,
+        "Outlet Piscinas": null,
+        "PoolComet": null,
+        "Piscinas y Productos": null
       }
     },
     {
@@ -81,7 +99,11 @@
           "matched_name": "Aspirador ZODIAC FREERIDER RF 5400 iQ limpa fundos automático a bateria sem fios",
           "url": "https://www.iot-pool.com/products/aspirador-de-piscina-automatico-a-bateria-sem-fios-freerider-rf-5400-iq-limpa-fundos-robot-zodiac",
           "match_score": 7
-        }
+        },
+        "Ferromar": null,
+        "Outlet Piscinas": null,
+        "PoolComet": null,
+        "Piscinas y Productos": null
       }
     },
     {
@@ -116,7 +138,23 @@
           "matched_name": "Robot Aspirador E-TRON GENIUS i20 by WYBOT a bateria sem fios",
           "url": "https://www.iot-pool.com/products/robot-aspirador-e-tron-spyder-genius-i20-by-wybot-1",
           "match_score": 6
-        }
+        },
+        "Ferromar": {
+          "current": 599.0,
+          "before": 999.0,
+          "matched_name": "E-TRON VISION NG Limpiafondos sin cables Wybot",
+          "url": "https://www.piscinasferromar.com/limpiafondos-sin-cables-wybot-c2.html",
+          "match_score": 4
+        },
+        "Outlet Piscinas": {
+          "current": 368.0,
+          "before": 549.0,
+          "matched_name": "(9)Limpa-fundos a bateria Wybot E-tron i20 NG(9)Special Price368,00 €549,00 €33%",
+          "url": "https://www.outlet-piscinas.pt/limpa-fundos-e-tron-i20-sem-fios-wybot",
+          "match_score": 7
+        },
+        "PoolComet": null,
+        "Piscinas y Productos": null
       }
     },
     {
@@ -139,7 +177,11 @@
           "matched_name": "Robot Aspirador E-TRON F1 Wybot",
           "url": "https://www.iot-pool.com/products/robot-aspirador-e-tron-f1-wybot",
           "match_score": 5
-        }
+        },
+        "Ferromar": null,
+        "Outlet Piscinas": null,
+        "PoolComet": null,
+        "Piscinas y Productos": null
       }
     },
     {
@@ -169,12 +211,28 @@
           "match_score": 4
         },
         "IoT Pool": {
-          "current": 849.0,
-          "before": 1229.0,
-          "matched_name": "Aspirador robot ZODIAC FREERIDER FREEDOM OF 42 limpa fundos Bateria Automático",
-          "url": "https://www.iot-pool.com/products/aspirador-de-piscina-eletrico-e-automatico-of-42-limpa-fundos-robot-bateria",
-          "match_score": 3
-        }
+          "current": 548.0,
+          "before": null,
+          "matched_name": "Aspirador robot ZODIAC FREEDOM LITE limpa fundos a Bateria Automático sem fios",
+          "url": "https://www.iot-pool.com/products/aspirador-robot-zodiac-freedom-lite-limpa-fundos-a-bateria-automatico-sem-fios",
+          "match_score": 4
+        },
+        "Ferromar": {
+          "current": 549.0,
+          "before": 649.0,
+          "matched_name": "Zodiac Freedom Lite Limpiafondos sin cable",
+          "url": "https://www.piscinasferromar.com/limpiafondos-zodiac-freedom-lite.html",
+          "match_score": 4
+        },
+        "Outlet Piscinas": {
+          "current": 599.0,
+          "before": 649.0,
+          "matched_name": "Limpa-fundos Zodiac Freedom Lite sem fiosSpecial Price599,00 €649,00 €8%",
+          "url": "https://www.outlet-piscinas.pt/zodiac-freedom-lite",
+          "match_score": 4
+        },
+        "PoolComet": null,
+        "Piscinas y Productos": null
       }
     },
     {
@@ -221,48 +279,11 @@
           "matched_name": "Aspirador robot ZODIAC FREERIDER OP 32 Pixel limpa fundos automático a bateria sem fios",
           "url": "https://www.iot-pool.com/products/aspirador-de-piscina-automatico-a-bateria-sem-fios-pixel-op-32-limpa-fundos-robot-zodiac",
           "match_score": 6
-        }
-      }
-    },
-    {
-      "name": "Zodiac RF 5200 IQ Freerider – Aspirador Robô para Piscina",
-      "brand": "zodiac",
-      "prices": {
-        "Pools and More": {
-          "current": null,
-          "before": null,
-          "matched_name": "Zodiac RF 5200 IQ Freerider – Aspirador Robô para Piscina",
-          "url": "https://poolsandmore.pt/produto/zodiac-rf-5200-iq-freerider/"
         },
-        "Bricoandpool": {
-          "current": 799.0,
-          "before": 999.0,
-          "matched_name": "Zodiac Vortex OV 5200 4WD Robô limpa-fundos com cabo para piscina",
-          "url": "https://bricoandpool.com/pt-pt/products/zodiac-vortex-ov-5200-4wd-robot-cleaning-pool-2",
-          "match_score": 5
-        },
-        "Carol Piscina": null,
-        "Shop4Pool": {
-          "current": null,
-          "before": 870.0,
-          "matched_name": "Robot Aspirador de Piscina Sem Fios Zodiac RF 5200 iQ – Limpeza de Fundo, Paredes e Linha de Água",
-          "url": "https://shop4pool.com/products/wr000576",
-          "match_score": 7
-        },
-        "Hidraulicart": {
-          "current": 999.0,
-          "before": 1099.0,
-          "matched_name": "Aspirador Piscina Zodiac OV 5200",
-          "url": "https://www.hidraulicart.pt/loja-online/aspiradoras-robotizadas-automaticas/aspiradora-de-piscina-zodiac-ov-5200/",
-          "match_score": 5
-        },
-        "IoT Pool": {
-          "current": 899.0,
-          "before": 1399.0,
-          "matched_name": "Aspirador robot ZODIAC FREERIDER RF 5200 iQ limpa fundos automático a bateria sem fios",
-          "url": "https://www.iot-pool.com/products/aspirador-de-piscina-automatico-a-bateria-sem-fios-freerider-rf-5200-iq-limpa-fundos-robot-zodiac",
-          "match_score": 8
-        }
+        "Ferromar": null,
+        "Outlet Piscinas": null,
+        "PoolComet": null,
+        "Piscinas y Productos": null
       }
     },
     {
@@ -297,7 +318,62 @@
           "matched_name": "Aspirador Elétrico sem fios ROBOT AIPER Scuba X1 Pro Max limpa fundos automático",
           "url": "https://www.iot-pool.com/products/aspirador-eletrico-robot-aiper-scuba-x1-pro-max-limpa-fundos-automatico",
           "match_score": 7
-        }
+        },
+        "Ferromar": {
+          "current": 740.0,
+          "before": 998.0,
+          "matched_name": "Pack Promo Aiper Scuba S1 y Pilot X1",
+          "url": "https://www.piscinasferromar.com/pack-promo-aiper-scuba-s1-y-pilot-x1.html",
+          "match_score": 5
+        },
+        "Outlet Piscinas": null,
+        "PoolComet": null,
+        "Piscinas y Productos": null
+      }
+    },
+    {
+      "name": "Zodiac RF 5200 IQ Freerider – Aspirador Robô para Piscina",
+      "brand": "zodiac",
+      "prices": {
+        "Pools and More": {
+          "current": null,
+          "before": null,
+          "matched_name": "Zodiac RF 5200 IQ Freerider – Aspirador Robô para Piscina",
+          "url": "https://poolsandmore.pt/produto/zodiac-rf-5200-iq-freerider/"
+        },
+        "Bricoandpool": {
+          "current": 799.0,
+          "before": 999.0,
+          "matched_name": "Zodiac Vortex OV 5200 4WD Robô limpa-fundos com cabo para piscina",
+          "url": "https://bricoandpool.com/pt-pt/products/zodiac-vortex-ov-5200-4wd-robot-cleaning-pool-2",
+          "match_score": 5
+        },
+        "Carol Piscina": null,
+        "Shop4Pool": {
+          "current": null,
+          "before": 849.0,
+          "matched_name": "Robot Aspirador de Piscina Sem Fios Zodiac RF 5200 iQ – Limpeza de Fundo, Paredes e Linha de Água",
+          "url": "https://shop4pool.com/products/wr000576",
+          "match_score": 7
+        },
+        "Hidraulicart": {
+          "current": 999.0,
+          "before": 1099.0,
+          "matched_name": "Aspirador Piscina Zodiac OV 5200",
+          "url": "https://www.hidraulicart.pt/loja-online/aspiradoras-robotizadas-automaticas/aspiradora-de-piscina-zodiac-ov-5200/",
+          "match_score": 5
+        },
+        "IoT Pool": {
+          "current": 899.0,
+          "before": 1399.0,
+          "matched_name": "Aspirador robot ZODIAC FREERIDER RF 5200 iQ limpa fundos automático a bateria sem fios",
+          "url": "https://www.iot-pool.com/products/aspirador-de-piscina-automatico-a-bateria-sem-fios-freerider-rf-5200-iq-limpa-fundos-robot-zodiac",
+          "match_score": 8
+        },
+        "Ferromar": null,
+        "Outlet Piscinas": null,
+        "PoolComet": null,
+        "Piscinas y Productos": null
       }
     },
     {
@@ -320,7 +396,11 @@
           "url": "https://www.hidraulicart.pt/loja-online/elektro-vakuum-batterie-vektro-junior/",
           "match_score": 3
         },
-        "IoT Pool": null
+        "IoT Pool": null,
+        "Ferromar": null,
+        "Outlet Piscinas": null,
+        "PoolComet": null,
+        "Piscinas y Productos": null
       }
     },
     {
@@ -349,7 +429,11 @@
           "matched_name": "Aspirador robot FAIRLAND AQUARK iGARDEN X-WARRIOR limpa fundos bateria",
           "url": "https://www.iot-pool.com/products/aspirador-eletrico-x-warrior-aspirador-de-piscina-robot-limpa-fundos",
           "match_score": 3
-        }
+        },
+        "Ferromar": null,
+        "Outlet Piscinas": null,
+        "PoolComet": null,
+        "Piscinas y Productos": null
       }
     },
     {
@@ -372,7 +456,11 @@
         "Carol Piscina": null,
         "Shop4Pool": null,
         "Hidraulicart": null,
-        "IoT Pool": null
+        "IoT Pool": null,
+        "Ferromar": null,
+        "Outlet Piscinas": null,
+        "PoolComet": null,
+        "Piscinas y Productos": null
       }
     },
     {
@@ -386,7 +474,7 @@
           "url": "https://poolsandmore.pt/produto/aquasense-2-ultra-aspirador-robotico-para-piscinas/"
         },
         "Bricoandpool": {
-          "current": 3199.0,
+          "current": 2769.0,
           "before": 3850.0,
           "matched_name": "Beatbot AquaSense 2 Ultra Robô limpa-fundos sem cabo para piscina",
           "url": "https://bricoandpool.com/pt-pt/products/beatbot-robo-aspirador-de-piscina-aquasense-2-ultra",
@@ -407,7 +495,23 @@
           "matched_name": "Aspirador Robot AquaSense 2 Ultra Beatbot",
           "url": "https://www.iot-pool.com/products/aspirador-robot-aquasense-2-ultra-beatbot",
           "match_score": 4
-        }
+        },
+        "Ferromar": {
+          "current": 3999.0,
+          "before": 4250.0,
+          "matched_name": "Robot limpiafondos AquaSense X Beatbot con Autolimpieza",
+          "url": "https://www.piscinasferromar.com/robot-limpiafondos-aquasense-x-beatbot.html",
+          "match_score": 3
+        },
+        "Outlet Piscinas": {
+          "current": 3990.0,
+          "before": null,
+          "matched_name": "Robô Beatbot AquaSense X3990,00 €",
+          "url": "https://www.outlet-piscinas.pt/beatbot-aquasense-x",
+          "match_score": 3
+        },
+        "PoolComet": null,
+        "Piscinas y Productos": null
       }
     },
     {
@@ -442,7 +546,23 @@
           "matched_name": "Aspirador Robot AquaSense 2 Pro Beatbot",
           "url": "https://www.iot-pool.com/products/aspirador-robot-aquasense-2-pro-beatbot",
           "match_score": 4
-        }
+        },
+        "Ferromar": {
+          "current": 3999.0,
+          "before": 4250.0,
+          "matched_name": "Robot limpiafondos AquaSense X Beatbot con Autolimpieza",
+          "url": "https://www.piscinasferromar.com/robot-limpiafondos-aquasense-x-beatbot.html",
+          "match_score": 3
+        },
+        "Outlet Piscinas": {
+          "current": 3990.0,
+          "before": null,
+          "matched_name": "Robô Beatbot AquaSense X3990,00 €",
+          "url": "https://www.outlet-piscinas.pt/beatbot-aquasense-x",
+          "match_score": 3
+        },
+        "PoolComet": null,
+        "Piscinas y Productos": null
       }
     },
     {
@@ -477,7 +597,23 @@
           "matched_name": "Aspirador robot ZODIAC FREERIDER FREEDOM OF 42 limpa fundos Bateria Automático",
           "url": "https://www.iot-pool.com/products/aspirador-de-piscina-eletrico-e-automatico-of-42-limpa-fundos-robot-bateria",
           "match_score": 3
-        }
+        },
+        "Ferromar": {
+          "current": 1299.0,
+          "before": null,
+          "matched_name": "Limpiafondos Zodiac Freedom + Control sin cable",
+          "url": "https://www.piscinasferromar.com/limpiafondos-zodiac-freedom-plus-control.html",
+          "match_score": 4
+        },
+        "Outlet Piscinas": {
+          "current": 599.0,
+          "before": 649.0,
+          "matched_name": "Limpa-fundos Zodiac Freedom Lite sem fiosSpecial Price599,00 €649,00 €8%",
+          "url": "https://www.outlet-piscinas.pt/zodiac-freedom-lite",
+          "match_score": 3
+        },
+        "PoolComet": null,
+        "Piscinas y Productos": null
       }
     },
     {
@@ -506,7 +642,11 @@
           "matched_name": "Aspirador Elétrico sem fios ROBOT AIPER Scuba P1 limpa fundos automático",
           "url": "https://www.iot-pool.com/products/aspirador-eletrico-sem-fios-robot-aiper-scuba-p1-limpa-fundos-automatico",
           "match_score": 6
-        }
+        },
+        "Ferromar": null,
+        "Outlet Piscinas": null,
+        "PoolComet": null,
+        "Piscinas y Productos": null
       }
     },
     {
@@ -535,7 +675,11 @@
           "matched_name": "Aspirador Elétrico sem fios ROBOT AIPER Scuba P1 PRO limpa fundos automático",
           "url": "https://www.iot-pool.com/products/aspirador-eletrico-sem-fios-robot-aiper-scuba-p1-pro-limpa-fundos-automatico",
           "match_score": 7
-        }
+        },
+        "Ferromar": null,
+        "Outlet Piscinas": null,
+        "PoolComet": null,
+        "Piscinas y Productos": null
       }
     },
     {
@@ -564,7 +708,17 @@
           "matched_name": "Robot Aspirador E-TRON S2 SOLAR VISION Wybot",
           "url": "https://www.iot-pool.com/products/robot-aspirador-e-tron-s2-solar-vision",
           "match_score": 7
-        }
+        },
+        "Ferromar": {
+          "current": 599.0,
+          "before": 999.0,
+          "matched_name": "E-TRON VISION NG Limpiafondos sin cables Wybot",
+          "url": "https://www.piscinasferromar.com/limpiafondos-sin-cables-wybot-c2.html",
+          "match_score": 4
+        },
+        "Outlet Piscinas": null,
+        "PoolComet": null,
+        "Piscinas y Productos": null
       }
     },
     {
@@ -599,7 +753,23 @@
           "matched_name": "Aspirador robot ZODIAC CNX 40 iq limpa fundos Elétrico e Automático piscina",
           "url": "https://www.iot-pool.com/products/aspirador-de-piscina-electrico-e-automatico-zodiac-cnx-40-iq-limpa-fundos-robot",
           "match_score": 7
-        }
+        },
+        "Ferromar": {
+          "current": 999.0,
+          "before": 1269.0,
+          "matched_name": "Limpiafondos Zodiac CNX 40 iQ",
+          "url": "https://www.piscinasferromar.com/limpiafondos-zodiac-cnx-40-iq.html",
+          "match_score": 7
+        },
+        "Outlet Piscinas": {
+          "current": 1099.0,
+          "before": 1269.0,
+          "matched_name": "Aspirador de Piscina Automático Zodiac 40 XA iQSpecial Price1099,00 €1269,00 €13%",
+          "url": "https://www.outlet-piscinas.pt/limpa-fundos-piscina-zodiac-40xa-iq",
+          "match_score": 5
+        },
+        "PoolComet": null,
+        "Piscinas y Productos": null
       }
     },
     {
@@ -628,7 +798,11 @@
           "matched_name": "Aspirador ROBOT ZODIAC ALPHA RA 6900 iQ limpa fundos Eléctrico e Automático",
           "url": "https://www.iot-pool.com/products/aspirador-eletrico-robot-alpha-ra-6900-iq-aspirador-de-piscina-limpa-fundos-zodiac",
           "match_score": 8
-        }
+        },
+        "Ferromar": null,
+        "Outlet Piscinas": null,
+        "PoolComet": null,
+        "Piscinas y Productos": null
       }
     },
     {
@@ -644,20 +818,18 @@
         "Bricoandpool": null,
         "Carol Piscina": null,
         "Shop4Pool": null,
-        "Hidraulicart": {
-          "current": 528.0,
-          "before": 599.0,
-          "matched_name": "Aspirador Piscina Aquasphere ASR 105 by FLUIDRA",
-          "url": "https://www.hidraulicart.pt/loja-online/aspiradoras-robotizadas-automaticas/aspiradora-de-piscina-aquasphere-asr-105-de-fluidra/",
-          "match_score": 3
-        },
+        "Hidraulicart": null,
         "IoT Pool": {
           "current": 559.0,
           "before": 886.0,
           "matched_name": "STOCK OFF - Aspirador robot ZODIAC AQUASPHERE ASR 105 limpa fundos Elétrico piscina",
           "url": "https://www.iot-pool.com/products/aspirador-de-piscina-electrico-e-automatico-aquasphere-asr-105-limpa-fundos-robot-zodiac",
           "match_score": 3
-        }
+        },
+        "Ferromar": null,
+        "Outlet Piscinas": null,
+        "PoolComet": null,
+        "Piscinas y Productos": null
       }
     },
     {
@@ -692,7 +864,11 @@
           "matched_name": "Aspirador Elétrico sem fios ROBOT AIPER EcoSurfer M2 / Ecosurfer S2 limpa fundos automático",
           "url": "https://www.iot-pool.com/products/aspirador-eletrico-sem-fios-robot-aiper-ecosurfer-m2-limpa-fundos-automatico",
           "match_score": 6
-        }
+        },
+        "Ferromar": null,
+        "Outlet Piscinas": null,
+        "PoolComet": null,
+        "Piscinas y Productos": null
       }
     },
     {
@@ -727,7 +903,23 @@
           "matched_name": "Aspirador robot ZODIAC FREERIDER FREEDOM OF 42 limpa fundos Bateria Automático",
           "url": "https://www.iot-pool.com/products/aspirador-de-piscina-eletrico-e-automatico-of-42-limpa-fundos-robot-bateria",
           "match_score": 7
-        }
+        },
+        "Ferromar": {
+          "current": 549.0,
+          "before": 649.0,
+          "matched_name": "Zodiac Freedom Lite Limpiafondos sin cable",
+          "url": "https://www.piscinasferromar.com/limpiafondos-zodiac-freedom-lite.html",
+          "match_score": 3
+        },
+        "Outlet Piscinas": {
+          "current": 649.0,
+          "before": 844.0,
+          "matched_name": "Robô limpa-fundos Zodiac Freedom OF 42 iQSpecial Price649,00 €844,00 €23%",
+          "url": "https://www.outlet-piscinas.pt/zodiac-of-42-iq",
+          "match_score": 7
+        },
+        "PoolComet": null,
+        "Piscinas y Productos": null
       }
     },
     {
@@ -762,7 +954,11 @@
           "matched_name": "Aspirador Elétrico sem fios ROBOT AIPER Scuba N1 MAX / AIPER X1 PRO limpa fundos automático",
           "url": "https://www.iot-pool.com/products/aspirador-eletrico-sem-fios-robot-aiper-scuba-n1-max-limpa-fundos-automatico",
           "match_score": 7
-        }
+        },
+        "Ferromar": null,
+        "Outlet Piscinas": null,
+        "PoolComet": null,
+        "Piscinas y Productos": null
       }
     },
     {
@@ -791,7 +987,11 @@
           "url": "https://www.hidraulicart.pt/loja-online/aspiradoras-robotizadas-automaticas/aspirador-piscina-k-pro-igarden/",
           "match_score": 3
         },
-        "IoT Pool": null
+        "IoT Pool": null,
+        "Ferromar": null,
+        "Outlet Piscinas": null,
+        "PoolComet": null,
+        "Piscinas y Productos": null
       }
     },
     {
@@ -814,7 +1014,11 @@
         "Carol Piscina": null,
         "Shop4Pool": null,
         "Hidraulicart": null,
-        "IoT Pool": null
+        "IoT Pool": null,
+        "Ferromar": null,
+        "Outlet Piscinas": null,
+        "PoolComet": null,
+        "Piscinas y Productos": null
       }
     },
     {
@@ -849,7 +1053,23 @@
           "matched_name": "Aspirador robot ZODIAC VORTRAX TRX 8700 IQ limpa fundos electrico",
           "url": "https://www.iot-pool.com/products/aspirador-eletrico-vortrax-trx-8700-iq-aspirador-de-piscina-robot-limpa-fundos-zodiac",
           "match_score": 8
-        }
+        },
+        "Ferromar": {
+          "current": 2890.0,
+          "before": null,
+          "matched_name": "Limpiafondos TRX 8700 IQ VORTRAX Zodiac",
+          "url": "https://www.piscinasferromar.com/limpiafondos-trx-8700-iq-vortrax-zodiac.html",
+          "match_score": 8
+        },
+        "Outlet Piscinas": {
+          "current": 2799.0,
+          "before": null,
+          "matched_name": "Limpa-fundos Zodiac Vortrax TRX 8700 iQ2799,00 €",
+          "url": "https://www.outlet-piscinas.pt/aspirador-vortrax-trx-8700-iq",
+          "match_score": 7
+        },
+        "PoolComet": null,
+        "Piscinas y Productos": null
       }
     },
     {
@@ -884,7 +1104,62 @@
           "matched_name": "Aspirador robot ZODIAC Sweepy SWY 3500 limpa fundos Elétrico e Automático",
           "url": "https://www.iot-pool.com/products/aspirador-de-piscina-eletrico-e-automatico-sweepy-swy-3500-limpa-fundos-robot",
           "match_score": 3
-        }
+        },
+        "Ferromar": {
+          "current": 599.0,
+          "before": 649.0,
+          "matched_name": "Limpiafondos Zodiac Sweepy SWY 3500",
+          "url": "https://www.piscinasferromar.com/limpiafondos-zodiac-sweepy.html",
+          "match_score": 3
+        },
+        "Outlet Piscinas": null,
+        "PoolComet": null,
+        "Piscinas y Productos": null
+      }
+    },
+    {
+      "name": "Zodiac Mx9",
+      "brand": "zodiac",
+      "prices": {
+        "Pools and More": {
+          "current": 349.0,
+          "before": null,
+          "matched_name": "Zodiac Mx9",
+          "url": "https://poolsandmore.pt/produto/zodiac-mx9-robot-hidraulico/"
+        },
+        "Bricoandpool": null,
+        "Carol Piscina": {
+          "current": 439.0,
+          "before": 569.0,
+          "matched_name": "Aspirador hidráulico MX9",
+          "url": "https://carolpiscina.pt/products/aspirador-hidraulico-mx9",
+          "match_score": 4
+        },
+        "Shop4Pool": null,
+        "Hidraulicart": {
+          "current": 346.0,
+          "before": null,
+          "matched_name": "Aspirador Zodiac MX9",
+          "url": "https://www.hidraulicart.pt/loja-online/zodiac-mx9-vacio/",
+          "match_score": 5
+        },
+        "IoT Pool": {
+          "current": 399.0,
+          "before": 569.0,
+          "matched_name": "Aspirador de Piscina Automático Hidráulico MX9 ZODIAC limpa fundos robot",
+          "url": "https://www.iot-pool.com/products/aspirador-de-piscina-automatico-hidraulico-mx9-zodiac-limpa-fundos-robot",
+          "match_score": 5
+        },
+        "Ferromar": null,
+        "Outlet Piscinas": {
+          "current": 375.0,
+          "before": null,
+          "matched_name": "(1)Aspirador Limpa-fundos Zodiac MX9(1)375,00 €",
+          "url": "https://www.outlet-piscinas.pt/limpa-fundos-zodiac-mx9",
+          "match_score": 5
+        },
+        "PoolComet": null,
+        "Piscinas y Productos": null
       }
     },
     {
@@ -898,7 +1173,7 @@
           "url": "https://poolsandmore.pt/produto/beatbot-sora-p7-robot-de-piscina-sem-cabo/"
         },
         "Bricoandpool": {
-          "current": 1259.0,
+          "current": 1149.0,
           "before": 1499.0,
           "matched_name": "Beatbot Sora P7 Robô limpa-fundos sem fio para piscina",
           "url": "https://bricoandpool.com/pt-pt/products/beatbot-sora-p7-robot-limpiafondos-sin-cable-para-piscina",
@@ -913,7 +1188,17 @@
           "matched_name": "Robot aspirador BEATBOT SORA P7",
           "url": "https://www.iot-pool.com/products/robot-aspirador-beatbot-sora-p7",
           "match_score": 6
-        }
+        },
+        "Ferromar": {
+          "current": 1149.0,
+          "before": 1499.0,
+          "matched_name": "Limpiafondos inteligente Sora P7 Beatbot",
+          "url": "https://www.piscinasferromar.com/limpiafondos-inteligente-sora-p7-beatbot.html",
+          "match_score": 6
+        },
+        "Outlet Piscinas": null,
+        "PoolComet": null,
+        "Piscinas y Productos": null
       }
     },
     {
@@ -948,7 +1233,23 @@
           "matched_name": "Aspirador Robot AquaSense 2 Pro Beatbot",
           "url": "https://www.iot-pool.com/products/aspirador-robot-aquasense-2-pro-beatbot",
           "match_score": 4
-        }
+        },
+        "Ferromar": {
+          "current": 3999.0,
+          "before": 4250.0,
+          "matched_name": "Robot limpiafondos AquaSense X Beatbot con Autolimpieza",
+          "url": "https://www.piscinasferromar.com/robot-limpiafondos-aquasense-x-beatbot.html",
+          "match_score": 3
+        },
+        "Outlet Piscinas": {
+          "current": 3990.0,
+          "before": null,
+          "matched_name": "Robô Beatbot AquaSense X3990,00 €",
+          "url": "https://www.outlet-piscinas.pt/beatbot-aquasense-x",
+          "match_score": 3
+        },
+        "PoolComet": null,
+        "Piscinas y Productos": null
       }
     },
     {
@@ -983,7 +1284,23 @@
           "matched_name": "Aspirador Robot AquaSense 2 Beatbot",
           "url": "https://www.iot-pool.com/products/aspirador-robot-aquasense-2-beatbot",
           "match_score": 3
-        }
+        },
+        "Ferromar": {
+          "current": 3999.0,
+          "before": 4250.0,
+          "matched_name": "Robot limpiafondos AquaSense X Beatbot con Autolimpieza",
+          "url": "https://www.piscinasferromar.com/robot-limpiafondos-aquasense-x-beatbot.html",
+          "match_score": 3
+        },
+        "Outlet Piscinas": {
+          "current": 3990.0,
+          "before": null,
+          "matched_name": "Robô Beatbot AquaSense X3990,00 €",
+          "url": "https://www.outlet-piscinas.pt/beatbot-aquasense-x",
+          "match_score": 3
+        },
+        "PoolComet": null,
+        "Piscinas y Productos": null
       }
     },
     {
@@ -1018,7 +1335,23 @@
           "matched_name": "Aspirador robot ZODIAC FREERIDER CNX-Li 52 iQ limpa fundos a Bateria Automático sem fios",
           "url": "https://www.iot-pool.com/products/aspirador-de-piscina-automatico-a-bateria-sem-fios-cnx-li-52-iq-limpa-fundos-robot",
           "match_score": 8
-        }
+        },
+        "Ferromar": {
+          "current": 849.0,
+          "before": 1299.0,
+          "matched_name": "Limpiafondos Zodiac Freerider CNX Li 52 iQ FREEDOM sin cables",
+          "url": "https://www.piscinasferromar.com/robot-limpiafondos-zodiac-cnx-li-52-iq.html",
+          "match_score": 8
+        },
+        "Outlet Piscinas": {
+          "current": 849.0,
+          "before": 999.0,
+          "matched_name": "Limpa-fundos Zodiac CNX-Li 52 iQ FreedomSpecial Price849,00 €999,00 €15%",
+          "url": "https://www.outlet-piscinas.pt/zodiac-cnx-li-52-iq",
+          "match_score": 8
+        },
+        "PoolComet": null,
+        "Piscinas y Productos": null
       }
     },
     {
@@ -1053,7 +1386,17 @@
           "matched_name": "Aspirador robot ZODIAC CNX 50 iq limpa fundos Elétrico e Automático piscina",
           "url": "https://www.iot-pool.com/products/aspirador-de-piscina-electrico-e-automatico-zodiac-cnx-50-iq-limpa-fundos-robot",
           "match_score": 7
-        }
+        },
+        "Ferromar": {
+          "current": 1099.0,
+          "before": 1329.0,
+          "matched_name": "Limpiafondos eléctrico Zodiac CNX 50 iQ",
+          "url": "https://www.piscinasferromar.com/limpiafondos-electrico-zodiac-cnx-50-iq.html",
+          "match_score": 7
+        },
+        "Outlet Piscinas": null,
+        "PoolComet": null,
+        "Piscinas y Productos": null
       }
     },
     {
@@ -1088,7 +1431,17 @@
           "matched_name": "Aspirador robot ZODIAC CNX 30 limpa fundos Elétrico e Automático",
           "url": "https://www.iot-pool.com/products/aspirador-de-piscina-electrico-e-automatico-zodiac-cnx-30-iq-limpa-fundos-robot",
           "match_score": 6
-        }
+        },
+        "Ferromar": {
+          "current": 899.0,
+          "before": 1139.0,
+          "matched_name": "Limpiafondos de Piscinas Zodiac CNX 30 iQ",
+          "url": "https://www.piscinasferromar.com/limpiafondos-de-piscinas-zodiac-cnx-30-iq.html",
+          "match_score": 7
+        },
+        "Outlet Piscinas": null,
+        "PoolComet": null,
+        "Piscinas y Productos": null
       }
     },
     {
@@ -1129,7 +1482,11 @@
           "matched_name": "Aspirador ROBOT ZODIAC ARCOMAX limpa fundos Eléctrico e Automático",
           "url": "https://www.iot-pool.com/products/aspirador-eletrico-arcomax-aspirador-de-piscina-limpa-fundos-zodiac",
           "match_score": 3
-        }
+        },
+        "Ferromar": null,
+        "Outlet Piscinas": null,
+        "PoolComet": null,
+        "Piscinas y Productos": null
       }
     },
     {
@@ -1170,7 +1527,11 @@
           "matched_name": "Aspirador ROBOT ZODIAC ARCO limpa fundos Eléctrico e Automático",
           "url": "https://www.iot-pool.com/products/aspirador-eletrico-arco-aspirador-de-piscina-limpa-fundos-zodiac",
           "match_score": 3
-        }
+        },
+        "Ferromar": null,
+        "Outlet Piscinas": null,
+        "PoolComet": null,
+        "Piscinas y Productos": null
       }
     },
     {
@@ -1205,7 +1566,23 @@
           "matched_name": "Aspirador robot ZODIAC VORTRAX TRX 8500 IQ limpa fundos electrico",
           "url": "https://www.iot-pool.com/products/aspirador-eletrico-vortrax-trx-8500-iq-aspirador-de-piscina-robot-limpa-fundos-zodiac",
           "match_score": 8
-        }
+        },
+        "Ferromar": {
+          "current": 2159.0,
+          "before": null,
+          "matched_name": "Limpiafondos Zodiac TRX 8500 IQ - VORTRAX",
+          "url": "https://www.piscinasferromar.com/limpiafondos-zodiac-trx-8500-iq-vortrax.html",
+          "match_score": 8
+        },
+        "Outlet Piscinas": {
+          "current": 2159.0,
+          "before": null,
+          "matched_name": "Limpa-fundos Zodiac Vortrax TRX 8500 iQ2159,00 €",
+          "url": "https://www.outlet-piscinas.pt/aspirador-vortrax-trx-7500-iq",
+          "match_score": 7
+        },
+        "PoolComet": null,
+        "Piscinas y Productos": null
       }
     },
     {
@@ -1234,7 +1611,11 @@
           "matched_name": "STOCK OFF - Aspirador a bateria SPABOT OS 0800 para spa ZODIAC",
           "url": "https://www.iot-pool.com/products/aspirador-a-bateria-spabot-os-0800-para-spa-zodiac",
           "match_score": 7
-        }
+        },
+        "Ferromar": null,
+        "Outlet Piscinas": null,
+        "PoolComet": null,
+        "Piscinas y Productos": null
       }
     },
     {
@@ -1269,7 +1650,23 @@
           "matched_name": "Aspirador robot ZODIAC ALPHA OA 6400 iQ limpa fundos Eléctrico Automático RA 6500 iq e RA 6300 iq",
           "url": "https://www.iot-pool.com/products/aspirador-de-piscina-electrico-automatico-zodiac-alpha-oa-6400-iq-limpa-fundos-robot",
           "match_score": 8
-        }
+        },
+        "Ferromar": {
+          "current": 1249.0,
+          "before": 1329.0,
+          "matched_name": "Limpiafondos Zodiac Alpha OA 6400 IQ",
+          "url": "https://www.piscinasferromar.com/limpiafondos-zodiac-alpha-oa-6400iq.html",
+          "match_score": 8
+        },
+        "Outlet Piscinas": {
+          "current": 1249.0,
+          "before": null,
+          "matched_name": "Limpa-fundos elétrico Zodiac Alpha OA 6400 iQ1249,00 €",
+          "url": "https://www.outlet-piscinas.pt/limpa-fundos-zodiac-alpha-oa-6400-iq",
+          "match_score": 7
+        },
+        "PoolComet": null,
+        "Piscinas y Productos": null
       }
     },
     {
@@ -1304,7 +1701,23 @@
           "matched_name": "Aspirador robot ZODIAC Alpha OA 6600 iq limpa fundos Elétrico e Automático piscina RA 6800 iq",
           "url": "https://www.iot-pool.com/products/aspirador-de-piscina-electrico-automatico-zodiac-alpha-oa-6600-iq-limpa-fundos-robot",
           "match_score": 8
-        }
+        },
+        "Ferromar": {
+          "current": 1349.0,
+          "before": 1719.0,
+          "matched_name": "Zodiac Alpha OA 6600 IQ Limpiafondos",
+          "url": "https://www.piscinasferromar.com/zodiac-alpha-oa-6600-iq-limpiafondos.html",
+          "match_score": 8
+        },
+        "Outlet Piscinas": {
+          "current": 1349.0,
+          "before": null,
+          "matched_name": "Limpa-fundos elétrico Zodiac Alpha OA 6600 iQ1349,00 €",
+          "url": "https://www.outlet-piscinas.pt/zodiac-alpha-oa-6600-iq-limpa-fundo-piscinas",
+          "match_score": 7
+        },
+        "PoolComet": null,
+        "Piscinas y Productos": null
       }
     },
     {
@@ -1333,7 +1746,11 @@
           "matched_name": "Aspirador ROBOT ZODIAC ALPHA RA 6800 iq limpa fundos Eléctrico e Automático",
           "url": "https://www.iot-pool.com/products/aspirador-eletrico-robot-alpha-ra-6800-iq-aspirador-de-piscina-limpa-fundos-zodiac",
           "match_score": 8
-        }
+        },
+        "Ferromar": null,
+        "Outlet Piscinas": null,
+        "PoolComet": null,
+        "Piscinas y Productos": null
       }
     },
     {
@@ -1362,7 +1779,11 @@
           "url": "https://www.hidraulicart.pt/loja-online/filtro-aspirador-zodiac-cnx-e-voyager/",
           "match_score": 3
         },
-        "IoT Pool": null
+        "IoT Pool": null,
+        "Ferromar": null,
+        "Outlet Piscinas": null,
+        "PoolComet": null,
+        "Piscinas y Productos": null
       }
     }
   ],

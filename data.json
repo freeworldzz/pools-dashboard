@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-10T11:03:02",
+  "generated_at": "2026-06-11T10:33:28",
   "vendors": [
     "Pools and More",
     "Bricoandpool",
@@ -458,7 +458,13 @@
         "Bricoandpool": null,
         "Carol Piscina": null,
         "Shop4Pool": null,
-        "Hidraulicart": null,
+        "Hidraulicart": {
+          "current": 528.0,
+          "before": 599.0,
+          "matched_name": "Aspirador Piscina Aquasphere ASR 105 by FLUIDRA",
+          "url": "https://www.hidraulicart.pt/loja-online/aspiradoras-robotizadas-automaticas/aspiradora-de-piscina-aquasphere-asr-105-de-fluidra/",
+          "match_score": 3
+        },
         "IoT Pool": null
       }
     },

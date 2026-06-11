@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-11T11:31:53",
+  "generated_at": "2026-06-11T15:09:34",
   "vendors": [
     "Pools and More",
     "Bricoandpool",
@@ -100,8 +100,8 @@
         },
         "Hidraulicart": null,
         "IoT Pool": {
-          "current": 1176.0,
-          "before": 1764.0,
+          "current": 1175.0,
+          "before": 1763.0,
           "matched_name": "Aspirador ZODIAC FREERIDER RF 5400 iQ limpa fundos automático a bateria sem fios",
           "url": "https://www.iot-pool.com/products/aspirador-de-piscina-automatico-a-bateria-sem-fios-freerider-rf-5400-iq-limpa-fundos-robot-zodiac",
           "match_score": 7
@@ -522,8 +522,8 @@
           "match_score": 4
         },
         "IoT Pool": {
-          "current": 3441.0,
-          "before": 5998.0,
+          "current": 3440.0,
+          "before": 5997.0,
           "matched_name": "Aspirador Robot AquaSense 2 Ultra Beatbot",
           "url": "https://www.iot-pool.com/products/aspirador-robot-aquasense-2-ultra-beatbot",
           "match_score": 4
@@ -575,8 +575,8 @@
           "match_score": 4
         },
         "IoT Pool": {
-          "current": 2352.0,
-          "before": 4328.0,
+          "current": 2351.0,
+          "before": 4327.0,
           "matched_name": "Aspirador Robot AquaSense 2 Pro Beatbot",
           "url": "https://www.iot-pool.com/products/aspirador-robot-aquasense-2-pro-beatbot",
           "match_score": 4
@@ -839,7 +839,7 @@
         },
         "Hidraulicart": null,
         "IoT Pool": {
-          "current": 1764.0,
+          "current": 1763.0,
           "before": null,
           "matched_name": "Aspirador ROBOT ZODIAC ALPHA RA 6900 iQ limpa fundos Eléctrico e Automático",
           "url": "https://www.iot-pool.com/products/aspirador-eletrico-robot-alpha-ra-6900-iq-aspirador-de-piscina-limpa-fundos-zodiac",
@@ -866,27 +866,15 @@
         "Bricoandpool": null,
         "Carol Piscina": null,
         "Shop4Pool": null,
-        "Hidraulicart": {
-          "current": 528.0,
-          "before": 599.0,
-          "matched_name": "Aspirador Piscina Aquasphere ASR 105 by FLUIDRA",
-          "url": "https://www.hidraulicart.pt/loja-online/aspiradoras-robotizadas-automaticas/aspiradora-de-piscina-aquasphere-asr-105-de-fluidra/",
-          "match_score": 3
-        },
+        "Hidraulicart": null,
         "IoT Pool": {
           "current": 658.0,
-          "before": 1043.0,
+          "before": 1042.0,
           "matched_name": "STOCK OFF - Aspirador robot ZODIAC AQUASPHERE ASR 105 limpa fundos Elétrico piscina",
           "url": "https://www.iot-pool.com/products/aspirador-de-piscina-electrico-e-automatico-aquasphere-asr-105-limpa-fundos-robot-zodiac",
           "match_score": 3
         },
-        "Ferromar": {
-          "current": 599.0,
-          "before": null,
-          "matched_name": "Limpiafondos eléctrico Aquasphere ASR 105 by Fluidra",
-          "url": "https://www.piscinasferromar.com/limpiafondos-electrico-aquasphere-asr-105-by-fluidra.html",
-          "match_score": 3
-        },
+        "Ferromar": null,
         "Outlet Piscinas": null,
         "PoolComet": null,
         "Piscinas y Productos": null,
@@ -1308,8 +1296,8 @@
           "match_score": 4
         },
         "IoT Pool": {
-          "current": 2352.0,
-          "before": 4328.0,
+          "current": 2351.0,
+          "before": 4327.0,
           "matched_name": "Aspirador Robot AquaSense 2 Pro Beatbot",
           "url": "https://www.iot-pool.com/products/aspirador-robot-aquasense-2-pro-beatbot",
           "match_score": 4
@@ -1361,7 +1349,7 @@
           "match_score": 3
         },
         "IoT Pool": {
-          "current": 1176.0,
+          "current": 1175.0,
           "before": 2469.0,
           "matched_name": "Aspirador Robot AquaSense 2 Beatbot",
           "url": "https://www.iot-pool.com/products/aspirador-robot-aquasense-2-beatbot",
@@ -1520,8 +1508,8 @@
           "match_score": 7
         },
         "IoT Pool": {
-          "current": 1176.0,
-          "before": 1744.0,
+          "current": 1175.0,
+          "before": 1743.0,
           "matched_name": "Aspirador robot ZODIAC CNX 30 limpa fundos Elétrico e Automático",
           "url": "https://www.iot-pool.com/products/aspirador-de-piscina-electrico-e-automatico-zodiac-cnx-30-iq-limpa-fundos-robot",
           "match_score": 6
@@ -1579,8 +1567,8 @@
           "match_score": 3
         },
         "IoT Pool": {
-          "current": 9409.0,
-          "before": 12107.0,
+          "current": 9407.0,
+          "before": 12105.0,
           "matched_name": "Aspirador ROBOT ZODIAC ARCOMAX limpa fundos Eléctrico e Automático",
           "url": "https://www.iot-pool.com/products/aspirador-eletrico-arcomax-aspirador-de-piscina-limpa-fundos-zodiac",
           "match_score": 3
@@ -1626,8 +1614,8 @@
           "match_score": 3
         },
         "IoT Pool": {
-          "current": 4704.0,
-          "before": 6213.0,
+          "current": 4703.0,
+          "before": 6212.0,
           "matched_name": "Aspirador ROBOT ZODIAC ARCO limpa fundos Eléctrico e Automático",
           "url": "https://www.iot-pool.com/products/aspirador-eletrico-arco-aspirador-de-piscina-limpa-fundos-zodiac",
           "match_score": 3
@@ -1668,7 +1656,7 @@
         "Hidraulicart": null,
         "IoT Pool": {
           "current": 2469.0,
-          "before": 2999.0,
+          "before": 2998.0,
           "matched_name": "Aspirador robot ZODIAC VORTRAX TRX 8500 IQ limpa fundos electrico",
           "url": "https://www.iot-pool.com/products/aspirador-eletrico-vortrax-trx-8500-iq-aspirador-de-piscina-robot-limpa-fundos-zodiac",
           "match_score": 8
@@ -1808,8 +1796,8 @@
           "match_score": 8
         },
         "IoT Pool": {
-          "current": 1717.0,
-          "before": 2646.0,
+          "current": 1716.0,
+          "before": 2645.0,
           "matched_name": "Aspirador robot ZODIAC Alpha OA 6600 iq limpa fundos Elétrico e Automático piscina RA 6800 iq",
           "url": "https://www.iot-pool.com/products/aspirador-de-piscina-electrico-automatico-zodiac-alpha-oa-6600-iq-limpa-fundos-robot",
           "match_score": 8
@@ -1933,7 +1921,7 @@
           "match_score": 5
         },
         "IoT Pool": {
-          "current": 1517.0,
+          "current": 1516.0,
           "before": 2026.0,
           "matched_name": "Bomba de Calor ZODIAC Z250 iQ INVERTER (MD3)",
           "url": "https://www.iot-pool.com/products/bomba-de-calor-z250-iq",
@@ -2016,7 +2004,7 @@
         },
         "IoT Pool": {
           "current": 2116.0,
-          "before": 3039.0,
+          "before": 3038.0,
           "matched_name": "Bomba de Calor ZODIAC Z250 iQ INVERTER (MD5)",
           "url": "https://www.iot-pool.com/products/bomba-de-calor-z250-iq",
           "match_score": 100
@@ -2057,7 +2045,7 @@
         },
         "IoT Pool": {
           "current": 2587.0,
-          "before": 3473.0,
+          "before": 3472.0,
           "matched_name": "Bomba de Calor ZODIAC Z250 iQ INVERTER (MD6)",
           "url": "https://www.iot-pool.com/products/bomba-de-calor-z250-iq",
           "match_score": 100
@@ -2097,8 +2085,8 @@
           "match_score": 5
         },
         "IoT Pool": {
-          "current": 3528.0,
-          "before": 4630.0,
+          "current": 3527.0,
+          "before": 4629.0,
           "matched_name": "Bomba de Calor ZODIAC Z250 iQ INVERTER (MD8)",
           "url": "https://www.iot-pool.com/products/bomba-de-calor-z250-iq",
           "match_score": 100
@@ -2139,7 +2127,7 @@
         },
         "IoT Pool": {
           "current": 4351.0,
-          "before": 5643.0,
+          "before": 5642.0,
           "matched_name": "Bomba de Calor ZODIAC Z250 iQ INVERTER (MD9)",
           "url": "https://www.iot-pool.com/products/bomba-de-calor-z250-iq",
           "match_score": 100
@@ -2179,8 +2167,8 @@
           "match_score": 5
         },
         "IoT Pool": {
-          "current": 5057.0,
-          "before": 7234.0,
+          "current": 5056.0,
+          "before": 7233.0,
           "matched_name": "Bomba de Calor ZODIAC Z250 iQ INVERTER (MD12)",
           "url": "https://www.iot-pool.com/products/bomba-de-calor-z250-iq",
           "match_score": 100
@@ -2261,8 +2249,8 @@
           "match_score": 5
         },
         "IoT Pool": {
-          "current": 4234.0,
-          "before": 5859.0,
+          "current": 4233.0,
+          "before": 5858.0,
           "matched_name": "Bomba de Calor ZODIAC Z250 iQ INVERTER (TD9)",
           "url": "https://www.iot-pool.com/products/bomba-de-calor-z250-iq",
           "match_score": 100
@@ -2302,8 +2290,8 @@
           "match_score": 5
         },
         "IoT Pool": {
-          "current": 5763.0,
-          "before": 7452.0,
+          "current": 5762.0,
+          "before": 7451.0,
           "matched_name": "Bomba de Calor ZODIAC Z250 iQ INVERTER (TD12)",
           "url": "https://www.iot-pool.com/products/bomba-de-calor-z250-iq",
           "match_score": 100
@@ -2343,8 +2331,8 @@
           "match_score": 100
         },
         "IoT Pool": {
-          "current": 2940.0,
-          "before": 4928.0,
+          "current": 2939.0,
+          "before": 4927.0,
           "matched_name": "Bomba de Calor FAIRLAND AQUARK iGARDEN Inverx20 (X20-14 14KW)",
           "url": "https://www.iot-pool.com/products/bomba-de-calor-inverx20-fairland",
           "match_score": 100
@@ -2384,8 +2372,8 @@
           "match_score": 100
         },
         "IoT Pool": {
-          "current": 3528.0,
-          "before": 6139.0,
+          "current": 3527.0,
+          "before": 6138.0,
           "matched_name": "Bomba de Calor FAIRLAND AQUARK iGARDEN Inverx20 (X20-18 18KW)",
           "url": "https://www.iot-pool.com/products/bomba-de-calor-inverx20-fairland",
           "match_score": 100
@@ -2425,8 +2413,8 @@
           "match_score": 100
         },
         "IoT Pool": {
-          "current": 4234.0,
-          "before": 6762.0,
+          "current": 4233.0,
+          "before": 6761.0,
           "matched_name": "Bomba de Calor FAIRLAND AQUARK iGARDEN Inverx20 (X20-22 22KW)",
           "url": "https://www.iot-pool.com/products/bomba-de-calor-inverx20-fairland",
           "match_score": 100
@@ -2466,8 +2454,8 @@
           "match_score": 100
         },
         "IoT Pool": {
-          "current": 4704.0,
-          "before": 7939.0,
+          "current": 4703.0,
+          "before": 7937.0,
           "matched_name": "Bomba de Calor FAIRLAND AQUARK iGARDEN Inverx20 (X20-26 26KW)",
           "url": "https://www.iot-pool.com/products/bomba-de-calor-inverx20-fairland",
           "match_score": 100
@@ -2507,8 +2495,8 @@
           "match_score": 100
         },
         "IoT Pool": {
-          "current": 5057.0,
-          "before": 8233.0,
+          "current": 5056.0,
+          "before": 8231.0,
           "matched_name": "Bomba de Calor FAIRLAND AQUARK iGARDEN Inverx20 (X20-26T 26KW)",
           "url": "https://www.iot-pool.com/products/bomba-de-calor-inverx20-fairland",
           "match_score": 100
@@ -2548,8 +2536,8 @@
           "match_score": 100
         },
         "IoT Pool": {
-          "current": 5880.0,
-          "before": 9338.0,
+          "current": 5879.0,
+          "before": 9337.0,
           "matched_name": "Bomba de Calor FAIRLAND AQUARK iGARDEN Inverx20 (X20-32T 32KW)",
           "url": "https://www.iot-pool.com/products/bomba-de-calor-inverx20-fairland",
           "match_score": 100
@@ -2589,8 +2577,8 @@
           "match_score": 100
         },
         "IoT Pool": {
-          "current": 6586.0,
-          "before": 10491.0,
+          "current": 6585.0,
+          "before": 10489.0,
           "matched_name": "Bomba de Calor FAIRLAND AQUARK iGARDEN Inverx20 (X20-40T 40KW)",
           "url": "https://www.iot-pool.com/products/bomba-de-calor-inverx20-fairland",
           "match_score": 100
@@ -2665,7 +2653,7 @@
         "Shop4Pool": null,
         "Hidraulicart": null,
         "IoT Pool": {
-          "current": 1764.0,
+          "current": 1763.0,
           "before": null,
           "matched_name": "Bomba de Calor SILVERLINE FI POOLEX (90)",
           "url": "https://www.iot-pool.com/products/bomba-de-calor-silverline-fi-poolex",
@@ -2835,7 +2823,7 @@
           "match_score": 100
         },
         "IoT Pool": {
-          "current": 2893.0,
+          "current": 2892.0,
           "before": 4553.0,
           "matched_name": "Bomba de calor ZODIAC Z350 iQ MD4 MD5 MD6 (Z350iQ MD4)",
           "url": "https://www.iot-pool.com/products/bomba-de-calor-z350-iq-md4-md5-md6",
@@ -3027,7 +3015,7 @@
         "Shop4Pool": null,
         "Hidraulicart": null,
         "IoT Pool": {
-          "current": 2705.0,
+          "current": 2704.0,
           "before": null,
           "matched_name": "Bomba de Calor Silverline Top Full Inverter (Silverline Top 150)",
           "url": "https://www.iot-pool.com/products/bomba-de-calor-silverline-top-full-inverter",
@@ -3097,7 +3085,7 @@
         "Shop4Pool": null,
         "Hidraulicart": null,
         "IoT Pool": {
-          "current": 3834.0,
+          "current": 3833.0,
           "before": null,
           "matched_name": "Bomba de Calor Silverline Top Full Inverter (Silverline Top 200)",
           "url": "https://www.iot-pool.com/products/bomba-de-calor-silverline-top-full-inverter",
@@ -3173,7 +3161,7 @@
         "Shop4Pool": null,
         "Hidraulicart": null,
         "IoT Pool": {
-          "current": 1176.0,
+          "current": 1175.0,
           "before": null,
           "matched_name": "Bomba de Calor SILVERLINE POOLEX (55)",
           "url": "https://www.iot-pool.com/products/bomba-de-calor-silverline-poolex",
@@ -3214,7 +3202,7 @@
         "Shop4Pool": null,
         "Hidraulicart": null,
         "IoT Pool": {
-          "current": 1410.0,
+          "current": 1409.0,
           "before": null,
           "matched_name": "Bomba de Calor SILVERLINE POOLEX (70)",
           "url": "https://www.iot-pool.com/products/bomba-de-calor-silverline-poolex",
@@ -3491,7 +3479,7 @@
         },
         "IoT Pool": {
           "current": 1634.0,
-          "before": 2705.0,
+          "before": 2704.0,
           "matched_name": "Bomba de Calor FAIRLAND AQUARK iGARDEN Inver Boy (Inver Boy IB11)",
           "url": "https://www.iot-pool.com/products/bomba-de-calor-inver-boy",
           "match_score": 100
@@ -3584,8 +3572,8 @@
           "match_score": 100
         },
         "IoT Pool": {
-          "current": 1176.0,
-          "before": 1470.0,
+          "current": 1175.0,
+          "before": 1469.0,
           "matched_name": "Bomba de Calor FAIRLAND AQUARK iGARDEN Inver Boy (Inver Boy IB07)",
           "url": "https://www.iot-pool.com/products/bomba-de-calor-inver-boy",
           "match_score": 100
@@ -3701,7 +3689,7 @@
         },
         "IoT Pool": {
           "current": 3410.0,
-          "before": 5064.0,
+          "before": 5063.0,
           "matched_name": "Bomba de Calor ASTRALPOOL ECO ELYO Full Inverter (ECO ELYO 24 kW)",
           "url": "https://www.iot-pool.com/products/bomba-de-calor-eco-elyo-full-inverter",
           "match_score": 100
@@ -3753,8 +3741,8 @@
           "match_score": 100
         },
         "IoT Pool": {
-          "current": 4234.0,
-          "before": 5563.0,
+          "current": 4233.0,
+          "before": 5562.0,
           "matched_name": "Bomba de Calor ASTRALPOOL ECO ELYO Full Inverter (ECO ELYO 30 kW)",
           "url": "https://www.iot-pool.com/products/bomba-de-calor-eco-elyo-full-inverter",
           "match_score": 100
@@ -3807,7 +3795,7 @@
         },
         "IoT Pool": {
           "current": 2635.0,
-          "before": 4196.0,
+          "before": 4195.0,
           "matched_name": "Bomba de Calor ASTRALPOOL ECO ELYO Full Inverter (ECO ELYO 20 kW)",
           "url": "https://www.iot-pool.com/products/bomba-de-calor-eco-elyo-full-inverter",
           "match_score": 100
@@ -3860,7 +3848,7 @@
         },
         "IoT Pool": {
           "current": 3410.0,
-          "before": 5064.0,
+          "before": 5063.0,
           "matched_name": "Bomba de Calor ASTRALPOOL ECO ELYO Full Inverter (ECO ELYO 24 kW)",
           "url": "https://www.iot-pool.com/products/bomba-de-calor-eco-elyo-full-inverter",
           "match_score": 100
@@ -3912,8 +3900,8 @@
           "match_score": 100
         },
         "IoT Pool": {
-          "current": 4234.0,
-          "before": 5563.0,
+          "current": 4233.0,
+          "before": 5562.0,
           "matched_name": "Bomba de Calor ASTRALPOOL ECO ELYO Full Inverter (ECO ELYO 30 kW)",
           "url": "https://www.iot-pool.com/products/bomba-de-calor-eco-elyo-full-inverter",
           "match_score": 100
@@ -4019,7 +4007,7 @@
         },
         "IoT Pool": {
           "current": 1352.0,
-          "before": 2031.0,
+          "before": 2030.0,
           "matched_name": "Bomba de Calor ASTRALPOOL ECO ELYO Full Inverter (ECO ELYO 9 kW)",
           "url": "https://www.iot-pool.com/products/bomba-de-calor-eco-elyo-full-inverter",
           "match_score": 100
@@ -4071,7 +4059,7 @@
           "match_score": 100
         },
         "IoT Pool": {
-          "current": 1717.0,
+          "current": 1716.0,
           "before": 2540.0,
           "matched_name": "Bomba de Calor ASTRALPOOL ECO ELYO Full Inverter (ECO ELYO 13 kW)",
           "url": "https://www.iot-pool.com/products/bomba-de-calor-eco-elyo-full-inverter",
@@ -4125,7 +4113,7 @@
         },
         "IoT Pool": {
           "current": 2069.0,
-          "before": 2986.0,
+          "before": 2985.0,
           "matched_name": "Bomba de Calor ASTRALPOOL ECO ELYO Full Inverter (ECO ELYO 15 kW)",
           "url": "https://www.iot-pool.com/products/bomba-de-calor-eco-elyo-full-inverter",
           "match_score": 100
@@ -4178,7 +4166,7 @@
         },
         "IoT Pool": {
           "current": 2635.0,
-          "before": 4196.0,
+          "before": 4195.0,
           "matched_name": "Bomba de Calor ASTRALPOOL ECO ELYO Full Inverter (ECO ELYO 20 kW)",
           "url": "https://www.iot-pool.com/products/bomba-de-calor-eco-elyo-full-inverter",
           "match_score": 100
@@ -4224,8 +4212,8 @@
           "match_score": 100
         },
         "IoT Pool": {
-          "current": 5057.0,
-          "before": 7633.0,
+          "current": 5056.0,
+          "before": 7632.0,
           "matched_name": "Bomba de Calor FAIRLAND AQUARK iGARDEN Mr. Silence 30 FULL-INVERTER (280M)",
           "url": "https://www.iot-pool.com/products/bomba-de-calor-mr-silence-30",
           "match_score": 100
@@ -4259,8 +4247,8 @@
         "Shop4Pool": null,
         "Hidraulicart": null,
         "IoT Pool": {
-          "current": 4822.0,
-          "before": 7547.0,
+          "current": 4821.0,
+          "before": 7546.0,
           "matched_name": "Bomba de calor FAIRLAND AQUARK iGARDEN Mr. Silence (BZP 350T)",
           "url": "https://www.iot-pool.com/products/bomba-de-calor-mr-silence-bluezone-aquark",
           "match_score": 100
@@ -4406,7 +4394,7 @@
         },
         "IoT Pool": {
           "current": 2528.0,
-          "before": 3773.0,
+          "before": 3772.0,
           "matched_name": "Bomba de calor FAIRLAND AQUARK iGARDEN Mr. Silence (BZP 130M)",
           "url": "https://www.iot-pool.com/products/bomba-de-calor-mr-silence-bluezone-aquark",
           "match_score": 100
@@ -4446,8 +4434,8 @@
           "match_score": 100
         },
         "IoT Pool": {
-          "current": 2940.0,
-          "before": 4998.0,
+          "current": 2939.0,
+          "before": 4997.0,
           "matched_name": "Bomba de Calor FAIRLAND AQUARK iGARDEN Mr. Silence 30 FULL-INVERTER (150M)",
           "url": "https://www.iot-pool.com/products/bomba-de-calor-mr-silence-30",
           "match_score": 100
@@ -4487,7 +4475,7 @@
           "match_score": 100
         },
         "IoT Pool": {
-          "current": 3293.0,
+          "current": 3292.0,
           "before": 5527.0,
           "matched_name": "Bomba de Calor FAIRLAND AQUARK iGARDEN Mr. Silence 30 FULL-INVERTER (170M)",
           "url": "https://www.iot-pool.com/products/bomba-de-calor-mr-silence-30",
@@ -4528,8 +4516,8 @@
           "match_score": 100
         },
         "IoT Pool": {
-          "current": 3787.0,
-          "before": 5785.0,
+          "current": 3786.0,
+          "before": 5784.0,
           "matched_name": "Bomba de calor FAIRLAND AQUARK iGARDEN Mr. Silence (BZP 210M)",
           "url": "https://www.iot-pool.com/products/bomba-de-calor-mr-silence-bluezone-aquark",
           "match_score": 100
@@ -4569,8 +4557,8 @@
           "match_score": 100
         },
         "IoT Pool": {
-          "current": 5057.0,
-          "before": 7633.0,
+          "current": 5056.0,
+          "before": 7632.0,
           "matched_name": "Bomba de Calor FAIRLAND AQUARK iGARDEN Mr. Silence 30 FULL-INVERTER (280M)",
           "url": "https://www.iot-pool.com/products/bomba-de-calor-mr-silence-30",
           "match_score": 100
@@ -4605,7 +4593,7 @@
         },
         "IoT Pool": {
           "current": 1705.0,
-          "before": 5409.0,
+          "before": 5408.0,
           "matched_name": "Bomba de calor ZODIAC Z400 iQ INOX Cinza aluminio (MD4 Inox)",
           "url": "https://www.iot-pool.com/products/bomba-de-calor-z400-iq",
           "match_score": 100
@@ -4639,7 +4627,7 @@
           "match_score": 100
         },
         "IoT Pool": {
-          "current": 3528.0,
+          "current": 3527.0,
           "before": 4364.0,
           "matched_name": "Bomba de calor ZODIAC Z400 iQ INOX Cinza aluminio (MD5 Cinza Alumínio (RAL7006))",
           "url": "https://www.iot-pool.com/products/bomba-de-calor-z400-iq",
@@ -4674,8 +4662,8 @@
           "match_score": 100
         },
         "IoT Pool": {
-          "current": 4704.0,
-          "before": 7226.0,
+          "current": 4703.0,
+          "before": 7225.0,
           "matched_name": "Bomba de calor ZODIAC Z400 iQ INOX Cinza aluminio (MD7 Cinza Alumínio (RAL9007))",
           "url": "https://www.iot-pool.com/products/bomba-de-calor-z400-iq",
           "match_score": 100
@@ -4709,8 +4697,8 @@
           "match_score": 100
         },
         "IoT Pool": {
-          "current": 4434.0,
-          "before": 4863.0,
+          "current": 4433.0,
+          "before": 4862.0,
           "matched_name": "Bomba de calor ZODIAC Z400 iQ INOX Cinza aluminio (TD7 Cinza Alumínio (RAL7006))",
           "url": "https://www.iot-pool.com/products/bomba-de-calor-z400-iq",
           "match_score": 100
@@ -4744,8 +4732,8 @@
           "match_score": 100
         },
         "IoT Pool": {
-          "current": 5916.0,
-          "before": 6234.0,
+          "current": 5915.0,
+          "before": 6233.0,
           "matched_name": "Bomba de calor ZODIAC Z400 iQ INOX Cinza aluminio (MD8 Cinza Alumínio (RAL9007))",
           "url": "https://www.iot-pool.com/products/bomba-de-calor-z400-iq",
           "match_score": 100
@@ -4779,8 +4767,8 @@
           "match_score": 100
         },
         "IoT Pool": {
-          "current": 5339.0,
-          "before": 6800.0,
+          "current": 5338.0,
+          "before": 6799.0,
           "matched_name": "Bomba de calor ZODIAC Z400 iQ INOX Cinza aluminio (TD8 Cinza Alumínio (RAL9007))",
           "url": "https://www.iot-pool.com/products/bomba-de-calor-z400-iq",
           "match_score": 100
@@ -4814,8 +4802,8 @@
           "match_score": 100
         },
         "IoT Pool": {
-          "current": 6598.0,
-          "before": 9845.0,
+          "current": 6597.0,
+          "before": 9844.0,
           "matched_name": "Bomba de calor ZODIAC Z400 iQ INOX Cinza aluminio (MD9 Cinza Alumínio (RAL9007))",
           "url": "https://www.iot-pool.com/products/bomba-de-calor-z400-iq",
           "match_score": 100
@@ -4849,8 +4837,8 @@
           "match_score": 100
         },
         "IoT Pool": {
-          "current": 5798.0,
-          "before": 10437.0,
+          "current": 5797.0,
+          "before": 10435.0,
           "matched_name": "Bomba de calor ZODIAC Z400 iQ INOX Cinza aluminio (TD9 Cinza Alumínio (RAL9007))",
           "url": "https://www.iot-pool.com/products/bomba-de-calor-z400-iq",
           "match_score": 100
@@ -4932,7 +4920,7 @@
         },
         "IoT Pool": {
           "current": 4633.0,
-          "before": 7174.0,
+          "before": 7173.0,
           "matched_name": "Bomba de calor ZODIAC ZS550 iQ (Z550 iQ MD5)",
           "url": "https://www.iot-pool.com/products/bomba-de-calor-z550-iq-zodiac",
           "match_score": 100
@@ -4972,8 +4960,8 @@
           "match_score": 100
         },
         "IoT Pool": {
-          "current": 5410.0,
-          "before": 7448.0,
+          "current": 5409.0,
+          "before": 7447.0,
           "matched_name": "Bomba de calor ZODIAC ZS550 iQ (Z550 iQ TD5)",
           "url": "https://www.iot-pool.com/products/bomba-de-calor-z550-iq-zodiac",
           "match_score": 100
@@ -5013,8 +5001,8 @@
           "match_score": 100
         },
         "IoT Pool": {
-          "current": 6174.0,
-          "before": 9404.0,
+          "current": 6173.0,
+          "before": 9403.0,
           "matched_name": "Bomba de calor ZODIAC ZS550 iQ (Z550 iQ MD8)",
           "url": "https://www.iot-pool.com/products/bomba-de-calor-z550-iq-zodiac",
           "match_score": 100
@@ -5055,7 +5043,7 @@
         },
         "IoT Pool": {
           "current": 6562.0,
-          "before": 10319.0,
+          "before": 10318.0,
           "matched_name": "Bomba de calor ZODIAC ZS550 iQ (Z550 iQ TD8)",
           "url": "https://www.iot-pool.com/products/bomba-de-calor-z550-iq-zodiac",
           "match_score": 100
@@ -5500,7 +5488,7 @@
         "Shop4Pool": null,
         "Hidraulicart": null,
         "IoT Pool": {
-          "current": 2940.0,
+          "current": 2939.0,
           "before": 3429.0,
           "matched_name": "Bomba de calor AQUASPHERE ASTRALPOOL FSN (FSN-17)",
           "url": "https://www.iot-pool.com/products/bomba-de-calor-aquasphere-fsn",
@@ -5910,7 +5898,7 @@
           "match_score": 5
         },
         "IoT Pool": {
-          "current": 2940.0,
+          "current": 2939.0,
           "before": 5787.0,
           "matched_name": "Bomba de calor FAIRLAND AQUARK iGARDEN Mr. Perfect (170M)",
           "url": "https://www.iot-pool.com/products/bomba-de-calor-mr-perfect-bluezone-aquark",
@@ -5951,8 +5939,8 @@
         },
         "Hidraulicart": null,
         "IoT Pool": {
-          "current": 3881.0,
-          "before": 6614.0,
+          "current": 3880.0,
+          "before": 6613.0,
           "matched_name": "Bomba de calor FAIRLAND AQUARK iGARDEN Mr. Perfect (220M)",
           "url": "https://www.iot-pool.com/products/bomba-de-calor-mr-perfect-bluezone-aquark",
           "match_score": 100
@@ -5999,7 +5987,7 @@
         },
         "IoT Pool": {
           "current": 4351.0,
-          "before": 7854.0,
+          "before": 7853.0,
           "matched_name": "Bomba de calor FAIRLAND AQUARK iGARDEN Mr. Perfect (270M)",
           "url": "https://www.iot-pool.com/products/bomba-de-calor-mr-perfect-bluezone-aquark",
           "match_score": 100
@@ -6027,8 +6015,8 @@
         "Shop4Pool": null,
         "Hidraulicart": null,
         "IoT Pool": {
-          "current": 5057.0,
-          "before": 8818.0,
+          "current": 5056.0,
+          "before": 8817.0,
           "matched_name": "Bomba de calor FAIRLAND AQUARK iGARDEN Mr. Perfect (320T)",
           "url": "https://www.iot-pool.com/products/bomba-de-calor-mr-perfect-bluezone-aquark",
           "match_score": 100
@@ -6056,8 +6044,8 @@
         "Shop4Pool": null,
         "Hidraulicart": null,
         "IoT Pool": {
-          "current": 6586.0,
-          "before": 9920.0,
+          "current": 6585.0,
+          "before": 9919.0,
           "matched_name": "Bomba de calor FAIRLAND AQUARK iGARDEN Mr. Perfect (410T)",
           "url": "https://www.iot-pool.com/products/bomba-de-calor-mr-perfect-bluezone-aquark",
           "match_score": 100
@@ -6092,7 +6080,7 @@
         "Hidraulicart": null,
         "IoT Pool": {
           "current": 940.0,
-          "before": 1965.0,
+          "before": 1964.0,
           "matched_name": "Bomba de calor FAIRLAND AQUARK iGARDEN Mr. Smile (Mr. Smile 70M)",
           "url": "https://www.iot-pool.com/products/bomba-de-calor-mr-smile-bluezone-aquark",
           "match_score": 100
@@ -6196,7 +6184,7 @@
         "Shop4Pool": null,
         "Hidraulicart": null,
         "IoT Pool": {
-          "current": 2705.0,
+          "current": 2704.0,
           "before": 3952.0,
           "matched_name": "Bomba de calor FAIRLAND AQUARK iGARDEN Mr. Smile (Mr. Smile 160M)",
           "url": "https://www.iot-pool.com/products/bomba-de-calor-mr-smile-bluezone-aquark",
@@ -6231,8 +6219,8 @@
         "Shop4Pool": null,
         "Hidraulicart": null,
         "IoT Pool": {
-          "current": 2752.0,
-          "before": 5364.0,
+          "current": 2751.0,
+          "before": 5363.0,
           "matched_name": "Bomba de calor FAIRLAND AQUARK iGARDEN Mr. Smile (Mr. Smile 200M)",
           "url": "https://www.iot-pool.com/products/bomba-de-calor-mr-smile-bluezone-aquark",
           "match_score": 100
@@ -6267,7 +6255,7 @@
         "Hidraulicart": null,
         "IoT Pool": {
           "current": 2928.0,
-          "before": 6211.0,
+          "before": 6210.0,
           "matched_name": "Bomba de calor FAIRLAND AQUARK iGARDEN Mr. Smile (Mr. Smile 240M)",
           "url": "https://www.iot-pool.com/products/bomba-de-calor-mr-smile-bluezone-aquark",
           "match_score": 100
@@ -6414,8 +6402,8 @@
           "match_score": 100
         },
         "IoT Pool": {
-          "current": 1176.0,
-          "before": 1707.0,
+          "current": 1174.0,
+          "before": 1705.0,
           "matched_name": "Eletrólise de Sal DAVEY ECOSALT 2  / LS lowsalt (15gr/h)",
           "url": "https://www.iot-pool.com/products/eletrolise-de-sal-ecosalt-2-davey",
           "match_score": 100
@@ -6455,8 +6443,8 @@
           "match_score": 100
         },
         "IoT Pool": {
-          "current": 1293.0,
-          "before": 1888.0,
+          "current": 1292.0,
+          "before": 1886.0,
           "matched_name": "Eletrólise de Sal DAVEY ECOSALT 2  / LS lowsalt (25gr/h)",
           "url": "https://www.iot-pool.com/products/eletrolise-de-sal-ecosalt-2-davey",
           "match_score": 100
@@ -6555,8 +6543,8 @@
           "match_score": 3
         },
         "IoT Pool": {
-          "current": 376.0,
-          "before": 470.0,
+          "current": 375.0,
+          "before": 469.0,
           "matched_name": "Eletrólise de Sal HAYWARD SUGAR VALLEY AQUARITE HC Low Salt LS NG (OPCIONAL: pH + Bomba peristáltica)",
           "url": "https://www.iot-pool.com/products/eletrolise-de-sal-aquarite-hc-low-salt-ng",
           "match_score": 5
@@ -6608,7 +6596,7 @@
           "match_score": 100
         },
         "IoT Pool": {
-          "current": 457.0,
+          "current": 456.0,
           "before": 493.0,
           "matched_name": "Eletrólise de Sal HAYWARD SUGAR VALLEY AQUARITE HC Low Salt LS NG (OPCIONAL: Touch Screen)",
           "url": "https://www.iot-pool.com/products/eletrolise-de-sal-aquarite-hc-low-salt-ng",
@@ -6655,7 +6643,7 @@
           "match_score": 100
         },
         "IoT Pool": {
-          "current": 457.0,
+          "current": 456.0,
           "before": 493.0,
           "matched_name": "Eletrólise de Sal HAYWARD SUGAR VALLEY AQUARITE HC Low Salt LS NG (OPCIONAL: Touch Screen)",
           "url": "https://www.iot-pool.com/products/eletrolise-de-sal-aquarite-hc-low-salt-ng",
@@ -6702,7 +6690,7 @@
           "match_score": 100
         },
         "IoT Pool": {
-          "current": 457.0,
+          "current": 456.0,
           "before": 493.0,
           "matched_name": "Eletrólise de Sal HAYWARD SUGAR VALLEY AQUARITE HC Low Salt LS NG (OPCIONAL: Touch Screen)",
           "url": "https://www.iot-pool.com/products/eletrolise-de-sal-aquarite-hc-low-salt-ng",
@@ -6743,7 +6731,7 @@
           "match_score": 100
         },
         "IoT Pool": {
-          "current": 457.0,
+          "current": 456.0,
           "before": 493.0,
           "matched_name": "Eletrólise de Sal HAYWARD SUGAR VALLEY AQUARITE HC Low Salt LS NG (OPCIONAL: Touch Screen)",
           "url": "https://www.iot-pool.com/products/eletrolise-de-sal-aquarite-hc-low-salt-ng",
@@ -6954,8 +6942,8 @@
           "match_score": 100
         },
         "IoT Pool": {
-          "current": 952.0,
-          "before": 1084.0,
+          "current": 951.0,
+          "before": 1083.0,
           "matched_name": "Eletrólise de Sal EiSalt (12 gr/hr)",
           "url": "https://www.iot-pool.com/products/eletrolise-de-sal-eisalt",
           "match_score": 100
@@ -7001,8 +6989,8 @@
           "match_score": 100
         },
         "IoT Pool": {
-          "current": 1117.0,
-          "before": 1266.0,
+          "current": 1116.0,
+          "before": 1265.0,
           "matched_name": "Eletrólise de Sal EiSalt (21 gr/hr)",
           "url": "https://www.iot-pool.com/products/eletrolise-de-sal-eisalt",
           "match_score": 100
@@ -7048,8 +7036,8 @@
           "match_score": 100
         },
         "IoT Pool": {
-          "current": 1234.0,
-          "before": 1403.0,
+          "current": 1233.0,
+          "before": 1401.0,
           "matched_name": "Eletrólise de Sal EiSalt (30 gr/hr)",
           "url": "https://www.iot-pool.com/products/eletrolise-de-sal-eisalt",
           "match_score": 100
@@ -7118,8 +7106,8 @@
         },
         "Hidraulicart": null,
         "IoT Pool": {
-          "current": 4351.0,
-          "before": 5022.0,
+          "current": 4347.0,
+          "before": 5016.0,
           "matched_name": "Eletrólise de Sal e UV NEOLYSIS CONNECT (LS 12 + UV 48W)",
           "url": "https://www.iot-pool.com/products/eletrolise-de-sal-e-uv-neolysis-connect",
           "match_score": 4
@@ -7287,8 +7275,8 @@
           "match_score": 100
         },
         "IoT Pool": {
-          "current": 4351.0,
-          "before": 5022.0,
+          "current": 4347.0,
+          "before": 5016.0,
           "matched_name": "Eletrólise de Sal e UV NEOLYSIS CONNECT (LS 12 + UV 48W)",
           "url": "https://www.iot-pool.com/products/eletrolise-de-sal-e-uv-neolysis-connect",
           "match_score": 4
@@ -7516,8 +7504,8 @@
           "match_score": 3
         },
         "IoT Pool": {
-          "current": 576.0,
-          "before": 846.0,
+          "current": 575.0,
+          "before": 845.0,
           "matched_name": "Eletrólise de Sal HAYWARD SUGAR VALLEY Aquarite Plus NG ph rx redox (OPCIONAL: Opção módulo wi-fi)",
           "url": "https://www.iot-pool.com/products/eletrolise-de-sal-aquarite-plus-nova-geracao",
           "match_score": 8
@@ -7575,8 +7563,8 @@
           "match_score": 4
         },
         "IoT Pool": {
-          "current": 682.0,
-          "before": 999.0,
+          "current": 681.0,
+          "before": 998.0,
           "matched_name": "Eletrólise de Sal HAYWARD SUGAR VALLEY Aquarite Plus NG ph rx redox (OPCIONAL: Módulo ORP AQ-Plus)",
           "url": "https://www.iot-pool.com/products/eletrolise-de-sal-aquarite-plus-nova-geracao",
           "match_score": 8
@@ -7628,7 +7616,7 @@
           "match_score": 100
         },
         "IoT Pool": {
-          "current": 576.0,
+          "current": 575.0,
           "before": 693.0,
           "matched_name": "Eletrólise de Sal HAYWARD SUGAR VALLEY Aquarite Flo Advanced NG ph rx redox (OPCIONAL: Módulo Wi-Fi Aquarite Flo Plus/Advanced)",
           "url": "https://www.iot-pool.com/products/eletrolise-de-sal-aquarite-flo-advanced-nova-geracao",
@@ -7675,7 +7663,7 @@
           "match_score": 100
         },
         "IoT Pool": {
-          "current": 576.0,
+          "current": 575.0,
           "before": 693.0,
           "matched_name": "Eletrólise de Sal HAYWARD SUGAR VALLEY Aquarite Flo Advanced NG ph rx redox (OPCIONAL: Módulo Wi-Fi Aquarite Flo Plus/Advanced)",
           "url": "https://www.iot-pool.com/products/eletrolise-de-sal-aquarite-flo-advanced-nova-geracao",
@@ -7722,7 +7710,7 @@
           "match_score": 100
         },
         "IoT Pool": {
-          "current": 576.0,
+          "current": 575.0,
           "before": 693.0,
           "matched_name": "Eletrólise de Sal HAYWARD SUGAR VALLEY Aquarite Flo Advanced NG ph rx redox (OPCIONAL: Módulo Wi-Fi Aquarite Flo Plus/Advanced)",
           "url": "https://www.iot-pool.com/products/eletrolise-de-sal-aquarite-flo-advanced-nova-geracao",
@@ -7769,7 +7757,7 @@
           "match_score": 100
         },
         "IoT Pool": {
-          "current": 576.0,
+          "current": 575.0,
           "before": 693.0,
           "matched_name": "Eletrólise de Sal HAYWARD SUGAR VALLEY Aquarite Flo Advanced NG ph rx redox (OPCIONAL: Módulo Wi-Fi Aquarite Flo Plus/Advanced)",
           "url": "https://www.iot-pool.com/products/eletrolise-de-sal-aquarite-flo-advanced-nova-geracao",
@@ -7810,8 +7798,8 @@
         "Shop4Pool": null,
         "Hidraulicart": null,
         "IoT Pool": {
-          "current": 940.0,
-          "before": 1658.0,
+          "current": 939.0,
+          "before": 1656.0,
           "matched_name": "Eletrólise de Sal FAIRLAND AQUARK iGARDEN InverClear (10 g/h)",
           "url": "https://www.iot-pool.com/products/eletrolise-de-sal-inverclear-inverter",
           "match_score": 100
@@ -7845,8 +7833,8 @@
         "Shop4Pool": null,
         "Hidraulicart": null,
         "IoT Pool": {
-          "current": 1046.0,
-          "before": 1928.0,
+          "current": 1045.0,
+          "before": 1926.0,
           "matched_name": "Eletrólise de Sal FAIRLAND AQUARK iGARDEN InverClear (16 g/h)",
           "url": "https://www.iot-pool.com/products/eletrolise-de-sal-inverclear-inverter",
           "match_score": 100
@@ -7886,8 +7874,8 @@
         "Shop4Pool": null,
         "Hidraulicart": null,
         "IoT Pool": {
-          "current": 1211.0,
-          "before": 2069.0,
+          "current": 1210.0,
+          "before": 2067.0,
           "matched_name": "Eletrólise de Sal FAIRLAND AQUARK iGARDEN InverClear (22 g/h)",
           "url": "https://www.iot-pool.com/products/eletrolise-de-sal-inverclear-inverter",
           "match_score": 100
@@ -7927,8 +7915,8 @@
         "Shop4Pool": null,
         "Hidraulicart": null,
         "IoT Pool": {
-          "current": 1328.0,
-          "before": 2175.0,
+          "current": 1327.0,
+          "before": 2173.0,
           "matched_name": "Eletrólise de Sal FAIRLAND AQUARK iGARDEN InverClear (28 g/h)",
           "url": "https://www.iot-pool.com/products/eletrolise-de-sal-inverclear-inverter",
           "match_score": 100
@@ -7974,8 +7962,8 @@
           "match_score": 100
         },
         "IoT Pool": {
-          "current": 1293.0,
-          "before": 1470.0,
+          "current": 1292.0,
+          "before": 1468.0,
           "matched_name": "Eletrólise de sal eXPERT (eXPERT 7 g/h)",
           "url": "https://www.iot-pool.com/products/eletrolise-de-sal-expert",
           "match_score": 100
@@ -8021,8 +8009,8 @@
           "match_score": 100
         },
         "IoT Pool": {
-          "current": 1411.0,
-          "before": 1658.0,
+          "current": 1409.0,
+          "before": 1656.0,
           "matched_name": "Eletrólise de sal eXPERT (eXPERT 12 g/h)",
           "url": "https://www.iot-pool.com/products/eletrolise-de-sal-expert",
           "match_score": 100
@@ -8062,8 +8050,8 @@
           "match_score": 100
         },
         "IoT Pool": {
-          "current": 1528.0,
-          "before": 2025.0,
+          "current": 1527.0,
+          "before": 2023.0,
           "matched_name": "Eletrólise de sal eXPERT (eXPERT 21 g/h)",
           "url": "https://www.iot-pool.com/products/eletrolise-de-sal-expert",
           "match_score": 100
@@ -8103,8 +8091,8 @@
           "match_score": 100
         },
         "IoT Pool": {
-          "current": 1764.0,
-          "before": 2280.0,
+          "current": 1762.0,
+          "before": 2278.0,
           "matched_name": "Eletrólise de sal eXPERT (eXPERT 30 g/h)",
           "url": "https://www.iot-pool.com/products/eletrolise-de-sal-expert",
           "match_score": 100
@@ -8144,8 +8132,8 @@
           "match_score": 100
         },
         "IoT Pool": {
-          "current": 2587.0,
-          "before": 3394.0,
+          "current": 2584.0,
+          "before": 3390.0,
           "matched_name": "Eletrólise de sal eXPERT (eXPERT 40 g/h)",
           "url": "https://www.iot-pool.com/products/eletrolise-de-sal-expert",
           "match_score": 100
@@ -8191,8 +8179,8 @@
           "match_score": 100
         },
         "IoT Pool": {
-          "current": 1999.0,
-          "before": 2481.0,
+          "current": 1997.0,
+          "before": 2479.0,
           "matched_name": "Eletrólise de sal eXPERT (eXPERT pH 7 g/h)",
           "url": "https://www.iot-pool.com/products/eletrolise-de-sal-expert",
           "match_score": 100
@@ -8250,8 +8238,8 @@
           "match_score": 100
         },
         "IoT Pool": {
-          "current": 2116.0,
-          "before": 2666.0,
+          "current": 2114.0,
+          "before": 2663.0,
           "matched_name": "Eletrólise de sal eXPERT (eXPERT pH 12 g/h)",
           "url": "https://www.iot-pool.com/products/eletrolise-de-sal-expert",
           "match_score": 100
@@ -8297,8 +8285,8 @@
           "match_score": 100
         },
         "IoT Pool": {
-          "current": 2269.0,
-          "before": 3023.0,
+          "current": 2267.0,
+          "before": 3020.0,
           "matched_name": "Eletrólise de sal eXPERT (eXPERT pH 21 g/h)",
           "url": "https://www.iot-pool.com/products/eletrolise-de-sal-expert",
           "match_score": 100
@@ -8344,8 +8332,8 @@
           "match_score": 100
         },
         "IoT Pool": {
-          "current": 2469.0,
-          "before": 3282.0,
+          "current": 2467.0,
+          "before": 3279.0,
           "matched_name": "Eletrólise de sal eXPERT (eXPERT pH 30 g/h)",
           "url": "https://www.iot-pool.com/products/eletrolise-de-sal-expert",
           "match_score": 100
@@ -8391,8 +8379,8 @@
           "match_score": 100
         },
         "IoT Pool": {
-          "current": 2705.0,
-          "before": 4563.0,
+          "current": 2702.0,
+          "before": 4558.0,
           "matched_name": "Eletrólise de sal eXPERT (eXPERT pH 40 g/h)",
           "url": "https://www.iot-pool.com/products/eletrolise-de-sal-expert",
           "match_score": 100
@@ -8438,8 +8426,8 @@
         },
         "Hidraulicart": null,
         "IoT Pool": {
-          "current": 2705.0,
-          "before": 3587.0,
+          "current": 2702.0,
+          "before": 3583.0,
           "matched_name": "Eletrólise de sal eXPERT (eXPERT pH/ORP 7 g/h)",
           "url": "https://www.iot-pool.com/products/eletrolise-de-sal-expert",
           "match_score": 100
@@ -8491,8 +8479,8 @@
         },
         "Hidraulicart": null,
         "IoT Pool": {
-          "current": 2822.0,
-          "before": 3787.0,
+          "current": 2819.0,
+          "before": 3783.0,
           "matched_name": "Eletrólise de sal eXPERT (eXPERT pH/ORP 12 g/h)",
           "url": "https://www.iot-pool.com/products/eletrolise-de-sal-expert",
           "match_score": 100
@@ -8532,8 +8520,8 @@
         },
         "Hidraulicart": null,
         "IoT Pool": {
-          "current": 3116.0,
-          "before": 4138.0,
+          "current": 3113.0,
+          "before": 4134.0,
           "matched_name": "Eletrólise de sal eXPERT (eXPERT pH/ORP 21 g/h)",
           "url": "https://www.iot-pool.com/products/eletrolise-de-sal-expert",
           "match_score": 100
@@ -8573,8 +8561,8 @@
         },
         "Hidraulicart": null,
         "IoT Pool": {
-          "current": 3293.0,
-          "before": 4402.0,
+          "current": 3289.0,
+          "before": 4397.0,
           "matched_name": "Eletrólise de sal eXPERT (eXPERT pH/ORP 30 g/h)",
           "url": "https://www.iot-pool.com/products/eletrolise-de-sal-expert",
           "match_score": 100
@@ -8614,8 +8602,8 @@
         },
         "Hidraulicart": null,
         "IoT Pool": {
-          "current": 3998.0,
-          "before": 5369.0,
+          "current": 3994.0,
+          "before": 5363.0,
           "matched_name": "Eletrólise de sal eXPERT (eXPERT pH/ORP 40 g/h)",
           "url": "https://www.iot-pool.com/products/eletrolise-de-sal-expert",
           "match_score": 100
@@ -8661,8 +8649,8 @@
           "match_score": 100
         },
         "IoT Pool": {
-          "current": 1764.0,
-          "before": 1881.0,
+          "current": 1762.0,
+          "before": 1879.0,
           "matched_name": "Eletrólise de Sal Go Salt (7gr/h com pH)",
           "url": "https://www.iot-pool.com/products/eletrolise-de-sal-go-salt",
           "match_score": 100
@@ -8714,8 +8702,8 @@
           "match_score": 100
         },
         "IoT Pool": {
-          "current": 1999.0,
-          "before": 2049.0,
+          "current": 1997.0,
+          "before": 2047.0,
           "matched_name": "Eletrólise de Sal Go Salt (12gr/h com pH)",
           "url": "https://www.iot-pool.com/products/eletrolise-de-sal-go-salt",
           "match_score": 100
@@ -8761,7 +8749,7 @@
           "match_score": 100
         },
         "IoT Pool": {
-          "current": 2234.0,
+          "current": 2232.0,
           "before": null,
           "matched_name": "Eletrólise de Sal Go Salt (21gr/h com pH)",
           "url": "https://www.iot-pool.com/products/eletrolise-de-sal-go-salt",
@@ -8808,8 +8796,8 @@
           "match_score": 100
         },
         "IoT Pool": {
-          "current": 2352.0,
-          "before": 2628.0,
+          "current": 2349.0,
+          "before": 2625.0,
           "matched_name": "Eletrólise de Sal Go Salt (30gr/h com pH)",
           "url": "https://www.iot-pool.com/products/eletrolise-de-sal-go-salt",
           "match_score": 100
@@ -8855,8 +8843,8 @@
           "match_score": 100
         },
         "IoT Pool": {
-          "current": 2587.0,
-          "before": 2956.0,
+          "current": 2584.0,
+          "before": 2953.0,
           "matched_name": "Eletrólise de Sal Go Salt (40gr/h com pH)",
           "url": "https://www.iot-pool.com/products/eletrolise-de-sal-go-salt",
           "match_score": 100
@@ -8908,7 +8896,7 @@
           "match_score": 100
         },
         "IoT Pool": {
-          "current": 1176.0,
+          "current": 1174.0,
           "before": null,
           "matched_name": "Eletrólise de Sal Go Salt (7gr/h)",
           "url": "https://www.iot-pool.com/products/eletrolise-de-sal-go-salt",
@@ -8961,7 +8949,7 @@
           "match_score": 100
         },
         "IoT Pool": {
-          "current": 1293.0,
+          "current": 1292.0,
           "before": null,
           "matched_name": "Eletrólise de Sal Go Salt (12gr/h)",
           "url": "https://www.iot-pool.com/products/eletrolise-de-sal-go-salt",
@@ -9020,7 +9008,7 @@
           "match_score": 100
         },
         "IoT Pool": {
-          "current": 1411.0,
+          "current": 1409.0,
           "before": null,
           "matched_name": "Eletrólise de Sal Go Salt (21gr/h)",
           "url": "https://www.iot-pool.com/products/eletrolise-de-sal-go-salt",
@@ -9073,7 +9061,7 @@
           "match_score": 100
         },
         "IoT Pool": {
-          "current": 1528.0,
+          "current": 1527.0,
           "before": null,
           "matched_name": "Eletrólise de Sal Go Salt (30gr/h)",
           "url": "https://www.iot-pool.com/products/eletrolise-de-sal-go-salt",
@@ -9126,8 +9114,8 @@
           "match_score": 100
         },
         "IoT Pool": {
-          "current": 2116.0,
-          "before": 2181.0,
+          "current": 2114.0,
+          "before": 2179.0,
           "matched_name": "Eletrólise de Sal Go Salt (40gr/h)",
           "url": "https://www.iot-pool.com/products/eletrolise-de-sal-go-salt",
           "match_score": 100
@@ -9185,8 +9173,8 @@
           "match_score": 100
         },
         "IoT Pool": {
-          "current": 1764.0,
-          "before": 2179.0,
+          "current": 1762.0,
+          "before": 2177.0,
           "matched_name": "Eletrólise de Sal c/ Domótica eXO iQ LS - Baixa salinidade (10 R gr/h)",
           "url": "https://www.iot-pool.com/products/eletrolise-de-sal-c-domotica-exo-iq-ls-baixa-salinidade",
           "match_score": 100
@@ -9244,8 +9232,8 @@
           "match_score": 100
         },
         "IoT Pool": {
-          "current": 1999.0,
-          "before": 2396.0,
+          "current": 1997.0,
+          "before": 2394.0,
           "matched_name": "Eletrólise de Sal c/ Domótica eXO iQ LS - Baixa salinidade (18 R gr/h)",
           "url": "https://www.iot-pool.com/products/eletrolise-de-sal-c-domotica-exo-iq-ls-baixa-salinidade",
           "match_score": 100
@@ -9303,8 +9291,8 @@
           "match_score": 100
         },
         "IoT Pool": {
-          "current": 2234.0,
-          "before": 2987.0,
+          "current": 2232.0,
+          "before": 2984.0,
           "matched_name": "Eletrólise de Sal c/ Domótica eXO iQ (35 R gr/h)",
           "url": "https://www.iot-pool.com/products/eletrolise-de-sal-c-domotica-exo-iq",
           "match_score": 100
@@ -9362,8 +9350,8 @@
           "match_score": 100
         },
         "IoT Pool": {
-          "current": 1881.0,
-          "before": 2639.0,
+          "current": 1879.0,
+          "before": 2636.0,
           "matched_name": "Eletrólise de Sal c/ Domótica eXO iQ (22 R gr/h)",
           "url": "https://www.iot-pool.com/products/eletrolise-de-sal-c-domotica-exo-iq",
           "match_score": 100
@@ -9421,8 +9409,8 @@
           "match_score": 100
         },
         "IoT Pool": {
-          "current": 1646.0,
-          "before": 2198.0,
+          "current": 1644.0,
+          "before": 2195.0,
           "matched_name": "Eletrólise de Sal c/ Domótica eXO iQ (18 R gr/h)",
           "url": "https://www.iot-pool.com/products/eletrolise-de-sal-c-domotica-exo-iq",
           "match_score": 100
@@ -9480,8 +9468,8 @@
           "match_score": 100
         },
         "IoT Pool": {
-          "current": 1411.0,
-          "before": 1906.0,
+          "current": 1409.0,
+          "before": 1904.0,
           "matched_name": "Eletrólise de Sal c/ Domótica eXO iQ (10 R gr/h)",
           "url": "https://www.iot-pool.com/products/eletrolise-de-sal-c-domotica-exo-iq",
           "match_score": 100
@@ -9527,8 +9515,8 @@
           "match_score": 100
         },
         "IoT Pool": {
-          "current": 2822.0,
-          "before": 3536.0,
+          "current": 2819.0,
+          "before": 3532.0,
           "matched_name": "Sistema Magnapool c/ Domótica Hydroxinator iQ (35 R gr/h)",
           "url": "https://www.iot-pool.com/products/sistema-magnapool-c-domotica-hydroxinator-iq-10",
           "match_score": 100
@@ -9574,8 +9562,8 @@
           "match_score": 100
         },
         "IoT Pool": {
-          "current": 2352.0,
-          "before": 3120.0,
+          "current": 2349.0,
+          "before": 3117.0,
           "matched_name": "Sistema Magnapool c/ Domótica Hydroxinator iQ (22 R gr/h)",
           "url": "https://www.iot-pool.com/products/sistema-magnapool-c-domotica-hydroxinator-iq-10",
           "match_score": 100
@@ -9621,8 +9609,8 @@
           "match_score": 100
         },
         "IoT Pool": {
-          "current": 2116.0,
-          "before": 2600.0,
+          "current": 2114.0,
+          "before": 2597.0,
           "matched_name": "Sistema Magnapool c/ Domótica Hydroxinator iQ (18 R gr/h)",
           "url": "https://www.iot-pool.com/products/sistema-magnapool-c-domotica-hydroxinator-iq-10",
           "match_score": 100
@@ -9668,7 +9656,7 @@
           "match_score": 100
         },
         "IoT Pool": {
-          "current": 1999.0,
+          "current": 1997.0,
           "before": null,
           "matched_name": "Sistema Magnapool c/ Domótica Hydroxinator iQ (10gr/h)",
           "url": "https://www.iot-pool.com/products/sistema-magnapool-c-domotica-hydroxinator-iq-10",
@@ -9715,8 +9703,8 @@
         },
         "Hidraulicart": null,
         "IoT Pool": {
-          "current": 3998.0,
-          "before": 4575.0,
+          "current": 3994.0,
+          "before": 4570.0,
           "matched_name": "Sistema de Dosagem CONTROL CONNECT (pH/ORP/Temp panel)",
           "url": "https://www.iot-pool.com/products/sistema-de-dosagem-control-connect",
           "match_score": 3
@@ -9768,8 +9756,8 @@
         },
         "Hidraulicart": null,
         "IoT Pool": {
-          "current": 3998.0,
-          "before": 4575.0,
+          "current": 3994.0,
+          "before": 4570.0,
           "matched_name": "Sistema de Dosagem CONTROL CONNECT (pH/ORP/Temp panel)",
           "url": "https://www.iot-pool.com/products/sistema-de-dosagem-control-connect",
           "match_score": 3
@@ -9967,8 +9955,8 @@
         "Shop4Pool": null,
         "Hidraulicart": null,
         "IoT Pool": {
-          "current": 940.0,
-          "before": 1128.0,
+          "current": 939.0,
+          "before": 1127.0,
           "matched_name": "Eletrólise de Sal CLEAR CONNECT (7 g/h)",
           "url": "https://www.iot-pool.com/products/eletrolise-de-sal-clear-connect",
           "match_score": 100
@@ -10043,8 +10031,8 @@
         "Shop4Pool": null,
         "Hidraulicart": null,
         "IoT Pool": {
-          "current": 1058.0,
-          "before": 1303.0,
+          "current": 1057.0,
+          "before": 1301.0,
           "matched_name": "Eletrólise de Sal CLEAR CONNECT (12 g/h)",
           "url": "https://www.iot-pool.com/products/eletrolise-de-sal-clear-connect",
           "match_score": 100
@@ -10119,8 +10107,8 @@
         "Shop4Pool": null,
         "Hidraulicart": null,
         "IoT Pool": {
-          "current": 1411.0,
-          "before": 1645.0,
+          "current": 1409.0,
+          "before": 1643.0,
           "matched_name": "Eletrólise de Sal CLEAR CONNECT (21 g/h)",
           "url": "https://www.iot-pool.com/products/eletrolise-de-sal-clear-connect",
           "match_score": 100
@@ -10160,8 +10148,8 @@
         "Shop4Pool": null,
         "Hidraulicart": null,
         "IoT Pool": {
-          "current": 1764.0,
-          "before": 2124.0,
+          "current": 1762.0,
+          "before": 2121.0,
           "matched_name": "Eletrólise de Sal CLEAR CONNECT (30 g/h)",
           "url": "https://www.iot-pool.com/products/eletrolise-de-sal-clear-connect",
           "match_score": 100
@@ -10201,8 +10189,8 @@
         "Shop4Pool": null,
         "Hidraulicart": null,
         "IoT Pool": {
-          "current": 1999.0,
-          "before": 2380.0,
+          "current": 1997.0,
+          "before": 2377.0,
           "matched_name": "Eletrólise de Sal CLEAR CONNECT (40 g/h)",
           "url": "https://www.iot-pool.com/products/eletrolise-de-sal-clear-connect",
           "match_score": 100
@@ -10242,8 +10230,8 @@
           "match_score": 100
         },
         "IoT Pool": {
-          "current": 1176.0,
-          "before": 1403.0,
+          "current": 1174.0,
+          "before": 1401.0,
           "matched_name": "Eletrolise de sal Smart Next (7gr/hr)",
           "url": "https://www.iot-pool.com/products/eletrolise-de-sal-smart-next",
           "match_score": 100
@@ -10283,8 +10271,8 @@
           "match_score": 100
         },
         "IoT Pool": {
-          "current": 1293.0,
-          "before": 1591.0,
+          "current": 1292.0,
+          "before": 1589.0,
           "matched_name": "Eletrolise de sal Smart Next (12gr/h)",
           "url": "https://www.iot-pool.com/products/eletrolise-de-sal-smart-next",
           "match_score": 100
@@ -10318,8 +10306,8 @@
           "match_score": 100
         },
         "IoT Pool": {
-          "current": 1528.0,
-          "before": 1932.0,
+          "current": 1527.0,
+          "before": 1930.0,
           "matched_name": "Eletrolise de sal Smart Next (21gr/h)",
           "url": "https://www.iot-pool.com/products/eletrolise-de-sal-smart-next",
           "match_score": 100
@@ -10353,8 +10341,8 @@
           "match_score": 100
         },
         "IoT Pool": {
-          "current": 1881.0,
-          "before": 2276.0,
+          "current": 1879.0,
+          "before": 2274.0,
           "matched_name": "Eletrolise de sal Smart Next (7gr/h+pH)",
           "url": "https://www.iot-pool.com/products/eletrolise-de-sal-smart-next",
           "match_score": 100
@@ -10394,8 +10382,8 @@
           "match_score": 100
         },
         "IoT Pool": {
-          "current": 1999.0,
-          "before": 2453.0,
+          "current": 1997.0,
+          "before": 2450.0,
           "matched_name": "Eletrolise de sal Smart Next (12gr/h+pH)",
           "url": "https://www.iot-pool.com/products/eletrolise-de-sal-smart-next",
           "match_score": 100
@@ -10429,8 +10417,8 @@
           "match_score": 100
         },
         "IoT Pool": {
-          "current": 2352.0,
-          "before": 2794.0,
+          "current": 2349.0,
+          "before": 2791.0,
           "matched_name": "Eletrolise de sal Smart Next (21gr/h+pH)",
           "url": "https://www.iot-pool.com/products/eletrolise-de-sal-smart-next",
           "match_score": 100
@@ -10464,8 +10452,8 @@
           "match_score": 100
         },
         "IoT Pool": {
-          "current": 2587.0,
-          "before": 3032.0,
+          "current": 2584.0,
+          "before": 3028.0,
           "matched_name": "Eletrolise de sal Smart Next (30gr/h+pH)",
           "url": "https://www.iot-pool.com/products/eletrolise-de-sal-smart-next",
           "match_score": 100
@@ -10493,8 +10481,8 @@
         "Shop4Pool": null,
         "Hidraulicart": null,
         "IoT Pool": {
-          "current": 2940.0,
-          "before": 3892.0,
+          "current": 2937.0,
+          "before": 3888.0,
           "matched_name": "Eletrolise de sal Smart Next (40gr/h+pH)",
           "url": "https://www.iot-pool.com/products/eletrolise-de-sal-smart-next",
           "match_score": 100
@@ -10522,8 +10510,8 @@
         "Shop4Pool": null,
         "Hidraulicart": null,
         "IoT Pool": {
-          "current": 2352.0,
-          "before": 3249.0,
+          "current": 2349.0,
+          "before": 3246.0,
           "matched_name": "Eletrolise de sal Smart Next (7gr/h+pH/Rx)",
           "url": "https://www.iot-pool.com/products/eletrolise-de-sal-smart-next",
           "match_score": 100
@@ -10557,8 +10545,8 @@
         },
         "Hidraulicart": null,
         "IoT Pool": {
-          "current": 2587.0,
-          "before": 3398.0,
+          "current": 2584.0,
+          "before": 3395.0,
           "matched_name": "Eletrolise de sal Smart Next (12gr/h+pH/Rx)",
           "url": "https://www.iot-pool.com/products/eletrolise-de-sal-smart-next",
           "match_score": 100
@@ -10586,8 +10574,8 @@
         "Shop4Pool": null,
         "Hidraulicart": null,
         "IoT Pool": {
-          "current": 3057.0,
-          "before": 3988.0,
+          "current": 3054.0,
+          "before": 3984.0,
           "matched_name": "Eletrolise de sal Smart Next (30gr/h+pH/Rx)",
           "url": "https://www.iot-pool.com/products/eletrolise-de-sal-smart-next",
           "match_score": 100
@@ -10615,8 +10603,8 @@
         "Shop4Pool": null,
         "Hidraulicart": null,
         "IoT Pool": {
-          "current": 3763.0,
-          "before": 4876.0,
+          "current": 3759.0,
+          "before": 4871.0,
           "matched_name": "Eletrolise de sal Smart Next (40gr/h+pH/Rx)",
           "url": "https://www.iot-pool.com/products/eletrolise-de-sal-smart-next",
           "match_score": 100
@@ -10650,8 +10638,8 @@
         "Shop4Pool": null,
         "Hidraulicart": null,
         "IoT Pool": {
-          "current": 776.0,
-          "before": 1507.0,
+          "current": 775.0,
+          "before": 1506.0,
           "matched_name": "Modulo para eXO Dual Link e pH Link (Dual Link)",
           "url": "https://www.iot-pool.com/products/modulo-para-exo-dual-link-e-ph-link",
           "match_score": 100
@@ -10703,8 +10691,8 @@
         "Shop4Pool": null,
         "Hidraulicart": null,
         "IoT Pool": {
-          "current": 776.0,
-          "before": 1507.0,
+          "current": 775.0,
+          "before": 1506.0,
           "matched_name": "Modulo para eXO Dual Link e pH Link (Dual Link)",
           "url": "https://www.iot-pool.com/products/modulo-para-exo-dual-link-e-ph-link",
           "match_score": 100
@@ -10756,8 +10744,8 @@
         "Shop4Pool": null,
         "Hidraulicart": null,
         "IoT Pool": {
-          "current": 4586.0,
-          "before": 5386.0,
+          "current": 4582.0,
+          "before": 5381.0,
           "matched_name": "Eletrólise de sal ELITE CONNECT CELLGUARD pH (42gr/hr)",
           "url": "https://www.iot-pool.com/products/eletrolise-de-sal-elite-connect-cellguard-ph",
           "match_score": 100
@@ -10832,8 +10820,8 @@
         "Shop4Pool": null,
         "Hidraulicart": null,
         "IoT Pool": {
-          "current": 3293.0,
-          "before": 3998.0,
+          "current": 3289.0,
+          "before": 3994.0,
           "matched_name": "Eletrólise de sal ELITE CONNECT CELLGUARD pH (32gr/hr)",
           "url": "https://www.iot-pool.com/products/eletrolise-de-sal-elite-connect-cellguard-ph",
           "match_score": 100
@@ -10873,8 +10861,8 @@
         "Shop4Pool": null,
         "Hidraulicart": null,
         "IoT Pool": {
-          "current": 5410.0,
-          "before": 6292.0,
+          "current": 5404.0,
+          "before": 6285.0,
           "matched_name": "Eletrólise de Sal e UV NEOLYSIS CONNECT (LS 32 + UV 56W)",
           "url": "https://www.iot-pool.com/products/eletrolise-de-sal-e-uv-neolysis-connect",
           "match_score": 5
@@ -10914,8 +10902,8 @@
         "Shop4Pool": null,
         "Hidraulicart": null,
         "IoT Pool": {
-          "current": 3057.0,
-          "before": 3681.0,
+          "current": 3054.0,
+          "before": 3677.0,
           "matched_name": "Eletrólise de sal ELITE CONNECT CELLGUARD pH (24gr/hr)",
           "url": "https://www.iot-pool.com/products/eletrolise-de-sal-elite-connect-cellguard-ph",
           "match_score": 100
@@ -10955,8 +10943,8 @@
         "Shop4Pool": null,
         "Hidraulicart": null,
         "IoT Pool": {
-          "current": 4939.0,
-          "before": 5574.0,
+          "current": 4934.0,
+          "before": 5569.0,
           "matched_name": "Eletrólise de Sal e UV NEOLYSIS CONNECT (LS 24 + UV 56W)",
           "url": "https://www.iot-pool.com/products/eletrolise-de-sal-e-uv-neolysis-connect",
           "match_score": 5
@@ -11002,8 +10990,8 @@
         },
         "Hidraulicart": null,
         "IoT Pool": {
-          "current": 2822.0,
-          "before": 3340.0,
+          "current": 2819.0,
+          "before": 3336.0,
           "matched_name": "Eletrólise de sal ELITE CONNECT CELLGUARD pH (12gr/hr)",
           "url": "https://www.iot-pool.com/products/eletrolise-de-sal-elite-connect-cellguard-ph",
           "match_score": 100
@@ -11049,8 +11037,8 @@
         },
         "Hidraulicart": null,
         "IoT Pool": {
-          "current": 4351.0,
-          "before": 5022.0,
+          "current": 4347.0,
+          "before": 5016.0,
           "matched_name": "Eletrólise de Sal e UV NEOLYSIS CONNECT (LS 12 + UV 48W)",
           "url": "https://www.iot-pool.com/products/eletrolise-de-sal-e-uv-neolysis-connect",
           "match_score": 5
@@ -11228,8 +11216,8 @@
         "Shop4Pool": null,
         "Hidraulicart": null,
         "IoT Pool": {
-          "current": 658.0,
-          "before": 1244.0,
+          "current": 657.0,
+          "before": 1242.0,
           "matched_name": "Eletrólise de Sal DELUXE PLUS + (8 g/h)",
           "url": "https://www.iot-pool.com/products/eletrolise-de-sal-deluxe-plus",
           "match_score": 100
@@ -11264,7 +11252,7 @@
         "Hidraulicart": null,
         "IoT Pool": {
           "current": 693.0,
-          "before": 1331.0,
+          "before": 1329.0,
           "matched_name": "Eletrólise de Sal DELUXE PLUS + (12 g/h)",
           "url": "https://www.iot-pool.com/products/eletrolise-de-sal-deluxe-plus",
           "match_score": 100
@@ -11298,8 +11286,8 @@
         "Shop4Pool": null,
         "Hidraulicart": null,
         "IoT Pool": {
-          "current": 764.0,
-          "before": 1446.0,
+          "current": 763.0,
+          "before": 1445.0,
           "matched_name": "Eletrólise de Sal DELUXE PLUS + (16 g/h)",
           "url": "https://www.iot-pool.com/products/eletrolise-de-sal-deluxe-plus",
           "match_score": 100
@@ -11333,8 +11321,8 @@
         "Shop4Pool": null,
         "Hidraulicart": null,
         "IoT Pool": {
-          "current": 858.0,
-          "before": 1735.0,
+          "current": 857.0,
+          "before": 1734.0,
           "matched_name": "Eletrólise de Sal DELUXE PLUS + (23 g/h)",
           "url": "https://www.iot-pool.com/products/eletrolise-de-sal-deluxe-plus",
           "match_score": 100
@@ -11368,8 +11356,8 @@
         "Shop4Pool": null,
         "Hidraulicart": null,
         "IoT Pool": {
-          "current": 940.0,
-          "before": 1764.0,
+          "current": 939.0,
+          "before": 1762.0,
           "matched_name": "Eletrólise de Sal DELUXE PLUS + (30 g/h)",
           "url": "https://www.iot-pool.com/products/eletrolise-de-sal-deluxe-plus",
           "match_score": 100
@@ -11403,8 +11391,8 @@
         "Shop4Pool": null,
         "Hidraulicart": null,
         "IoT Pool": {
-          "current": 658.0,
-          "before": 1244.0,
+          "current": 657.0,
+          "before": 1242.0,
           "matched_name": "Eletrólise de Sal DELUXE PLUS + (8 g/h)",
           "url": "https://www.iot-pool.com/products/eletrolise-de-sal-deluxe-plus",
           "match_score": 100
@@ -11439,7 +11427,7 @@
         "Hidraulicart": null,
         "IoT Pool": {
           "current": 693.0,
-          "before": 1331.0,
+          "before": 1329.0,
           "matched_name": "Eletrólise de Sal DELUXE PLUS + (12 g/h)",
           "url": "https://www.iot-pool.com/products/eletrolise-de-sal-deluxe-plus",
           "match_score": 100
@@ -11473,8 +11461,8 @@
         "Shop4Pool": null,
         "Hidraulicart": null,
         "IoT Pool": {
-          "current": 764.0,
-          "before": 1446.0,
+          "current": 763.0,
+          "before": 1445.0,
           "matched_name": "Eletrólise de Sal DELUXE PLUS + (16 g/h)",
           "url": "https://www.iot-pool.com/products/eletrolise-de-sal-deluxe-plus",
           "match_score": 100
@@ -11508,8 +11496,8 @@
         "Shop4Pool": null,
         "Hidraulicart": null,
         "IoT Pool": {
-          "current": 858.0,
-          "before": 1735.0,
+          "current": 857.0,
+          "before": 1734.0,
           "matched_name": "Eletrólise de Sal DELUXE PLUS + (23 g/h)",
           "url": "https://www.iot-pool.com/products/eletrolise-de-sal-deluxe-plus",
           "match_score": 100
@@ -11543,8 +11531,8 @@
         "Shop4Pool": null,
         "Hidraulicart": null,
         "IoT Pool": {
-          "current": 940.0,
-          "before": 1764.0,
+          "current": 939.0,
+          "before": 1762.0,
           "matched_name": "Eletrólise de Sal DELUXE PLUS + (30 g/h)",
           "url": "https://www.iot-pool.com/products/eletrolise-de-sal-deluxe-plus",
           "match_score": 100

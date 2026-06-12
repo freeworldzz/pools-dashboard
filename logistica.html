@@ -1,0 +1,795 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Painel Logístico — Armazém</title>
+<script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.3/dist/chart.umd.min.js"></script>
+<style>
+  :root{
+    --bg:#0b1120;
+    --bg-card:#131c31;
+    --bg-card-2:#1b2740;
+    --border:#26344f;
+    --text:#f1f5f9;
+    --text-dim:#94a3b8;
+    --accent:#38bdf8;
+    --green:#22c55e;
+    --yellow:#facc15;
+    --red:#ef4444;
+    --shadow:0 10px 30px rgba(0,0,0,.45);
+  }
+  *{box-sizing:border-box}
+  html,body{margin:0;padding:0}
+  body{
+    background:radial-gradient(1200px 600px at 50% -10%, #16223c 0%, var(--bg) 60%);
+    color:var(--text);
+    font-family:"Segoe UI",system-ui,-apple-system,Roboto,Arial,sans-serif;
+    min-height:100vh;
+    padding:18px;
+    -webkit-font-smoothing:antialiased;
+  }
+  h1,h2,h3{margin:0;font-weight:800;letter-spacing:.3px}
+  .wrap{max-width:1280px;margin:0 auto}
+
+  /* ---------- Header ---------- */
+  header.top{
+    display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;
+    gap:14px;margin-bottom:18px;
+  }
+  header.top h1{font-size:30px;display:flex;align-items:center;gap:12px}
+  header.top h1 .dot{width:14px;height:14px;border-radius:50%;background:var(--green);box-shadow:0 0 14px var(--green)}
+  .status-box{display:flex;align-items:center;gap:16px;flex-wrap:wrap}
+  .last-update{font-size:15px;color:var(--text-dim);font-weight:600}
+  .last-update b{color:var(--text)}
+  .btn{
+    border:none;border-radius:12px;cursor:pointer;font-weight:700;
+    background:var(--bg-card-2);color:var(--text);padding:11px 16px;font-size:15px;
+    border:1px solid var(--border);transition:.15s;
+  }
+  .btn:hover{border-color:var(--accent);color:#fff}
+  .btn.accent{background:var(--accent);color:#062235;border-color:transparent}
+  .btn.accent:hover{filter:brightness(1.08)}
+
+  /* ---------- Cards ---------- */
+  .card{
+    background:var(--bg-card);border:1px solid var(--border);border-radius:18px;
+    padding:22px;box-shadow:var(--shadow);
+  }
+  .card h2{font-size:18px;text-transform:uppercase;letter-spacing:1.2px;color:var(--text-dim);margin-bottom:16px}
+
+  /* ---------- Config panel ---------- */
+  .config{margin-bottom:18px}
+  .config .head{display:flex;align-items:center;justify-content:space-between;cursor:pointer}
+  .config .head h2{margin:0}
+  .config-body{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-top:16px}
+  .config-body.hidden{display:none}
+  .field{display:flex;flex-direction:column;gap:6px}
+  .field label{font-size:13px;color:var(--text-dim);font-weight:700;text-transform:uppercase;letter-spacing:.6px}
+  .field input{
+    background:var(--bg);border:1px solid var(--border);border-radius:10px;
+    color:var(--text);padding:12px 14px;font-size:15px;font-family:inherit;
+  }
+  .field input:focus{outline:none;border-color:var(--accent)}
+  .config-actions{grid-column:1/-1;display:flex;align-items:center;gap:14px;flex-wrap:wrap}
+  .warn{
+    grid-column:1/-1;font-size:13px;color:#fcd34d;background:rgba(250,204,21,.08);
+    border:1px solid rgba(250,204,21,.25);border-radius:10px;padding:10px 14px;line-height:1.5;
+  }
+  .chip{font-size:13px;font-weight:700;padding:5px 12px;border-radius:999px}
+  .chip.ok{background:rgba(34,197,94,.15);color:#4ade80}
+  .chip.off{background:rgba(239,68,68,.15);color:#f87171}
+
+  /* ---------- Filters (slicer) ---------- */
+  .filters{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;margin-bottom:18px}
+  .filter-btn{
+    background:var(--bg-card);border:2px solid var(--border);border-radius:16px;
+    padding:22px 14px;font-size:20px;font-weight:800;color:var(--text-dim);cursor:pointer;
+    transition:.15s;text-align:center;box-shadow:var(--shadow);
+  }
+  .filter-btn:hover{border-color:#3b557f;color:var(--text)}
+  .filter-btn.active{background:linear-gradient(180deg,#1e88c9,#0f6aa3);border-color:var(--accent);color:#fff;box-shadow:0 0 0 3px rgba(56,189,248,.25),var(--shadow)}
+  .filter-btn small{display:block;font-size:13px;font-weight:600;opacity:.8;margin-top:4px}
+
+  /* ---------- Main grid ---------- */
+  .grid{display:grid;grid-template-columns:1.1fr 1fr;gap:18px;margin-bottom:18px}
+
+  /* Gauge */
+  .gauge-wrap{position:relative;width:100%;max-width:420px;margin:0 auto}
+  .gauge-value{text-align:center;margin-top:-6px}
+  .gauge-value .num{font-size:64px;font-weight:900;line-height:1}
+  .gauge-value .lbl{font-size:15px;color:var(--text-dim);font-weight:700;text-transform:uppercase;letter-spacing:1px}
+  .gauge-legend{display:flex;justify-content:center;gap:18px;margin-top:14px;flex-wrap:wrap}
+  .gauge-legend span{display:flex;align-items:center;gap:7px;font-size:14px;font-weight:600;color:var(--text-dim)}
+  .gauge-legend i{width:13px;height:13px;border-radius:3px;display:inline-block}
+
+  /* Meta do dia */
+  .meta-card{display:flex;flex-direction:column;gap:20px;justify-content:center}
+  .big-btn{
+    border:none;border-radius:20px;cursor:pointer;color:#06281a;font-weight:900;
+    background:linear-gradient(180deg,#34d77a,#16a34a);
+    padding:34px 20px;font-size:30px;line-height:1.15;letter-spacing:.5px;
+    box-shadow:0 12px 0 #0e7a37,0 18px 30px rgba(0,0,0,.4);
+    transition:transform .06s,box-shadow .06s;user-select:none;
+    display:flex;flex-direction:column;align-items:center;gap:6px;
+  }
+  .big-btn .plus{font-size:46px}
+  .big-btn:active{transform:translateY(8px);box-shadow:0 4px 0 #0e7a37,0 8px 16px rgba(0,0,0,.4)}
+  .progress-block .pct{font-size:40px;font-weight:900;text-align:center}
+  .progress-block .sub{text-align:center;color:var(--text-dim);font-weight:600;font-size:15px;margin-top:2px}
+  .bar{
+    margin-top:14px;height:34px;background:var(--bg);border:1px solid var(--border);
+    border-radius:999px;overflow:hidden;position:relative;
+  }
+  .bar .fill{
+    height:100%;width:0%;border-radius:999px;
+    background:linear-gradient(90deg,#22c55e,#38bdf8);
+    transition:width .5s ease;
+  }
+  .meta-note{text-align:center;font-weight:800;font-size:15px;margin-top:10px;color:#fca5a5;display:none}
+  .meta-note.show{display:block}
+
+  /* ---------- Alert table ---------- */
+  .table-head{display:flex;align-items:center;justify-content:space-between;gap:12px;flex-wrap:wrap;margin-bottom:16px}
+  .table-head h2{margin:0}
+  .table-actions{display:flex;align-items:center;gap:10px;flex-wrap:wrap}
+  .btn.small{padding:8px 12px;font-size:13px}
+  .btn:disabled{opacity:.4;cursor:not-allowed}
+  .btn:disabled:hover{border-color:var(--border);color:var(--text)}
+  .hidden-count{font-size:13px;color:var(--text-dim);font-weight:700}
+  .table-scroll{overflow-x:auto}
+  table{width:100%;border-collapse:collapse;font-size:17px;min-width:720px}
+  td.prod{font-size:14px;font-weight:600;line-height:1.45;max-width:340px}
+  td.total{font-weight:800;text-align:right;white-space:nowrap}
+  .muted-inline{color:var(--text-dim);font-size:13px}
+  .hide-cell{text-align:right;white-space:nowrap}
+  .hide-btn{background:transparent;border:1px solid var(--border);color:var(--text-dim);
+    border-radius:8px;width:34px;height:34px;cursor:pointer;font-size:15px;font-weight:800;line-height:1;transition:.15s}
+  .hide-btn:hover{border-color:var(--red);color:var(--red)}
+  thead th{
+    text-align:left;color:var(--text-dim);font-size:13px;text-transform:uppercase;
+    letter-spacing:.8px;padding:10px 12px;border-bottom:2px solid var(--border);
+  }
+  tbody td{padding:14px 12px;border-bottom:1px solid var(--border);font-weight:600}
+  tbody tr:last-child td{border-bottom:none}
+  .pill{font-weight:800;padding:4px 12px;border-radius:999px;font-size:15px;display:inline-block}
+  .pill.green{background:rgba(34,197,94,.15);color:#4ade80}
+  .pill.yellow{background:rgba(250,204,21,.15);color:#fde047}
+  .pill.red{background:rgba(239,68,68,.15);color:#f87171}
+  .muted{color:var(--text-dim);text-align:center;padding:26px;font-weight:600}
+
+  /* ---------- Error banner ---------- */
+  .banner{
+    background:rgba(239,68,68,.12);border:1px solid rgba(239,68,68,.4);color:#fca5a5;
+    border-radius:12px;padding:12px 16px;margin-bottom:18px;font-weight:600;display:none;line-height:1.5;
+  }
+  .banner.show{display:block}
+
+  /* ---------- Responsive ---------- */
+  @media (max-width:880px){
+    .grid{grid-template-columns:1fr}
+    .config-body{grid-template-columns:1fr}
+    .filters{grid-template-columns:repeat(2,1fr)}
+    header.top h1{font-size:24px}
+  }
+  @media (max-width:480px){
+    .filters{grid-template-columns:1fr}
+    .gauge-value .num{font-size:52px}
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <!-- ====== HEADER ====== -->
+  <header class="top">
+    <h1><span class="dot" id="liveDot"></span>Painel Logístico</h1>
+    <div class="status-box">
+      <span class="last-update">Última atualização: <b id="lastUpdate">—</b></span>
+      <span class="chip off" id="connChip">Sem ligação</span>
+      <button class="btn" id="refreshBtn">↻ Atualizar agora</button>
+    </div>
+  </header>
+
+  <!-- ====== ERROR BANNER ====== -->
+  <div class="banner" id="banner"></div>
+
+  <!-- ====== CONFIG ====== -->
+  <div class="card config">
+    <div class="head" id="configHead">
+      <h2>⚙️ Ligação ao WooCommerce</h2>
+      <button class="btn" id="toggleConfig">Mostrar / Ocultar</button>
+    </div>
+    <div class="config-body" id="configBody">
+      <div class="field">
+        <label>URL do Site</label>
+        <input type="text" id="cfgUrl" placeholder="https://aloja.pt" autocomplete="off"/>
+      </div>
+      <div class="field">
+        <label>Consumer Key (ck_…)</label>
+        <input type="password" id="cfgKey" placeholder="ck_xxxxxxxxxxxx" autocomplete="off"/>
+      </div>
+      <div class="field">
+        <label>Consumer Secret (cs_…)</label>
+        <input type="password" id="cfgSecret" placeholder="cs_xxxxxxxxxxxx" autocomplete="off"/>
+      </div>
+      <div class="config-actions">
+        <button class="btn accent" id="saveBtn">💾 Salvar</button>
+        <button class="btn" id="clearBtn">Limpar dados</button>
+      </div>
+      <div class="warn">
+        ⚠️ <b>Segurança:</b> as chaves ficam guardadas no <b>LocalStorage deste navegador</b> e são enviadas
+        diretamente do browser para a tua loja. Como esta página é pública, usa chaves de
+        <b>permissão "Leitura" (Read-only)</b>. Qualquer pessoa que use este dispositivo pode ver as chaves.
+      </div>
+    </div>
+  </div>
+
+  <!-- ====== FILTERS (SLICER) ====== -->
+  <div class="filters" id="filters">
+    <button class="filter-btn active" data-cat="todos">Todos</button>
+    <button class="filter-btn" data-cat="robos">1. Robôs</button>
+    <button class="filter-btn" data-cat="grandes">2. Enc. Grandes</button>
+    <button class="filter-btn" data-cat="restantes">3. Restantes</button>
+  </div>
+
+  <!-- ====== MAIN GRID ====== -->
+  <div class="grid">
+
+    <!-- Gauge -->
+    <div class="card">
+      <h2>Encomendas por Fazer (estado “processing”)</h2>
+      <div class="gauge-wrap"><canvas id="gauge" height="230"></canvas></div>
+      <div class="gauge-value">
+        <div class="num" id="pendingNum">0</div>
+        <div class="lbl">Pendentes Agora</div>
+      </div>
+      <div class="gauge-legend">
+        <span><i style="background:var(--green)"></i>Bom (0–<b id="zG">0</b>)</span>
+        <span><i style="background:var(--yellow)"></i>Atenção (até <b id="zY">0</b>)</span>
+        <span><i style="background:var(--red)"></i>Crítico (&gt; <b id="zR">0</b>)</span>
+      </div>
+    </div>
+
+    <!-- Meta do dia -->
+    <div class="card meta-card">
+      <h2>Meta do Dia &amp; Contagem Manual</h2>
+      <button class="big-btn" id="countBtn">
+        <span class="plus">+1</span>
+        <span>Encomenda Embalada</span>
+      </button>
+      <div class="progress-block">
+        <div class="pct" id="pctText">0% Concluído</div>
+        <div class="sub"><b id="doneToday">0</b> embaladas hoje &nbsp;•&nbsp; Meta: <b id="goalText">0</b></div>
+        <div class="bar"><div class="fill" id="barFill"></div></div>
+        <div class="meta-note" id="metaNote"></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ====== ALERT TABLE ====== -->
+  <div class="card">
+    <div class="table-head">
+      <h2>🚨 Top 10 Encomendas Mais Antigas por Fazer</h2>
+      <div class="table-actions">
+        <span class="hidden-count" id="hiddenCount"></span>
+        <button class="btn small" id="restoreLastBtn" disabled>↩ Repor última oculta</button>
+        <button class="btn small" id="restoreAllBtn" disabled>⟲ Repor todas</button>
+      </div>
+    </div>
+    <div class="table-scroll">
+    <table>
+      <thead>
+        <tr>
+          <th>Encomenda</th><th>Cliente</th><th>Produtos</th>
+          <th style="text-align:right">Total</th><th style="text-align:right">À espera há</th><th></th>
+        </tr>
+      </thead>
+      <tbody id="tableBody">
+        <tr><td colspan="6" class="muted">Sem dados. Configura a ligação ao WooCommerce acima.</td></tr>
+      </tbody>
+    </table>
+    </div>
+  </div>
+
+</div>
+
+<script>
+"use strict";
+
+/* ============================================================
+   CONFIGURAÇÃO DAS CATEGORIAS (editável)
+   Cada filtro procura, no NOME da categoria WooCommerce do produto,
+   qualquer um destes pedaços de texto (minúsculas). Ajusta aos nomes
+   reais das tuas categorias se necessário.
+   "restantes" = encomendas cujos produtos não caem em "robos" nem "grandes".
+   ============================================================ */
+const CATEGORY_MATCHERS = {
+  robos:   ["rob"],                              // "Robôs", "Robots", "1. Robôs"
+  // "Enc. Grandes" = bombas de calor, bombas de filtração, coberturas, enroladores.
+  // "bomba" apanha bombas de calor + de filtração; "cobertura" -> coberturas; "enrolador" -> enroladores.
+  grandes: ["bomba", "cobertura", "enrolador"]
+};
+
+/* ============================================================
+   ESTADO GLOBAL
+   ============================================================ */
+const LS_CFG = "logist_cfg_v1";
+const LS_COUNT = "logist_count_v1";
+const LS_HIDDEN = "logist_hidden_v1"; // IDs de encomendas ocultadas da tabela (pilha)
+const REFRESH_MS = 5 * 60 * 1000; // 5 minutos
+// Só considerar encomendas criadas nos últimos N dias.
+// Evita encomendas antigas/legado (ex.: ~900 do ano anterior) presas em "processing".
+const WINDOW_DAYS = 30;
+// "Feitas" (baseline do velocímetro/meta) = todas as encomendas EXCETO estes estados.
+const EXCLUDED_STATUSES = ["cancelled", "trash"];
+
+let state = {
+  processing: [],   // encomendas em "processing" (ponteiro + tabela)
+  baseline:  [],    // todas as encomendas da janela EXCETO canceladas ("feitas")
+  catMap: {}        // product_id -> [nomes de categoria minúsculos]
+};
+let activeFilters = new Set(["todos"]);
+let gaugeChart = null;
+let refreshTimer = null;
+
+/* ============================================================
+   HELPERS DOM
+   ============================================================ */
+const $ = id => document.getElementById(id);
+const banner = $("banner");
+function showError(msg){ banner.innerHTML = "❌ " + msg; banner.classList.add("show"); }
+function clearError(){ banner.classList.remove("show"); banner.innerHTML = ""; }
+
+/* ============================================================
+   CONFIG (LocalStorage)
+   ============================================================ */
+function getCfg(){
+  try{ return JSON.parse(localStorage.getItem(LS_CFG)) || {}; }catch(e){ return {}; }
+}
+function setCfg(c){ localStorage.setItem(LS_CFG, JSON.stringify(c)); }
+
+function loadCfgIntoForm(){
+  const c = getCfg();
+  $("cfgUrl").value = c.url || "";
+  $("cfgKey").value = c.key || "";
+  $("cfgSecret").value = c.secret || "";
+  updateConnChip(!!(c.url && c.key && c.secret));
+}
+function updateConnChip(ok){
+  const chip = $("connChip");
+  chip.textContent = ok ? "Configurado" : "Sem ligação";
+  chip.className = "chip " + (ok ? "ok" : "off");
+}
+
+/* ============================================================
+   API WOOCOMMERCE
+   ============================================================ */
+function buildUrl(endpoint, params){
+  const c = getCfg();
+  const base = (c.url || "").replace(/\/+$/,"");
+  const u = new URL(base + "/wp-json/wc/v3/" + endpoint);
+  u.searchParams.set("consumer_key", c.key || "");
+  u.searchParams.set("consumer_secret", c.secret || "");
+  Object.entries(params || {}).forEach(([k,v]) => {
+    if(v !== undefined && v !== null) u.searchParams.set(k, v);
+  });
+  return u.toString();
+}
+
+async function wcGet(endpoint, params){
+  const res = await fetch(buildUrl(endpoint, params), { headers:{ "Accept":"application/json" } });
+  if(!res.ok){
+    let detail = "";
+    try{ const j = await res.json(); detail = j.message ? " — " + j.message : ""; }catch(e){}
+    throw new Error("HTTP " + res.status + detail);
+  }
+  return res.json();
+}
+
+// Pagina até esgotar (lotes de 100, máx maxPages).
+async function wcGetAll(endpoint, params, maxPages = 10){
+  let page = 1, all = [];
+  while(page <= maxPages){
+    const batch = await wcGet(endpoint, Object.assign({}, params, { per_page:100, page }));
+    if(!Array.isArray(batch) || batch.length === 0) break;
+    all = all.concat(batch);
+    if(batch.length < 100) break;
+    page++;
+  }
+  return all;
+}
+
+/* ============================================================
+   MAPA PRODUTO -> CATEGORIAS
+   Busca apenas os produtos presentes nas encomendas (em lotes de 100).
+   ============================================================ */
+async function buildCategoryMap(orders){
+  const ids = new Set();
+  orders.forEach(o => (o.line_items || []).forEach(li => { if(li.product_id) ids.add(li.product_id); }));
+  const list = [...ids];
+  const map = {};
+  for(let i = 0; i < list.length; i += 100){
+    const slice = list.slice(i, i + 100);
+    try{
+      const prods = await wcGet("products", { include: slice.join(","), per_page:100, _fields:"id,categories" });
+      prods.forEach(p => { map[p.id] = (p.categories || []).map(c => (c.name || "").toLowerCase()); });
+    }catch(e){
+      console.warn("Falha ao obter categorias de produtos:", e.message);
+    }
+  }
+  return map;
+}
+
+/* ============================================================
+   CLASSIFICAÇÃO / FILTRO
+   ============================================================ */
+// Textos pesquisáveis de uma encomenda: nomes de categoria + nomes dos produtos.
+function orderText(order){
+  const out = [];
+  (order.line_items || []).forEach(li => {
+    const c = state.catMap[li.product_id];
+    if(c) out.push(...c);
+    if(li.name) out.push(li.name.toLowerCase());
+  });
+  return out;
+}
+function matchesAny(names, matchers){
+  return names.some(n => matchers.some(m => n.includes(m)));
+}
+function orderMatchesFilter(order){
+  if(activeFilters.has("todos") || activeFilters.size === 0) return true;
+  const names = orderText(order);
+  const isRobo   = matchesAny(names, CATEGORY_MATCHERS.robos);
+  const isGrande = matchesAny(names, CATEGORY_MATCHERS.grandes);
+  for(const f of activeFilters){
+    if(f === "robos" && isRobo) return true;
+    if(f === "grandes" && isGrande) return true;
+    if(f === "restantes" && !isRobo && !isGrande) return true;
+  }
+  return false;
+}
+
+/* ============================================================
+   DATAS / MÉDIAS
+   ============================================================ */
+function tsCreated(o){
+  const raw = o.date_created_gmt || o.date_created;
+  const t = Date.parse((raw || "") + (o.date_created_gmt ? "Z" : ""));
+  return isNaN(t) ? null : t;
+}
+// nº de encomendas (por data de criação) nos últimos N dias, a partir de uma lista
+function countWithin(list, days){
+  const cutoff = Date.now() - days * 86400000;
+  return list.filter(o => { const t = tsCreated(o); return t && t >= cutoff; }).length;
+}
+
+/* ============================================================
+   RENDER
+   ============================================================ */
+function renderAll(){
+  // --- Filtragem ---
+  const proc = state.processing.filter(orderMatchesFilter);
+  const base = state.baseline.filter(orderMatchesFilter);
+  // Linhas ocultas saem da carga ativa: reduzem os pendentes (ponteiro) e, em crítico, a meta.
+  const hiddenSet = new Set(getHidden());
+  const pending = proc.filter(o => !hiddenSet.has(o.id)).length;
+
+  // --- Zonas do velocímetro: TOTAIS de encomendas feitas (respeitam o filtro) ---
+  // "Feitas" = todas as encomendas da janela exceto canceladas (em processo + feitas).
+  // Verde: 0 → feitas nos últimos 2 dias. Amarelo: até feitas nos últimos 5 dias. Vermelho: acima.
+  const done2 = countWithin(base, 2);
+  const done5 = countWithin(base, 5);
+
+  let green = done2;
+  let yellow = done5;
+  if(!(yellow > 0)){
+    // Sem histórico de "completed" na janela: escala provisória baseada nos pendentes.
+    green = Math.max(1, Math.ceil(pending * 0.5));
+    yellow = Math.max(green + 1, pending);
+  }
+  if(green > yellow) green = yellow; // segurança (2 dias ⊂ 5 dias garante green ≤ yellow)
+  const gmax = Math.max(yellow + Math.max(1, Math.ceil(yellow * 0.3)), pending + 1, 5);
+
+  renderGauge(pending, green, yellow, gmax);
+  $("pendingNum").textContent = pending;
+  $("zG").textContent = Math.round(green);
+  $("zY").textContent = Math.round(yellow);
+  $("zR").textContent = Math.round(yellow);
+
+  // --- Meta do dia (média 14 dias, SEM filtro: o botão conta tudo) ---
+  const baseGoal = Math.max(1, Math.round(countWithin(state.baseline, 14) / 14));
+  // Se o velocímetro está CRÍTICO (pendentes acima do limite vermelho = feitas em 5 dias),
+  // a meta sobe, no mínimo, para o nº necessário para sair do vermelho.
+  const redLine = Math.round(yellow);
+  const critical = pending > redLine;
+  const toExit = critical ? (pending - redLine) : 0;   // embalagens mínimas para sair do crítico
+  const goal = Math.max(baseGoal, toExit);
+  renderMeta(goal, critical, toExit);
+
+  // --- Tabela das 5 mais antigas ---
+  renderTable(proc);
+}
+
+function renderGauge(pending, green, yellow, gmax){
+  const ctx = $("gauge").getContext("2d");
+  const data = [green, Math.max(0, yellow - green), Math.max(0, gmax - yellow)];
+  if(!gaugeChart){
+    gaugeChart = new Chart(ctx, {
+      type:"doughnut",
+      data:{ datasets:[{
+        data, backgroundColor:["#22c55e","#facc15","#ef4444"],
+        borderWidth:0, circumference:180, rotation:-90, cutout:"70%"
+      }]},
+      options:{
+        responsive:true, maintainAspectRatio:false, animation:{duration:400},
+        plugins:{legend:{display:false}, tooltip:{enabled:false}},
+        needleValue:pending, gaugeMax:gmax
+      },
+      plugins:[needlePlugin]
+    });
+  }else{
+    gaugeChart.data.datasets[0].data = data;
+    gaugeChart.options.needleValue = pending;
+    gaugeChart.options.gaugeMax = gmax;
+    gaugeChart.update();
+  }
+}
+
+const needlePlugin = {
+  id:"needle",
+  afterDatasetDraw(chart){
+    const arc = chart.getDatasetMeta(0).data[0];
+    if(!arc) return;
+    const {ctx} = chart;
+    const cx = arc.x, cy = arc.y, r = arc.outerRadius;
+    const max = chart.options.gaugeMax || 1;
+    const val = Math.max(0, Math.min(chart.options.needleValue || 0, max));
+    const angle = Math.PI - (val / max) * Math.PI; // π (esq) -> 0 (dir)
+    const len = r * 0.84;
+    ctx.save();
+    ctx.beginPath();
+    ctx.moveTo(cx, cy);
+    ctx.lineTo(cx + len * Math.cos(angle), cy - len * Math.sin(angle));
+    ctx.lineWidth = 5; ctx.lineCap = "round"; ctx.strokeStyle = "#f8fafc";
+    ctx.shadowColor = "rgba(0,0,0,.5)"; ctx.shadowBlur = 6;
+    ctx.stroke();
+    ctx.beginPath();
+    ctx.arc(cx, cy, 9, 0, 2 * Math.PI);
+    ctx.fillStyle = "#f8fafc"; ctx.fill();
+    ctx.restore();
+  }
+};
+
+function renderTable(proc){
+  const body = $("tableBody");
+  const hidden = new Set(getHidden());
+  updateRestoreButtons();
+  const oldest = proc.filter(o => !hidden.has(o.id))
+    .sort((a,b) => (tsCreated(a) || 0) - (tsCreated(b) || 0))
+    .slice(0, 10);
+  if(oldest.length === 0){
+    const msg = hidden.size > 0
+      ? "Todas as encomendas pendentes deste filtro estão ocultas."
+      : "Sem encomendas pendentes para este filtro. 🎉";
+    body.innerHTML = '<tr><td colspan="6" class="muted">' + msg + '</td></tr>';
+    return;
+  }
+  body.innerHTML = oldest.map(o => {
+    const t = tsCreated(o);
+    const days = t ? Math.floor((Date.now() - t) / 86400000) : 0;
+    const name = ((o.billing && (o.billing.first_name + " " + o.billing.last_name)) || "—").trim() || "—";
+    const cls = days >= 4 ? "red" : (days >= 2 ? "yellow" : "green");
+    const txt = days === 0 ? "Hoje" : (days === 1 ? "1 dia" : days + " dias");
+    // Produtos: até 3 linhas "qtd× nome", depois "+N mais"
+    const items = (o.line_items || []).map(li => `${li.quantity}× ${escapeHtml(li.name || "—")}`);
+    const prod = items.slice(0, 3).join("<br>") +
+      (items.length > 3 ? `<br><span class="muted-inline">+${items.length - 3} mais</span>` : "") ||
+      '<span class="muted-inline">—</span>';
+    const total = formatMoney(o.total, o.currency_symbol || o.currency);
+    return `<tr>
+      <td>#${o.number || o.id}</td>
+      <td>${escapeHtml(name)}</td>
+      <td class="prod">${prod}</td>
+      <td class="total">${total}</td>
+      <td style="text-align:right"><span class="pill ${cls}">${txt}</span></td>
+      <td class="hide-cell"><button class="hide-btn" data-hide="${o.id}" title="Ocultar esta linha">✕</button></td>
+    </tr>`;
+  }).join("");
+}
+
+/* ---- Ocultar / repor linhas (persistente em LocalStorage) ---- */
+function getHidden(){ try{ return JSON.parse(localStorage.getItem(LS_HIDDEN)) || []; }catch(e){ return []; } }
+function setHidden(arr){ localStorage.setItem(LS_HIDDEN, JSON.stringify(arr)); }
+function hideRow(id){
+  const a = getHidden();
+  if(!a.includes(id)){ a.push(id); setHidden(a); }   // pilha: último a entrar = topo
+  renderAll();                                        // re-render da cache (velocímetro não muda)
+}
+function restoreLast(){ const a = getHidden(); a.pop(); setHidden(a); renderAll(); }
+function restoreAll(){ setHidden([]); renderAll(); }
+function updateRestoreButtons(){
+  const n = getHidden().length;
+  $("restoreLastBtn").disabled = n === 0;
+  $("restoreAllBtn").disabled = n === 0;
+  $("hiddenCount").textContent = n ? (n + " oculta" + (n > 1 ? "s" : "")) : "";
+}
+function escapeHtml(s){ return String(s).replace(/[&<>"']/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c])); }
+function formatMoney(val, cur){
+  const n = parseFloat(val || 0) || 0;
+  const sym = ({EUR:"€",USD:"$",GBP:"£",BRL:"R$"})[cur] || cur || "";
+  return n.toLocaleString("pt-PT",{minimumFractionDigits:2,maximumFractionDigits:2}) + " " + sym;
+}
+
+/* ============================================================
+   CONTAGEM MANUAL (+1) — independente da API
+   ============================================================ */
+function todayKey(){
+  const d = new Date();
+  return d.getFullYear() + "-" + (d.getMonth()+1) + "-" + d.getDate();
+}
+function getCount(){
+  let obj;
+  try{ obj = JSON.parse(localStorage.getItem(LS_COUNT)); }catch(e){ obj = null; }
+  if(!obj || obj.date !== todayKey()){
+    obj = { date: todayKey(), count: 0 };      // reset automático ao mudar de dia
+    localStorage.setItem(LS_COUNT, JSON.stringify(obj));
+  }
+  return obj;
+}
+function incCount(){
+  const obj = getCount();
+  obj.count += 1;
+  localStorage.setItem(LS_COUNT, JSON.stringify(obj));
+  renderMeta(lastGoal, lastCritical, lastToExit);
+}
+let lastGoal = 0, lastCritical = false, lastToExit = 0;
+function renderMeta(goal, critical, toExit){
+  lastGoal = goal;
+  lastCritical = !!critical;
+  lastToExit = toExit || 0;
+  const done = getCount().count;            // valida/reseta o dia
+  const pct = goal > 0 ? Math.round((done / goal) * 100) : 0;
+  $("doneToday").textContent = done;
+  $("goalText").textContent = goal;
+  $("pctText").textContent = pct + "% Concluído";
+  $("barFill").style.width = Math.min(100, pct) + "%";
+  $("barFill").style.background = pct >= 100
+    ? "linear-gradient(90deg,#22c55e,#4ade80)"
+    : "linear-gradient(90deg,#22c55e,#38bdf8)";
+  // Aviso de meta crítica (só quando o velocímetro está no vermelho)
+  const note = $("metaNote");
+  const falta = Math.max(0, goal - done);
+  if(lastCritical && falta > 0){
+    note.textContent = "⚠ Meta crítica: embalar +" + falta + " para sair do vermelho";
+    note.style.color = "#fca5a5";
+    note.classList.add("show");
+  }else if(lastCritical){
+    note.textContent = "✓ Já saíste do vermelho — bom trabalho!";
+    note.style.color = "#4ade80";
+    note.classList.add("show");
+  }else{
+    note.classList.remove("show");
+  }
+}
+
+/* ============================================================
+   REFRESH DE DADOS (API)
+   ============================================================ */
+async function refreshData(){
+  const c = getCfg();
+  if(!(c.url && c.key && c.secret)){
+    showError("Configura o URL, a Consumer Key e a Consumer Secret e carrega em Salvar.");
+    return;
+  }
+  const dot = $("liveDot");
+  dot.style.background = "var(--yellow)";
+  try{
+    // Janela de dados: apenas encomendas criadas nos últimos WINDOW_DAYS dias.
+    const windowAfter = new Date(Date.now() - WINDOW_DAYS * 86400000).toISOString();
+    // Uma só chamada: todas as encomendas da janela (qualquer estado).
+    const all = await wcGetAll("orders", { status:"any", after: windowAfter }, 50);
+    // "Feitas" (baseline) = todas exceto canceladas; Pendentes = estado "processing".
+    const baseline = all.filter(o => !EXCLUDED_STATUSES.includes(o.status));
+    const processing = all.filter(o => o.status === "processing");
+
+    // Mapa de categorias (produtos das encomendas relevantes)
+    const catMap = await buildCategoryMap(baseline);
+
+    state.processing = processing;
+    state.baseline = baseline;
+    state.catMap = catMap;
+
+    clearError();
+    updateConnChip(true);
+    renderAll();
+    stampUpdate();
+    dot.style.background = "var(--green)";
+  }catch(e){
+    dot.style.background = "var(--red)";
+    showError("Não foi possível obter dados: " + e.message +
+      ". Verifica o URL/chaves. Se o erro for de rede/CORS, a tua loja precisa de permitir pedidos deste domínio (cabeçalhos CORS) ou de chaves válidas.");
+  }
+}
+function stampUpdate(){
+  const d = new Date();
+  const hh = String(d.getHours()).padStart(2,"0");
+  const mm = String(d.getMinutes()).padStart(2,"0");
+  $("lastUpdate").textContent = hh + ":" + mm;
+}
+
+/* ============================================================
+   EVENTOS
+   ============================================================ */
+// Filtros (seleção múltipla; "Todos" é exclusivo)
+$("filters").addEventListener("click", e => {
+  const btn = e.target.closest(".filter-btn");
+  if(!btn) return;
+  const cat = btn.dataset.cat;
+  if(cat === "todos"){
+    activeFilters = new Set(["todos"]);
+  }else{
+    activeFilters.delete("todos");
+    if(activeFilters.has(cat)) activeFilters.delete(cat); else activeFilters.add(cat);
+    if(activeFilters.size === 0) activeFilters = new Set(["todos"]);
+  }
+  // refletir visualmente
+  document.querySelectorAll(".filter-btn").forEach(b =>
+    b.classList.toggle("active", activeFilters.has(b.dataset.cat)));
+  renderAll(); // re-render instantâneo a partir da cache (sem nova chamada à API)
+});
+
+// Botão gigante +1
+$("countBtn").addEventListener("click", incCount);
+
+// Ocultar linha (delegação) + repor
+$("tableBody").addEventListener("click", e => {
+  const b = e.target.closest("[data-hide]");
+  if(b) hideRow(Number(b.dataset.hide));
+});
+$("restoreLastBtn").addEventListener("click", restoreLast);
+$("restoreAllBtn").addEventListener("click", restoreAll);
+
+// Config: guardar / limpar / mostrar-ocultar
+$("saveBtn").addEventListener("click", () => {
+  const cfg = {
+    url: $("cfgUrl").value.trim(),
+    key: $("cfgKey").value.trim(),
+    secret: $("cfgSecret").value.trim()
+  };
+  if(!cfg.url || !cfg.key || !cfg.secret){
+    showError("Preenche os três campos antes de Salvar.");
+    return;
+  }
+  setCfg(cfg);
+  updateConnChip(true);
+  $("configBody").classList.add("hidden");
+  refreshData();
+});
+$("clearBtn").addEventListener("click", () => {
+  localStorage.removeItem(LS_CFG);
+  loadCfgIntoForm();
+  showError("Dados de ligação apagados deste navegador.");
+});
+$("toggleConfig").addEventListener("click", () => $("configBody").classList.toggle("hidden"));
+$("refreshBtn").addEventListener("click", refreshData);
+
+/* ============================================================
+   ARRANQUE
+   ============================================================ */
+function init(){
+  loadCfgIntoForm();
+  renderMeta(0);                 // mostra contagem manual já guardada
+  updateRestoreButtons();        // reflete linhas ocultas guardadas
+  const c = getCfg();
+  if(c.url && c.key && c.secret){
+    $("configBody").classList.add("hidden");
+    refreshData();
+  }
+  // Atualização automática a cada 5 min (nunca afeta a contagem manual)
+  refreshTimer = setInterval(refreshData, REFRESH_MS);
+}
+init();
+</script>
+</body>
+</html>

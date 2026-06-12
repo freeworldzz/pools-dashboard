@@ -50,6 +50,8 @@
   .btn:hover{border-color:var(--accent);color:#fff}
   .btn.accent{background:var(--accent);color:#062235;border-color:transparent}
   .btn.accent:hover{filter:brightness(1.08)}
+  .btn.danger{background:rgba(239,68,68,.15);border-color:rgba(239,68,68,.5);color:#fca5a5}
+  .btn.danger:hover{background:var(--red);border-color:var(--red);color:#fff}
 
   /* ---------- Cards ---------- */
   .card{
@@ -105,6 +107,8 @@
 
   /* Meta do dia */
   .meta-card{display:flex;flex-direction:column;gap:20px;justify-content:center}
+  .meta-head{display:flex;align-items:center;justify-content:space-between;gap:12px;flex-wrap:wrap}
+  .meta-head h2{margin:0}
   .big-btn{
     border:none;border-radius:20px;cursor:pointer;color:#06281a;font-weight:900;
     background:linear-gradient(180deg,#34d77a,#16a34a);
@@ -253,7 +257,10 @@
 
     <!-- Meta do dia -->
     <div class="card meta-card">
-      <h2>Meta do Dia &amp; Contagem Manual</h2>
+      <div class="meta-head">
+        <h2>Meta do Dia &amp; Contagem Manual</h2>
+        <button class="btn small danger" id="undoBtn" title="Corrigir engano" disabled>−1 Encomenda</button>
+      </div>
       <button class="big-btn" id="countBtn">
         <span class="plus">+1</span>
         <span>Encomenda Embalada</span>
@@ -473,7 +480,10 @@ function renderAll(){
   const base = state.baseline.filter(orderMatchesFilter);
   // Linhas ocultas saem da carga ativa: reduzem os pendentes (ponteiro) e, em crítico, a meta.
   const hiddenSet = new Set(getHidden());
-  const pending = proc.filter(o => !hiddenSet.has(o.id)).length;
+  const pending = proc.filter(o => !hiddenSet.has(o.id)).length; // backlog ativo (alvo estável da meta)
+  lastPendingTotal = pending;
+  // "Pendentes agora" = backlog menos o que já foi embalado hoje (botão +1).
+  const pendingNow = Math.max(0, pending - getCount().count);
 
   // --- Zonas do velocímetro: TOTAIS de encomendas feitas (respeitam o filtro) ---
   // "Feitas" = todas as encomendas da janela exceto canceladas (em processo + feitas).
@@ -491,8 +501,8 @@ function renderAll(){
   if(green > yellow) green = yellow; // segurança (2 dias ⊂ 5 dias garante green ≤ yellow)
   const gmax = Math.max(yellow + Math.max(1, Math.ceil(yellow * 0.3)), pending + 1, 5);
 
-  renderGauge(pending, green, yellow, gmax);
-  $("pendingNum").textContent = pending;
+  renderGauge(pendingNow, green, yellow, gmax);
+  $("pendingNum").textContent = pendingNow;
   $("zG").textContent = Math.round(green);
   $("zY").textContent = Math.round(yellow);
   $("zR").textContent = Math.round(yellow);
@@ -641,15 +651,32 @@ function incCount(){
   const obj = getCount();
   obj.count += 1;
   localStorage.setItem(LS_COUNT, JSON.stringify(obj));
+  afterCountChange();
+}
+function decCount(){
+  const obj = getCount();
+  if(obj.count > 0){                       // nunca abaixo de 0
+    obj.count -= 1;
+    localStorage.setItem(LS_COUNT, JSON.stringify(obj));
+  }
+  afterCountChange();
+}
+// Atualiza ponteiro + meta após mexer na contagem, sem nova chamada à API.
+function afterCountChange(){
+  const c = getCount().count;
+  const pendingNow = Math.max(0, lastPendingTotal - c);
+  $("pendingNum").textContent = pendingNow;
+  if(gaugeChart){ gaugeChart.options.needleValue = pendingNow; gaugeChart.update(); }
   renderMeta(lastGoal, lastCritical, lastToExit);
 }
-let lastGoal = 0, lastCritical = false, lastToExit = 0;
+let lastGoal = 0, lastCritical = false, lastToExit = 0, lastPendingTotal = 0;
 function renderMeta(goal, critical, toExit){
   lastGoal = goal;
   lastCritical = !!critical;
   lastToExit = toExit || 0;
   const done = getCount().count;            // valida/reseta o dia
   const pct = goal > 0 ? Math.round((done / goal) * 100) : 0;
+  $("undoBtn").disabled = done === 0;       // nada para corrigir
   $("doneToday").textContent = done;
   $("goalText").textContent = goal;
   $("pctText").textContent = pct + "% Concluído";
@@ -739,8 +766,9 @@ $("filters").addEventListener("click", e => {
   renderAll(); // re-render instantâneo a partir da cache (sem nova chamada à API)
 });
 
-// Botão gigante +1
+// Botão gigante +1 e correção −1
 $("countBtn").addEventListener("click", incCount);
+$("undoBtn").addEventListener("click", decCount);
 
 // Ocultar linha (delegação) + repor
 $("tableBody").addEventListener("click", e => {

@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-27T09:38:46",
+  "generated_at": "2026-06-28T10:07:01",
   "vendors": [
     "Pools and More",
     "Bricoandpool",
@@ -166,7 +166,7 @@
       "brand": "zodiac",
       "prices": {
         "Pools and More": {
-          "current": 649.0,
+          "current": 599.0,
           "before": null,
           "matched_name": "Zodiac Freedom Lite Robot de Piscina a Bateria",
           "url": "https://poolsandmore.pt/produto/zodiac-freedom-lite-robot-piscina-sem-fios/"
@@ -581,7 +581,7 @@
       "brand": "zodiac",
       "prices": {
         "Pools and More": {
-          "current": 1299.0,
+          "current": 1099.0,
           "before": null,
           "matched_name": "Zodiac Freedom+ Control Robot de Piscina Sem Fios",
           "url": "https://poolsandmore.pt/produto/zodiac-freedom-control-robot-de-piscina-sem-fios/"
@@ -1245,6 +1245,53 @@
       }
     },
     {
+      "name": "Zodiac Alpha OA 6600 iQ – Robot de Piscina Inteligente",
+      "brand": "zodiac",
+      "prices": {
+        "Pools and More": {
+          "current": 1099.0,
+          "before": null,
+          "matched_name": "Zodiac Alpha OA 6600 iQ – Robot de Piscina Inteligente",
+          "url": "https://poolsandmore.pt/produto/zodiac-alpha-oa-6600-iq/"
+        },
+        "Bricoandpool": {
+          "current": 1198.99,
+          "before": 1719.0,
+          "matched_name": "Zodiac - Alpha OA 6600 iQ Robô limpa-fundos com cabo para piscina",
+          "url": "https://bricoandpool.com/pt-pt/products/zodiac-alpha-oa-6600-iq-robot-cleaning-pool-6",
+          "match_score": 8
+        },
+        "Carol Piscina": null,
+        "Shop4Pool": null,
+        "Hidraulicart": {
+          "current": 1459.0,
+          "before": 1719.0,
+          "matched_name": "Aspirador Piscina Zodiac OA 6600 ALPHA IQ",
+          "url": "https://www.hidraulicart.pt/loja-online/aspiradoras-robotizadas-automaticas/aspiradora-de-piscina-zodiac-oa-6600-alpha-iq/",
+          "match_score": 8
+        },
+        "IoT Pool": {
+          "current": 1567.0,
+          "before": 2612.0,
+          "matched_name": "Aspirador robot ZODIAC Alpha OA 6600 iq limpa fundos Elétrico e Automático piscina RA 6800 iq",
+          "url": "https://www.iot-pool.com/products/aspirador-de-piscina-electrico-automatico-zodiac-alpha-oa-6600-iq-limpa-fundos-robot",
+          "match_score": 8
+        },
+        "Ferromar": {
+          "current": 1198.0,
+          "before": 1719.0,
+          "matched_name": "Zodiac Alpha OA 6600 IQ Limpiafondos",
+          "url": "https://www.piscinasferromar.com/zodiac-alpha-oa-6600-iq-limpiafondos.html",
+          "match_score": 8
+        },
+        "Outlet Piscinas": null,
+        "PoolComet": null,
+        "Piscinas y Productos": null,
+        "MyPiscine": null,
+        "Piscinarium": null
+      }
+    },
+    {
       "name": "Beatbot Sora P7 – Robot de Piscina Sem Cabo",
       "brand": "beatbot",
       "prices": {
@@ -1687,53 +1734,6 @@
           "before": 1329.0,
           "matched_name": "Limpiafondos Zodiac Alpha OA 6400 IQ",
           "url": "https://www.piscinasferromar.com/limpiafondos-zodiac-alpha-oa-6400iq.html",
-          "match_score": 8
-        },
-        "Outlet Piscinas": null,
-        "PoolComet": null,
-        "Piscinas y Productos": null,
-        "MyPiscine": null,
-        "Piscinarium": null
-      }
-    },
-    {
-      "name": "Zodiac Alpha OA 6600 iQ – Robot de Piscina Inteligente",
-      "brand": "zodiac",
-      "prices": {
-        "Pools and More": {
-          "current": null,
-          "before": null,
-          "matched_name": "Zodiac Alpha OA 6600 iQ – Robot de Piscina Inteligente",
-          "url": "https://poolsandmore.pt/produto/zodiac-alpha-oa-6600-iq/"
-        },
-        "Bricoandpool": {
-          "current": 1198.99,
-          "before": 1719.0,
-          "matched_name": "Zodiac - Alpha OA 6600 iQ Robô limpa-fundos com cabo para piscina",
-          "url": "https://bricoandpool.com/pt-pt/products/zodiac-alpha-oa-6600-iq-robot-cleaning-pool-6",
-          "match_score": 8
-        },
-        "Carol Piscina": null,
-        "Shop4Pool": null,
-        "Hidraulicart": {
-          "current": 1459.0,
-          "before": 1719.0,
-          "matched_name": "Aspirador Piscina Zodiac OA 6600 ALPHA IQ",
-          "url": "https://www.hidraulicart.pt/loja-online/aspiradoras-robotizadas-automaticas/aspiradora-de-piscina-zodiac-oa-6600-alpha-iq/",
-          "match_score": 8
-        },
-        "IoT Pool": {
-          "current": 1567.0,
-          "before": 2612.0,
-          "matched_name": "Aspirador robot ZODIAC Alpha OA 6600 iq limpa fundos Elétrico e Automático piscina RA 6800 iq",
-          "url": "https://www.iot-pool.com/products/aspirador-de-piscina-electrico-automatico-zodiac-alpha-oa-6600-iq-limpa-fundos-robot",
-          "match_score": 8
-        },
-        "Ferromar": {
-          "current": 1198.0,
-          "before": 1719.0,
-          "matched_name": "Zodiac Alpha OA 6600 IQ Limpiafondos",
-          "url": "https://www.piscinasferromar.com/zodiac-alpha-oa-6600-iq-limpiafondos.html",
           "match_score": 8
         },
         "Outlet Piscinas": null,
